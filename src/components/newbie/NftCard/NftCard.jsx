@@ -10,7 +10,7 @@ const NftCard = () => {
       
     return (
         <div className='nftCardBody df'>
-            <div className="cardItem">
+            <div data-aos="fade-in" data-aos-delay="250" data-aos-duration="500" className="cardItem">
                 <div className="img-container">
                 <img className="nft-img" src={eq} alt=""/>
                 <div className="view-icon-container">
