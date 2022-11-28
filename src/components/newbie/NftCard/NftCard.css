@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  /* primary */
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* neutral  */
+  --mainBg: hsl(217, 54%, 11%);
+  --cardBg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.nftCardBody {
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  height: 100vh;
+  background-color: var(--mainBg);
+}
+
+.cardItem {
+  background-color: var(--cardBg);
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  color: var(--Soft-blue);
+}
+
+.nft-img {
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
+
+.img-container {
+  position: relative;
+}
+
+.view-icon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 5px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(178, 100%, 50%, 0.29);
+  border-radius: 15px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.img-container:hover .view-icon-container {
+  opacity: 1;
+}
+
+.content {
+}
+
+.title {
+  color: var(--White);
+  margin: 15px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.4s ease-in-out;
+}
+.desc {
+  display: flex;
+  font-weight: 300;
+  justify-content: space-between;
+  margin: 20px 0px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.price {
+  color: var(--Cyan);
+  font-weight: 400;
+}
+
+.icon {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.price,
+.countdown {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+p:first-of-type {
+  line-height: 1.5;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--line);
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--White);
+  margin-right: 15px;
+}
+
+span {
+  color: var(--White);
+  transition: all 0.4s ease-in-out;
+}
+
+span:hover,
+.title:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+}
