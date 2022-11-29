@@ -22,7 +22,7 @@ const Card = ({card}) => {
              <Link className="app-main-components-card-link" to={card.link}>
                  <button className="app-main-item-btn">Go to section <i class="bi bi-arrow-right"></i></button>
             </Link> 
-            : <a className="app-main-components-card-link" target="_blank" href={card.link}>
+            : <a className="app-main-components-card-link" rel="noreferrer" target="_blank" href={card.link}>
                 <button className="app-main-item-btn">Go to live site <i class="bi bi-arrow-right"></i></button>   
             </a>
         }
