@@ -30,7 +30,7 @@ const Advice = () => {
 
 
     return (
-        <div className='advice-container'>
+        <div data-aos="fade-in" data-aos-delay="250" data-aos-duration="500" className='advice-container'>
             <h4 className='advice-title'>ADVICE #{id}</h4>
             <p className='advice-quote'>{advice}</p>
             <div className="deco">
