@@ -5,7 +5,7 @@ import icon from '../parfumCard/assets/product-preview-card-component-main/image
 const ParfumCard = () => {
     return (
         <div className='parfumeCard df'>
-            <div className="parfumeCard-item">
+            <div data-aos="fade-in" data-aos-delay="250" data-aos-duration="500" className="parfumeCard-item">
                 <div className="parfumeCard-left">
                 </div>
                 <div className="parfumeCard-right">
