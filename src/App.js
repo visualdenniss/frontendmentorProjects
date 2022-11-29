@@ -34,7 +34,6 @@ AOS.init({
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
 
-
                 {/* Working on currently */}
                 {/* <Route path='/build' element={}/> */}
             </Routes>
