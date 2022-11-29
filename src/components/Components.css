@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+.components {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--main-app-bg);
+  color: var(--main-app-primary);
+  padding: 20px 80px;
+}
+
+.components-title {
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.components-title > h2 {
+  font-weight: 600;
+}
+
+.components-title-text {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--main-app-primary);
+}
+
+.components-title-text > h2 {
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+
+.components-title-text > h2:hover {
+  color: var(--main-app-hover);
+}
+
+.components-title:before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-app-primary);
+  opacity: 0.4;
+  width: 100%;
+  height: 1px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16.6rem, 1fr));
+  grid-gap: 2rem;
+  /* padding: 2rem; */
+}

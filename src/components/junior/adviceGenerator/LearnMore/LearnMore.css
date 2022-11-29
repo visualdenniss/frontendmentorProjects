@@ -1,0 +1,70 @@
+.learn-more {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 12rem;
+  height: auto;
+  background: white;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.circle {
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  /* border: 2px solid #282936; */
+  border-radius: 1.625rem;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.learn-more:hover .circle {
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.625rem;
+  margin: auto;
+  background: none;
+  width: 1.125rem;
+  height: 0.125rem;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+}
+
+.arrow::before {
+  content: '';
+  position: absolute;
+  top: -0.3rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.learn-more:hover .arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+.text {
+  position: absolute;
+  margin: 0 0 0 4rem;
+  color: #282936;
+  font-weight: 700;
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  /* opacity: 0; */
+  /* transition-delay: 0.1s; */
+}
+
+.learn-more:hover .text {
+  color: #fff;
+  /* opacity: 1; */
+}

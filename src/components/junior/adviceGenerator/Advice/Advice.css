@@ -1,0 +1,60 @@
+.advice-container {
+  max-width: 550px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  border-radius: 15px;
+  align-items: center;
+  background-color: var(--dark-grayish-blue);
+  margin-bottom: 60px;
+}
+
+.advice-title {
+  color: var(--neon-green);
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.advice-quote {
+  color: var(--light-cyan);
+  font-size: var(--fz-quote);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.deco {
+}
+
+.gen-btn {
+  background: var(--neon-green);
+  width: max-content;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.icon-dice {
+  width: 65%;
+}
+
+.gen-btn:active {
+  scale: 0.97;
+}
+
+.cat-img {
+  max-width: 50%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

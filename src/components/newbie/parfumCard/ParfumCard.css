@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --parfumCard-primary: hsl(158, 36%, 37%);
+  --parfumCard-primary1: hsl(30, 38%, 92%);
+  --parfumCard-neutral: hsl(212, 21%, 14%);
+  --parfumCard-neutral1: hsl(228, 12%, 48%);
+  --parfumCard-neutral2: hsl(0, 0%, 100%);
+}
+
+/* 
+- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
+- Weights: 500, 700
+
+- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
+- Weights: 700 */
+
+.parfumeCard {
+  height: 100vh;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--parfumCard-primary1);
+}
+
+.parfumeCard-item {
+  height: 450px;
+  width: 600px;
+  display: flex;
+  border-radius: 10px;
+  /* border: 1px solid green; */
+  overflow: hidden;
+  color: var(--parfumCard-neutral1);
+}
+.parfumeCard-left {
+  width: 50%;
+  /* border: 1px solid red; */
+  background: url(../parfumCard/assets/product-preview-card-component-main/images/image-product-desktop.jpg);
+  background-size: cover;
+}
+.parfumeCard-right {
+  /* border: 1px solid red; */
+  width: 50%;
+  padding: 30px;
+  background-color: var(--parfumCard-neutral2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.parfumeCard-title-desc {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.parfumeCard-title {
+  font-family: 'Fraunces', serif;
+  color: var(--parfumCard-neutral);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+.parfumeCard-desc {
+  line-height: 1.6;
+}
+.parfumeCard-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.parfumeCard-price-actual {
+  font-family: 'Fraunces', serif;
+  color: var(--parfumCard-primary);
+  font-size: 24px;
+  margin-right: 20px;
+}
+.parfumeCard-price-old {
+  text-decoration: line-through;
+}
+.parfumeCard-button {
+  display: flex;
+  justify-content: center;
+  background-color: var(--parfumCard-primary);
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  color: var(--parfumCard-neutral2);
+  transition: all 0.4s ease-in-out;
+}
+.parfumeCard-button:hover {
+  background-color: hsl(158, 44%, 18%);
+  cursor: pointer;
+}
+
+.parfumeCard-button > p {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .parfumeCard {
+    padding: 20px;
+  }
+
+  .parfumeCard-item {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .parfumeCard-left {
+    background: url(../parfumCard/assets/product-preview-card-component-main/images/image-product-mobile.jpg);
+    background-size: cover;
+  }
+  .parfumeCard-right,
+  .parfumeCard-left {
+    flex: 1;
+    width: 100%;
+  }
+}

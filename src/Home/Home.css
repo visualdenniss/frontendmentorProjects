@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --main-app-primary: #253354;
+  --main-app-bg: rgb(244, 244, 244);
+  --main-secondary: #364a7b;
+  --main-app-hover: #5770b3;
+}
+
+.app-main-home {
+  height: 100vh;
+  overflow: hidden;
+  padding: 0px 80px;
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--main-app-primary);
+  background-color: var(--main-app-bg);
+  position: relative;
+}
+
+.bi-list {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  font-size: 32px;
+}
+
+.app-main-left-deco {
+  position: absolute;
+  bottom: 0px;
+  left: -20px;
+  font-weight: 700;
+  font-size: 150px;
+  opacity: 0.1;
+  line-height: 0.65;
+}
+
+.app-main-left,
+.app-main-right {
+  flex: 1;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+
+.app-main-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-main-title {
+  font-size: 6vw;
+  margin-bottom: 40px;
+}
+
+.app-main-title-front-span {
+  position: relative;
+  color: var(--main-app-bg);
+  z-index: 1;
+}
+
+.app-main-title-front-span::before {
+  content: '';
+  /* background: linear-gradient(to right, #e4707017, #e47070); */
+  background: linear-gradient(to right, var(--main-app-bg), #2d3d67);
+  /* background-color: #e47070; */
+  position: absolute;
+  height: 100%;
+  width: 30vw;
+  right: -2px;
+  z-index: -1;
+}
+
+.app-main-home-desc {
+  font-size: 2.25vw;
+  line-height: 1.5;
+}
+
+.app-main-span {
+  font-weight: 700;
+  color: var(--main-secondary);
+  transition: all 0.2s ease-in-out;
+}
+
+.app-main-span:hover {
+  cursor: pointer;
+  color: var(--main-app-hover);
+}
+
+.app-main-home-contact {
+  margin-top: 40px;
+  font-size: 1.5vw;
+}
+
+.app-main-right {
+  display: flex;
+}
+
+.app-main-item {
+  /* border: 1px solid red; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+}
+
+.app-main-item:last-of-type {
+  justify-content: flex-end;
+}
+
+.app-main-item-img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+  opacity: 0.5;
+  filter: grayscale(0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+.app-main-item:hover .app-main-item-img {
+  opacity: 1;
+  filter: grayscale(0);
+}
+.app-main-item-title {
+  font-size: 24px;
+  margin: 15px 0px;
+  font-weight: 600;
+}
+
+.app-main-item-desc {
+  margin: 0px 0px;
+  font-weight: 300;
+}
+
+.app-main-item-btn {
+  width: max-content;
+  border: none;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+  border-left: 3px solid var(--main-secondary);
+  font-weight: 600;
+  color: var(--main-secondary);
+}
+
+.app-main-item-btn::before {
+  content: '';
+  width: 0%;
+  height: 100%;
+  background-color: var(--main-secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
+}
+
+.app-main-item-btn:hover {
+  color: var(--main-app-bg);
+}
+.app-main-item-btn:hover::before {
+  width: 100%;
+}
+
+.bi-arrow-right {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.app-main-item-btn:hover .bi-arrow-right {
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .app-main-home {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .app-main-left {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    margin-top: 120px;
+  }
+
+  .app-main-title {
+    margin-right: 40px;
+  }
+
+  .app-main-home-desc {
+    font-size: 1.7vw;
+  }
+
+  .app-main-home-contact {
+    padding: 0;
+    margin: 0;
+  }
+
+  .app-main-left-deco {
+    display: none;
+  }
+}
