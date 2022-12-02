@@ -33,7 +33,8 @@ const FourCards = () => {
 
 
     return (
-        <div className='fourCards'>
+        <div className='fourCards' 
+        data-aos="fade-in" data-aos-delay="150" data-aos-duration="500" >
             <h1 className="fourCards-title">
                  Reliable, efficient delivery
             </h1>
@@ -41,13 +42,15 @@ const FourCards = () => {
                 Powered by Technology
             </h1>
 
-        <p className="fourCards-desc">
+        <p className="fourCards-desc"
+        data-aos="fade-in" data-aos-delay="200" data-aos-duration="500">
             Our Artificial Intelligence powered tools use millions of project data points 
             to ensure that your project is successful
         </p>
         <div className="fourCards-cards-container">
             <div className="fourCards-cards-left">
-                <div className="fourCards-card-item fourCards-cyan">
+                <div className="fourCards-card-item fourCards-cyan"
+                data-aos="fade-up" data-aos-delay="250" data-aos-duration="500" >
                     <div className="fourCards-card-item-title">{card[0].title}</div>
                     <div className="fourCards-card-item-desc">{card[0].desc}</div>
                     <div className="fourCards-card-item-img">
@@ -56,14 +59,16 @@ const FourCards = () => {
                 </div>
             </div>
             <div className="fourCards-cards-center">
-                <div className="fourCards-card-item fourCards-red">
+                <div className="fourCards-card-item fourCards-red"
+                data-aos="fade-up" data-aos-delay="450" data-aos-duration="500">
                     <div className="fourCards-card-item-title">{card[1].title}</div>
                     <div className="fourCards-card-item-desc">{card[1].desc}</div>
                     <div className="fourCards-card-item-img">
                         <img src={card[1].img} alt=""/>
                     </div>
                 </div>
-                <div className="fourCards-card-item fourCards-orange">
+                <div className="fourCards-card-item fourCards-orange" 
+                data-aos="fade-up" data-aos-delay="650" data-aos-duration="500">
                     <div className="fourCards-card-item-title">{card[2].title}</div>
                     <div className="fourCards-card-item-desc">{card[2].desc}</div>
                     <div className="fourCards-card-item-img">
@@ -72,7 +77,8 @@ const FourCards = () => {
                 </div>
             </div>
             <div className="fourCards-cards-right">
-                <div className="fourCards-card-item fourCards-blue">
+                <div className="fourCards-card-item fourCards-blue"
+                data-aos="fade-up" data-aos-delay="850" data-aos-duration="500">
                     <div className="fourCards-card-item-title">{card[3].title}</div>
                     <div className="fourCards-card-item-desc">{card[3].desc}</div>
                     <div className="fourCards-card-item-img">
