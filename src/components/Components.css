@@ -5,6 +5,7 @@
   background-color: var(--main-app-bg);
   color: var(--main-app-primary);
   padding: 20px 80px;
+  min-height: 100vh;
 }
 
 .components-title {
@@ -51,4 +52,18 @@
   grid-template-columns: repeat(auto-fill, minmax(16.6rem, 1fr));
   grid-gap: 2rem;
   /* padding: 2rem; */
+}
+
+@media only screen and (max-width: 700px) {
+  .components {
+    padding: 20px;
+  }
+
+  .components-title > h2 {
+    font-size: 16px;
+  }
+
+  .components-title-text > h2 {
+    font-size: 14px;
+  }
 }

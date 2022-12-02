@@ -11,6 +11,7 @@ import AdviceGenerator from './components/junior/adviceGenerator/AdviceGenerator
 
 import Pages from './pages/Pages';
 import ParfumCard from './components/newbie/parfumCard/ParfumCard';
+import Faq from './components/newbie/Faq/Faq';
 
 const App = () => {
 
@@ -35,7 +36,7 @@ AOS.init({
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                {/* <Route path='/build' element={}/> */}
+                <Route path='/build' element={<Faq></Faq>}/>
             </Routes>
             </Router>
         </div>

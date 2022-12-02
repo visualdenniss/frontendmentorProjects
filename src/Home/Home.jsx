@@ -48,13 +48,13 @@ const Home = () => {
                 data-aos-delay="400"
                 data-aos-duration="1000" 
                 className="app-main-item">
-                        <div className="app-main-item-title">
+                        <div className="app-main-item-title ordr2">
                             Components
                         </div>
-                        <div className="app-main-item-desc">
+                        <div className="app-main-item-desc ordr3">
                             Showcase of individual parts and components of websites
                         </div>
-                        <Link to='/components'>
+                        <Link to='/components' className="ordr4">
                         <button className="app-main-item-btn">Go to section
                          <i class="bi bi-arrow-right"></i> </button>
                         </Link>

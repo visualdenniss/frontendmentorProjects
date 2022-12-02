@@ -8,7 +8,7 @@
 }
 
 .app-main-home {
-  height: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   padding: 0px 80px;
   display: flex;
@@ -38,8 +38,6 @@
 .app-main-left,
 .app-main-right {
   flex: 1;
-  height: 100%;
-  /* border: 1px solid red; */
 }
 
 .app-main-left {
@@ -181,30 +179,68 @@
 @media only screen and (max-width: 1000px) {
   .app-main-home {
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
+    overflow: visible;
+    padding: 20px;
+  }
+
+  .bi-list {
+    display: none;
   }
 
   .app-main-left {
     display: flex;
     /* flex-wrap: wrap; */
-    flex-direction: row;
-    margin-top: 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .app-main-title {
-    margin-right: 40px;
+    font-size: 32px;
   }
 
   .app-main-home-desc {
-    font-size: 1.7vw;
+    font-size: 16px;
   }
 
   .app-main-home-contact {
     padding: 0;
-    margin: 0;
+    margin: 10px;
+    font-size: 14px;
   }
 
   .app-main-left-deco {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .app-main-left,
+  .app-main-right {
+    flex-direction: column;
+
+    height: 100%;
+  }
+
+  .app-main-left {
+    margin-bottom: 20px;
+  }
+
+  .app-main-item-img:last-of-type {
+    order: 0;
+  }
+
+  .ordr2 {
+    order: 1;
+  }
+
+  .ordr3 {
+    order: 2;
+  }
+
+  .ordr4 {
+    order: 3;
   }
 }

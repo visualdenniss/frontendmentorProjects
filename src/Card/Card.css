@@ -9,10 +9,13 @@
   overflow: hidden;
   background-color: #f0f0f0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: auto;
 }
 
 .card > img {
   transition: all 0.4s ease-in-out;
+  max-height: 200px;
+  object-fit: cover;
 }
 
 .card:hover > img {

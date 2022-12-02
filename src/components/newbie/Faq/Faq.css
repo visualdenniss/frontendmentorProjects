@@ -1,0 +1,147 @@
+/* ### Primary
+
+  #### Text
+
+  - Very dark desaturated blue: hsl(238, 29%, 16%)
+  - Soft red: hsl(14, 88%, 65%)
+
+  ### Neutral
+
+  #### Text
+
+  - Very dark grayish blue: hsl(237, 12%, 33%)
+  - Dark grayish blue: hsl(240, 6%, 50%)
+
+  #### Dividers
+
+  - Light grayish blue: hsl(240, 5%, 91%) */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.faq-accordion {
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+  min-height: 100vh;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  padding-top: 40px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.faq-accordion-container {
+  width: 90%;
+  /* border: 1px solid red; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 20px;
+  padding: 20px;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  position: relative;
+  background-color: white;
+}
+
+.faq-accordion-container:before {
+  content: url('../Faq/assets/faq-accordion-card-main/images/illustration-woman-online-mobile.svg');
+  position: absolute;
+  min-width: 250px;
+  top: -115px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.faq-accordion-content {
+  /* border: 1px solid red; */
+}
+
+.faq-accordion-content-container {
+}
+
+.faq-accordion-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: hsl(238, 29%, 16%);
+  font-size: 32px;
+}
+.faq-accordion-question {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding-bottom: 10px;
+}
+
+.faq-accordion-question-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  padding: 10px 0;
+  background: transparent;
+  color: hsl(237, 12%, 33%);
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.faq-accordion-question-button:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.faq-accordion-question-button:after {
+  content: url('../Faq/assets/faq-accordion-card-main/images/icon-arrow-down.svg');
+}
+
+.faq-accordion-question-button-active {
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
+
+.faq-accordion-question-button-active:hover {
+  color: hsl(238, 29%, 16%);
+}
+
+.faq-accordion-answer {
+  color: hsl(240, 6%, 50%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+.faq-accordion-answer-active {
+  max-height: 100px;
+}
+
+@media only screen and (min-width: 800px) {
+  .faq-accordion-container {
+    height: 75%;
+    width: 900px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+
+    background: url('../Faq/assets/faq-accordion-card-main/images/illustration-woman-online-desktop.svg')
+        bottom 3.1rem left -5.1rem no-repeat,
+      url('../Faq/assets/faq-accordion-card-main/images/bg-pattern-desktop.svg')
+        bottom -10rem left -36rem no-repeat;
+
+    background-color: white;
+  }
+
+  .faq-accordion-container:before {
+    content: url(' ../Faq/assets/faq-accordion-card-main/images/illustration-box-desktop.svg');
+    top: 66%;
+    left: 3.5%;
+    transform: translate(-50%, -55%);
+    width: 140px;
+    height: 190px;
+  }
+  .faq-accordion-content {
+    padding-top: 40px;
+    width: 50%;
+  }
+
+  .faq-accordion-title {
+    text-align: left;
+  }
+}
