@@ -31,12 +31,13 @@ AOS.init({
                 <Route path='/components/nft-card' element={<NftCard></NftCard>}/>
                 <Route path='/components/advice-gen' element={<AdviceGenerator></AdviceGenerator>}/>
                 <Route path='/components/perfume-card' element={<ParfumCard></ParfumCard>}/>
+                <Route path='/components/faq' element={<Faq></Faq>}/>
                 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                <Route path='/build' element={<Faq></Faq>}/>
+                {/* <Route path='/build' element={<Faq></Faq>}/> */}
             </Routes>
             </Router>
         </div>

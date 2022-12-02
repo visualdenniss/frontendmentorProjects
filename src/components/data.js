@@ -25,5 +25,14 @@ export const componentCardData = [
         category:"newbie",
         type: "component", 
         link:"/components/perfume-card",
+    },
+    {
+        id:"4",
+        title: "FAQ accordion card",
+        desc: "Responsive FAQ Accordion, showing/hiding answers", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/ua4zwoxu3i9avrzrusre.jpg",
+        category:"newbie",
+        type: "component", 
+        link:"/components/faq",
     }
 ]
