@@ -34,5 +34,14 @@ export const componentCardData = [
         category:"newbie",
         type: "component", 
         link:"/components/faq",
-    }
+    },
+    {
+        id:"5",
+        title: "Four card feature section",
+        desc: "Multi-column and responsive layouts with CSS Flexbox", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/a3b5gbgtfbtiqrdawpwp.jpg",
+        category:"newbie",
+        type: "component", 
+        link:"/components/four-cards",
+    },
 ]

@@ -12,6 +12,7 @@ import AdviceGenerator from './components/junior/adviceGenerator/AdviceGenerator
 import Pages from './pages/Pages';
 import ParfumCard from './components/newbie/parfumCard/ParfumCard';
 import Faq from './components/newbie/Faq/Faq';
+import FourCards from './components/newbie/FourCards/FourCards';
 
 const App = () => {
 
@@ -32,12 +33,13 @@ AOS.init({
                 <Route path='/components/advice-gen' element={<AdviceGenerator></AdviceGenerator>}/>
                 <Route path='/components/perfume-card' element={<ParfumCard></ParfumCard>}/>
                 <Route path='/components/faq' element={<Faq></Faq>}/>
+                <Route path='/components/four-cards' element={<FourCards></FourCards>}/>
                 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                {/* <Route path='/build' element={<Faq></Faq>}/> */}
+                {/* <Route path='/build' element={<FourCards></FourCards>}/> */}
             </Routes>
             </Router>
         </div>

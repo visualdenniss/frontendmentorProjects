@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* ## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600
+ */
+
+.fourCards {
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  padding: 80px 20px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.fourCards-title {
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+}
+
+.fourCards-title:last-of-type {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.fourCards-desc {
+  margin: 20px 0px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: hsl(229, 6%, 66%);
+  max-width: 400px;
+}
+
+.fourCards-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.fourCards-card-item {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: flex-start;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-width: 350px;
+}
+
+.fourCards-cyan {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+.fourCards-red {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+.fourCards-orange {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+.fourCards-blue {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.fourCards-card-item-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.fourCards-card-item-desc {
+  font-weight: 400;
+  color: hsl(229, 6%, 66%);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 10px 0px;
+}
+
+.fourCards-card-item-img {
+  align-self: flex-end;
+}
+
+.fourCards-cards-center {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+  .fourCards-cards-container {
+    flex-direction: row;
+  }
+
+  .fourCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
