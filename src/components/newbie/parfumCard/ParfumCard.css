@@ -16,7 +16,7 @@
 - Weights: 700 */
 
 .parfumeCard {
-  height: 100vh;
+  min-height: 100vh;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   background-color: var(--parfumCard-primary1);
@@ -108,10 +108,23 @@
   .parfumeCard-left {
     background: url(../parfumCard/assets/product-preview-card-component-main/images/image-product-mobile.jpg);
     background-size: cover;
+    height: 300px;
   }
   .parfumeCard-right,
   .parfumeCard-left {
-    flex: 1;
     width: 100%;
+  }
+
+  .parfumeCard-right {
+    height: 100%;
+  }
+  .parfumeCard-title-desc,
+  .parfumeCard-title,
+  .parfumeCard-desc,
+  .parfumeCard-price {
+    padding: 10px 0px;
+  }
+  .parfumeCard-price {
+    margin-bottom: 20px;
   }
 }
