@@ -44,4 +44,22 @@ export const componentCardData = [
         type: "component", 
         link:"/components/four-cards",
     },
+    {
+        id:"6",
+        title: "QR code component",
+        desc: "Minimal yet clean QR card with CSS Flexbox", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/qh97gysgjrzqyqlig2al.jpg",
+        category:"newbie",
+        type: "component", 
+        link:"/components/qr",
+    },
+    {
+        id:"7",
+        title: "Order summary component",
+        desc: "Playful order card feature preview built with CSS Flexbox", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/ouobx6tvyduidzio7wr7.jpg",
+        category:"newbie",
+        type: "component", 
+        link:"/components/order-summary",
+    },
 ]

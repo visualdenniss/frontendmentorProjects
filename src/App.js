@@ -13,6 +13,8 @@ import Pages from './pages/Pages';
 import ParfumCard from './components/newbie/parfumCard/ParfumCard';
 import Faq from './components/newbie/Faq/Faq';
 import FourCards from './components/newbie/FourCards/FourCards';
+import Qr from './components/newbie/QR/Qr';
+import OrderSummary from './components/newbie/OrderSummary/OrderSummary';
 
 const App = () => {
 
@@ -34,6 +36,8 @@ AOS.init({
                 <Route path='/components/perfume-card' element={<ParfumCard></ParfumCard>}/>
                 <Route path='/components/faq' element={<Faq></Faq>}/>
                 <Route path='/components/four-cards' element={<FourCards></FourCards>}/>
+                <Route path='/components/qr' element={<Qr></Qr>}/>
+                <Route path='/components/order-summary' element={<OrderSummary></OrderSummary>}/>
                 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>

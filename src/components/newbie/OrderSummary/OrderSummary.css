@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.orderSummary {
+  min-height: 100vh;
+  background: url('../OrderSummary/assets/order-summary-component-main/images/pattern-background-desktop.svg')
+    no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  background-size: contain;
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 25px;
+}
+
+.orderSummary-container {
+  display: flex;
+  flex-direction: column;
+  width: 325px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.orderSummary-text-content {
+  padding: 30px 25px 15px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.orderSummary-title {
+  font-weight: 900;
+  font-size: 1.5em;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 20px;
+}
+
+.orderSummary-desc {
+  font-size: 1em;
+  color: hsl(224, 23%, 55%);
+  line-height: 1.6;
+  width: 95%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.orderSummary-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.orderSummary-plan-icon {
+}
+.orderSummary-plan-info {
+  /* font-size: 0.9em; */
+  margin-left: -40px;
+}
+
+.orderSummary-plan-info > p:first-of-type {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 3px;
+  font-size: 0.85em;
+}
+.orderSummary-plan-info > p:last-of-type {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  font-size: 0.85em;
+}
+
+.orderSummary-plan-link {
+  font-size: 0.8em;
+  color: hsl(245, 75%, 52%);
+  transition: color 0.4s ease;
+}
+
+.orderSummary-plan-link:hover {
+  color: hsl(242, 84%, 67%);
+}
+.orderSummary-cta {
+  padding: 15px 0px;
+  width: 100%;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.orderSummary-cta:first-of-type {
+  width: 100%;
+  color: white;
+  background: hsl(245, 75%, 52%);
+  margin-bottom: 10px;
+  box-shadow: 5px 20px 20px hsla(245, 75%, 52%, 0.208);
+}
+
+.orderSummary-cta:first-of-type:hover {
+  background: hsl(242, 84%, 67%);
+}
+.orderSummary-cta:last-of-type {
+  width: 100%;
+  color: hsl(224, 23%, 55%);
+  background: transparent;
+  /* border: 1px solid red; */
+}
+
+.orderSummary-cta:last-of-type:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 700px) {
+  .orderSummary {
+    min-height: 100vh;
+    background: url('../OrderSummary/assets/order-summary-component-main/images/pattern-background-mobile.svg')
+      no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: 200%;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+}

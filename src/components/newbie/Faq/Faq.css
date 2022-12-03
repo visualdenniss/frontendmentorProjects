@@ -28,7 +28,7 @@
     hsl(273, 75%, 66%),
     hsl(240, 73%, 65%)
   );
-  padding-top: 40px;
+  padding-top: 80px;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -91,11 +91,16 @@
 
 .faq-accordion-question-button:after {
   content: url('../Faq/assets/faq-accordion-card-main/images/icon-arrow-down.svg');
+  transition: all 0.2s ease-in-out;
 }
 
 .faq-accordion-question-button-active {
   font-weight: 700;
   color: hsl(238, 29%, 16%);
+}
+
+.faq-accordion-question-button-active:after {
+  transform: rotate(180deg);
 }
 
 .faq-accordion-question-button-active:hover {
@@ -130,12 +135,24 @@
 
   .faq-accordion-container:before {
     content: url(' ../Faq/assets/faq-accordion-card-main/images/illustration-box-desktop.svg');
-    top: 66%;
+    top: 60%;
     left: 3.5%;
     transform: translate(-50%, -55%);
     width: 140px;
     height: 190px;
+    animation: dropbox 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
+
+  @keyframes dropbox {
+    from {
+      top: 15%;
+      opacity: 0;
+    }
+    to {
+      top: 60%;
+    }
+  }
+
   .faq-accordion-content {
     padding-top: 40px;
     width: 50%;
