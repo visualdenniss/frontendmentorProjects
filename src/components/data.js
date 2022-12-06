@@ -1,5 +1,14 @@
 export const componentCardData = [
     {
+        id:"9",
+        title: "News homepage",
+        desc: "Multi-sectioned News Landing page, optimized responsive view for tablet and mobile devices as well.", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/abbzt6kmkawmpbj7evxx.jpg",
+        category:"junior",
+        type: "component", 
+        link:"/components/news-homepage",
+    },
+    {
         id:"1",
         title: "NFT preview card component",
         desc: "Personalized Card Component with Flexbox CSS and Hover Effects.", 
@@ -8,15 +17,6 @@ export const componentCardData = [
         type: "component", 
         link:"/components/nft-card",
     },
-    {
-        id:"2",
-        title: "Advice Generator App",
-        desc: "Fetching JSON Data from from the Advice Slip API to generate random quotes of advice", 
-        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/sfl8uqvq75wnnr559ksp.jpg",
-        category:"junior",
-        type: "component", 
-        link:"/components/advice-gen",
-    }, 
     {
         id:"3",
         title: "Product preview card",
@@ -62,4 +62,22 @@ export const componentCardData = [
         type: "component", 
         link:"/components/order-summary",
     },
+    {
+        id:"8",
+        title: "Article preview component",
+        desc: "Article Card with micro-interaction animations built with CSS", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/tm7zwaa7fprabjbwbemt.jpg",
+        category:"newbie",
+        type: "component", 
+        link:"/components/article-preview",
+    },
+    {
+        id:"2",
+        title: "Advice Generator App",
+        desc: "Fetching JSON Data from from the Advice Slip API to generate random quotes of advice", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/sfl8uqvq75wnnr559ksp.jpg",
+        category:"junior",
+        type: "component", 
+        link:"/components/advice-gen",
+    }, 
 ]

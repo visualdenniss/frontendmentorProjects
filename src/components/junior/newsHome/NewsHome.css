@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+/* ### Primary
+
+- Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
+
+### Neutral
+
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%) */
+
+.newsHome {
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  background-color: hsl(36, 100%, 99%);
+  overflow-x: hidden;
+  position: relative;
+}
+
+.newsHomeWrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+@media only screen and (max-width: 1100px) {
+  .newsHomeWrapper {
+    padding: 0px 25px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .newsHomeWrapper {
+    padding: 0px 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+}

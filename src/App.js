@@ -15,6 +15,8 @@ import Faq from './components/newbie/Faq/Faq';
 import FourCards from './components/newbie/FourCards/FourCards';
 import Qr from './components/newbie/QR/Qr';
 import OrderSummary from './components/newbie/OrderSummary/OrderSummary';
+import ArticlePreviewCard from './components/newbie/ArticlePreviewCard/ArticlePreviewCard';
+import NewsHome from './components/junior/newsHome/NewsHome';
 
 const App = () => {
 
@@ -38,12 +40,14 @@ AOS.init({
                 <Route path='/components/four-cards' element={<FourCards></FourCards>}/>
                 <Route path='/components/qr' element={<Qr></Qr>}/>
                 <Route path='/components/order-summary' element={<OrderSummary></OrderSummary>}/>
+                <Route path='/components/article-preview' element={<ArticlePreviewCard></ArticlePreviewCard>}/>
+                <Route path='/components/news-homepage' element={<NewsHome></NewsHome>}/>
                 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                {/* <Route path='/build' element={<FourCards></FourCards>}/> */}
+                {/* <Route path='/build' element={<NewsHome></NewsHome>}/> */}
             </Routes>
             </Router>
         </div>

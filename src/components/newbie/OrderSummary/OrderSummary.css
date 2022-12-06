@@ -20,6 +20,10 @@
   overflow: hidden;
 }
 
+.orderSummary-img {
+  max-width: 100%;
+}
+
 .orderSummary-text-content {
   padding: 30px 25px 15px 25px;
   display: flex;

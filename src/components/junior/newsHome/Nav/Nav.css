@@ -1,0 +1,123 @@
+/* ### Primary
+
+- Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
+
+### Neutral
+
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%) */
+
+.newsHome-nav {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.newsHome-nav-logo {
+}
+.newsHome-nav-logo-img {
+  display: block;
+}
+.newsHome-nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.newsHome-nav-link {
+  margin-left: 30px;
+}
+.newsHome-nav-link > a,
+.newsHome-nav-link-mobile > a {
+  text-decoration: none;
+  font-size: 1em;
+  color: hsl(236, 13%, 42%);
+  transition: color 0.2s ease;
+}
+
+.newsHome-nav-link:hover > a,
+.newsHome-nav-link-mobile:hover > a {
+  color: hsl(5, 85%, 63%);
+}
+
+/* TOGGLE PART  */
+
+.newsHome-nav-toggle {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  z-index: 1000;
+}
+
+.newsHome-nav-toggle-close,
+.newsHome-nav-toggle-open {
+  display: block;
+}
+
+.newsHome-nav-links-mobile-container {
+  display: none;
+}
+.newsHome-overlay {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .newsHome-overlay {
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  .newsHome-nav-links {
+    display: none;
+  }
+  .newsHome-nav-toggle {
+    display: block;
+  }
+
+  .newsHome-nav-links-mobile-container {
+    display: block;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 0;
+
+    transition: all 0.4s ease-in-out;
+  }
+
+  .newsHome-nav-links-mobile-container > ul {
+    height: 100%;
+    padding: 180px 40px;
+    list-style-type: none;
+    background: hsl(36, 100%, 99%);
+  }
+
+  .newsHome-nav-link-mobile {
+    margin-bottom: 35px;
+  }
+
+  .newsHome-nav-links-mobile-container {
+  }
+
+  .newsHome-nav-links-mobile-container-active {
+    width: 285px;
+  }
+
+  .newsHome-nav-link-mobile > a {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 375px) {
+}
