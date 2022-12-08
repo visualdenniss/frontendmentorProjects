@@ -171,4 +171,8 @@
     padding: 10px 15px;
     font-size: 0.9em;
   }
+
+  .githubUser-search-input::placeholder {
+    font-size: 0.75em;
+  }
 }

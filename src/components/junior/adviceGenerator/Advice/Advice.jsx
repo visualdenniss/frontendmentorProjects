@@ -7,7 +7,7 @@ import pattern from '../pattern-divider-desktop.svg'
 
 const Advice = () => {
 
-    const [advice, setAdvice] = useState('')
+    const [advice, setAdvice] = useState('Click on Dice below to get an advice')
     const [id, setId] = useState('')
 
     const [cat, setCat] = useState('')
@@ -15,18 +15,22 @@ const Advice = () => {
     const url = 'https://api.adviceslip.com/advice'
 
     const getPost =  async () => {
-        const res = await axios.get(url)
-        const advice = res.data.slip.advice
-
-        const catData = await axios.get('https://api.thecatapi.com/v1/images/search')
-        const cat = catData.data[0].url
-        setCat(cat)
-
-        const id = res.data.slip.id
-        setAdvice(advice);
-        setId(id)
-
+        try {
+            const res = await axios.get(url)
+            const advice = res.data.slip.advice
+            setAdvice(advice);
+            const id = res.data.slip.id
+            setId(id)
+    
+            const catData = await axios.get('https://api.thecatapi.com/v1/images/search')
+            const cat = catData.data[0].url
+            setCat(cat)
+        } catch (err) {
+            console.log(err);
+        }
     }
+
+    {console.log(advice)}
 
 
     return (
@@ -36,7 +40,7 @@ const Advice = () => {
             <div className="deco">
                 <img src={pattern} alt="" />
             </div> 
-            {/* <img className='cat-img' src={cat} alt="" /> */}
+            <img className='cat-img' src={cat} alt="" />
             <button className="gen-btn" onClick={()=>getPost()}>
                 <img className='icon-dice' src={icon} alt="" />
             </button>

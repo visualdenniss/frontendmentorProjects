@@ -18,6 +18,7 @@ import OrderSummary from './components/newbie/OrderSummary/OrderSummary';
 import ArticlePreviewCard from './components/newbie/ArticlePreviewCard/ArticlePreviewCard';
 import NewsHome from './components/junior/newsHome/NewsHome';
 import GithubUser from './components/junior/githubUser/GithubUser';
+import Error from './Error';
 
 const App = () => {
 
@@ -43,12 +44,14 @@ AOS.init({
                 <Route path='/components/order-summary' element={<OrderSummary></OrderSummary>}/>
                 <Route path='/components/article-preview' element={<ArticlePreviewCard></ArticlePreviewCard>}/>
                 <Route path='/components/news-homepage' element={<NewsHome></NewsHome>}/>
+                <Route path='/components/github-user' element={<GithubUser></GithubUser>}/>
                 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                <Route path='/build' element={<GithubUser></GithubUser>}/>
+                {/* <Route path='/build' element={<GithubUser></GithubUser>}/> */}
+                <Route path='*' element={<Error></Error>}></Route>
             </Routes>
             </Router>
         </div>

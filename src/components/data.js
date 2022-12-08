@@ -9,6 +9,15 @@ export const componentCardData = [
         link:"/components/news-homepage",
     },
     {
+        id:"10",
+        title: "Github User Search",
+        desc: "Fully responsive, interactive component allowing users to search real GitHub Users and displays user data using Fetch API. Includes Light & Dark modes.", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/Challenges/nr37our6z7faztmhwj9r.jpg?__cpo=aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20.jpg",
+        category:"junior",
+        type: "component", 
+        link:"/components/github-user",
+    },
+    {
         id:"1",
         title: "NFT preview card component",
         desc: "Personalized Card Component with Flexbox CSS and Hover Effects.", 

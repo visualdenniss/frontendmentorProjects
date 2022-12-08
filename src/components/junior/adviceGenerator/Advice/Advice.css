@@ -8,6 +8,7 @@
   align-items: center;
   background-color: var(--dark-grayish-blue);
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .advice-title {
@@ -55,6 +56,19 @@
 
 .cat-img {
   max-width: 50%;
+  max-height: 150px;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 550px) {
+  .deco > img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .advice-quote {
+    font-size: 18px;
+  }
 }
