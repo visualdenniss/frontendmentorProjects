@@ -10,18 +10,16 @@ const Nav = ({navData}) => {
     const handleToggle = () => {
         setOpenMenu(!openMenu)
         document.querySelector('.newsHome-nav-links-mobile-container').classList.toggle('newsHome-nav-links-mobile-container-active')
-        // // console.log(tog);
     }
 
     return (
         <nav className='newsHome-nav'>
             {openMenu && 
-            (
-                <div data-aos="fade-in"
+                (<div data-aos="fade-in"
                     data-aos-delay="0"
                     data-aos-duration="800"
                     className="newsHome-overlay"></div>
-            )}
+                )}
             <div className="newsHome-nav-logo">
                 <img className="newsHome-nav-logo-img" src={logo} alt=""/>
             </div>

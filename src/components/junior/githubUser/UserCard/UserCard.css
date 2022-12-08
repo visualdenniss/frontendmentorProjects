@@ -1,0 +1,195 @@
+.githubUser-Card {
+  color: var(--githubUser-clr-white);
+  background-color: var(--githubUser-clr-dark-desaturated-blue);
+  padding: 3rem;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-areas:
+    'avatar person  person   '
+    'avatar bio     bio    '
+    '.    statistic statistic'
+    '.    links   links  ';
+  grid-template-columns: 7.5rem repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(3.75rem, 1fr));
+
+  column-gap: 2.5rem;
+  row-gap: 1.875rem;
+}
+
+.githubUser-Card a {
+  transition: var(--githubUser-transition);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* AVATAR  */
+
+.githubUser-Card-avatar {
+  grid-area: avatar;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+  /* border: 1px solid red; */
+}
+
+/* PERSON INFO */
+
+.githubUser-Card-person-info {
+  /* border: 1px solid red; */
+  grid-area: person;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* PERSON INFO LEFT  */
+
+.githubUser-Card-person-info-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.githubUser-Card-person-info-username {
+  font-size: 1.5em;
+}
+.githubUser-Card-person-info-username-at {
+  color: #0079ff;
+  font-size: 1em;
+}
+.githubUser-Card-person-info-username-at:hover {
+  color: var(--githubUser-clr-hover-blue);
+}
+/* PERSON INFO RIGHT  */
+
+.githubUser-Card-person-info-right {
+}
+.githubUser-Card-person-info-joined-date {
+  padding-top: 5px;
+  font-size: 0.9em;
+}
+
+/* PERSON BIO  */
+
+.githubUser-Card-person-bio {
+  /* border: 1px solid red; */
+  grid-area: bio;
+  font-size: 0.9em;
+}
+
+/* PERSON STATS  */
+
+.githubUser-Card-person-stats {
+  /* border: 1px solid red; */
+  grid-area: statistic;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--githubUser-clr-very-dark-blue);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.githubUser-Card-person-stats-item {
+}
+.githubUser-Card-person-stats-title {
+  margin-bottom: 5px;
+  font-size: 0.75em;
+}
+.githubUser-Card-person-stats-data {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+/* LINKS  */
+
+.githubUser-Card-person-links {
+  /* border: 1px solid red; */
+  grid-area: links;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.githubUser-Card-person-links a {
+  color: var(--githubUser-clr-white);
+}
+
+.githubUser-Card-person-links-item {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  /* border: 1px solid red; */
+  margin-bottom: 10px;
+}
+
+.githubUser-Card-person-links-item:nth-of-type(even) {
+  padding-left: 20px;
+}
+
+.githubUser-Card-person-links-icon {
+  margin-right: 10px;
+  display: block;
+  width: 20px;
+  height: auto;
+}
+.githubUser-Card-person-links-desc {
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 850px) {
+  .githubUser-Card {
+    padding: 2.5rem;
+    grid-template-columns: 7.5rem 1fr;
+    grid-template-areas:
+      'avatar  person   '
+      'bio     bio    '
+      'statistic statistic'
+      'links   links  ';
+    column-gap: 2.5rem;
+    row-gap: 1.875rem;
+  }
+
+  .githubUser-Card-person-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .githubUser-Card-person-info-left {
+    margin-bottom: 5px;
+  }
+
+  .githubUser-Card-person-info-joined-date {
+    padding-top: 0px;
+  }
+
+  .githubUser-Card-person-links-item:nth-of-type(even) {
+    padding-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .githubUser-Card {
+    padding: 2rem 1.5rem;
+    grid-template-columns: 4.375rem 1fr;
+    row-gap: 1.5625rem;
+    column-gap: 1.25rem;
+  }
+
+  .githubUser-Card-person-info-username {
+    font-size: max(1em, 3.5vw);
+  }
+  .githubUser-Card-person-info-username-at {
+    font-size: 0.9em;
+  }
+  .githubUser-Card-person-info-joined-date {
+    font-size: max(0.8em, 3vw);
+  }
+
+  .githubUser-Card-person-links-item {
+    width: 100%;
+  }
+
+  .githubUser-Card-person-stats {
+    justify-content: space-evenly;
+  }
+}

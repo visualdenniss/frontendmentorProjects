@@ -17,6 +17,7 @@ import Qr from './components/newbie/QR/Qr';
 import OrderSummary from './components/newbie/OrderSummary/OrderSummary';
 import ArticlePreviewCard from './components/newbie/ArticlePreviewCard/ArticlePreviewCard';
 import NewsHome from './components/junior/newsHome/NewsHome';
+import GithubUser from './components/junior/githubUser/GithubUser';
 
 const App = () => {
 
@@ -47,7 +48,7 @@ AOS.init({
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                {/* <Route path='/build' element={<NewsHome></NewsHome>}/> */}
+                <Route path='/build' element={<GithubUser></GithubUser>}/>
             </Routes>
             </Router>
         </div>

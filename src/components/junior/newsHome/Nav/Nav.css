@@ -1,15 +1,3 @@
-/* ### Primary
-
-- Soft orange: hsl(35, 77%, 62%)
-- Soft red: hsl(5, 85%, 63%)
-
-### Neutral
-
-Off-white: hsl(36, 100%, 99%)
-Grayish blue: hsl(233, 8%, 79%)
-Dark grayish blue: hsl(236, 13%, 42%)
-Very dark blue: hsl(240, 100%, 5%) */
-
 .newsHome-nav {
   /* border: 1px solid red; */
   display: flex;
@@ -18,8 +6,6 @@ Very dark blue: hsl(240, 100%, 5%) */
   padding: 20px 0px;
 }
 
-.newsHome-nav-logo {
-}
 .newsHome-nav-logo-img {
   display: block;
 }
@@ -71,7 +57,7 @@ Very dark blue: hsl(240, 100%, 5%) */
     display: block;
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     width: 100vw;
@@ -86,7 +72,7 @@ Very dark blue: hsl(240, 100%, 5%) */
 
   .newsHome-nav-links-mobile-container {
     display: block;
-    height: 100vh;
+    height: 100%;
 
     position: absolute;
     top: 0;
@@ -108,9 +94,6 @@ Very dark blue: hsl(240, 100%, 5%) */
     margin-bottom: 35px;
   }
 
-  .newsHome-nav-links-mobile-container {
-  }
-
   .newsHome-nav-links-mobile-container-active {
     width: 285px;
   }
@@ -118,6 +101,4 @@ Very dark blue: hsl(240, 100%, 5%) */
   .newsHome-nav-link-mobile > a {
     font-size: 1.2em;
   }
-}
-@media only screen and (max-width: 375px) {
 }

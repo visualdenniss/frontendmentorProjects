@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+.githubUser {
+  min-height: 100vh;
+
+  --githubUser-clr-blue: #07f;
+  --githubUser-clr-white: #fff;
+  --githubUser-clr-red: #f64646;
+  --githubUser-clr-grayish-blue: #697c9b;
+  --githubUser-clr-desaturated-blue: #4b699b;
+  --githubUser-clr-dark-blue: #2a3341;
+  --githubUser-clr-saturated-white: #f5f7ff;
+  --githubUser-clr-very-dark-blue: #141d2e;
+  --githubUser-clr-dark-desaturated-blue: #1e2b48;
+  --githubUser-clr-hover-blue: #61abff;
+
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+
+  background-color: var(--githubUser-clr-very-dark-blue);
+  --githubUser-transition: all 0.2s ease-in-out;
+  transition: var(--githubUser-transition);
+}
+
+.githubUser-light-theme {
+  --githubUser-clr-blue: #07f;
+  --githubUser-clr-white: #141d2e;
+  --githubUser-clr-grayish-blue: #697c9b;
+  --githubUser-clr-desaturated-blue: #4b699b;
+  --githubUser-clr-dark-blue: #fff;
+  --githubUser-clr-saturated-white: #fff;
+  --githubUser-clr-very-dark-blue: #f5f7ff;
+  --githubUser-clr-dark-desaturated-blue: #fff;
+}
+
+.githubUserContainer {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  padding: 40px;
+}
+
+/* HEADER  */
+
+.githubUser-header {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.githubUser-theme {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.githubUser-theme-info {
+  color: var(--githubUser-clr-white);
+  margin-right: 10px;
+  transition: var(--githubUser-transition);
+}
+
+.githubUser-theme-switcher {
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+}
+
+.githubUser-theme-light-icon {
+  transition: var(--githubUser-transition);
+}
+
+.githubUser-theme:hover .githubUser-theme-light-icon {
+  fill: var(--githubUser-clr-grayish-blue);
+  cursor: pointer;
+}
+
+.githubUser-theme:hover .githubUser-theme-info {
+  color: var(--githubUser-clr-grayish-blue);
+}
+
+.githubUser-theme-dark-text {
+  color: #697c9a;
+  transition: var(--githubUser-transition);
+}
+.githubUser-theme-dark-text:hover {
+  color: #2a3341;
+}
+
+.githubUser-theme-dark-icon {
+  transition: var(--githubUser-transition);
+}
+.githubUser-theme-dark-icon:hover {
+  cursor: pointer;
+  fill: #2a3341;
+}
+
+/* FORM  */
+
+.githubUser-search-form {
+  /* border: 1px solid red; */
+  display: flex;
+  background-color: var(--githubUser-clr-dark-desaturated-blue);
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+.githubUser-search-icon {
+  height: 100%;
+}
+.githubUser-search-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  color: var(--githubUser-clr-white);
+  outline: none;
+  margin: 0px 10px;
+  font-size: 16px;
+}
+
+.githubUser-search-input:focus {
+  outline: 2px solid var(--githubUser-clr-grayish-blue);
+  border-radius: 10px;
+}
+
+.githubUser-search-btn {
+  background-color: var(--githubUser-clr-blue);
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: var(--githubUser-transition);
+  cursor: pointer;
+}
+
+.githubUser-search-btn:hover {
+  background-color: var(--githubUser-clr-hover-blue);
+}
+
+.githubUser-search-form > p {
+  position: absolute;
+  bottom: -30px;
+  color: var(--githubUser-clr-red);
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 600px) {
+  .githubUserContainer {
+    padding: 15px;
+  }
+
+  .githubUser-search-input {
+    font-size: max(0.8em, 3.5vw);
+  }
+
+  .githubUser-search-btn {
+    padding: 15px 20px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .githubUser-search-btn {
+    padding: 10px 15px;
+    font-size: 0.9em;
+  }
+}

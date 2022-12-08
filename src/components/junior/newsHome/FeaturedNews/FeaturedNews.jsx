@@ -2,7 +2,7 @@ import React from 'react'
 import './FeaturedNews.css'
 
 const FeaturedNews = ({topNews}) => {
-    console.log(topNews);
+
     return (
         <ul className="newsHome-featured">
             {topNews.map((news,index)=>(

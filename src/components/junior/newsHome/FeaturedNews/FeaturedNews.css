@@ -1,13 +1,11 @@
 .newsHome-featured {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .newsHome-featured-news-container {
   display: flex;
   margin-right: 20px;
-}
-
-.newsHome-featured-news-img-holder {
 }
 
 .newsHome-featured-news-img {
@@ -57,7 +55,6 @@
 @media only screen and (max-width: 900px) {
   .newsHome-featured {
     flex-direction: column;
-    margin-bottom: 30px;
   }
 
   .newsHome-featured-news-container {
@@ -66,9 +63,6 @@
 
   .newsHome-featured-news-img {
     max-height: 150px;
-  }
-
-  .newsHome-featured-news-text-content {
   }
 
   .newsHome-featured-news-rank {
