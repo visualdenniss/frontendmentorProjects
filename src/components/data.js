@@ -27,6 +27,15 @@ export const componentCardData = [
         link:"/components/nft-card",
     },
     {
+        id:"11",
+        title: "Expenses chart component",
+        desc: "Data visualization with dynamic JSON data using Javascript", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/Challenges/qqz8vfg0jzmrtk2liteo.jpg",
+        category:"junior",
+        type: "component", 
+        link:"/components/expense-chart",
+    },
+    {
         id:"3",
         title: "Product preview card",
         desc: "Responsive Product component, built with CSS Flexbox", 

@@ -38,3 +38,8 @@
 .app-main-components-card-link {
   padding: 0px 20px;
 }
+
+.card .app-main-components-card-link {
+  /* pushes button to the bottom of the container! */
+  margin-top: auto;
+}

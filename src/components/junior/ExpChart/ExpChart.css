@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+.expChart {
+  min-height: 100vh;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  background-color: hsl(27, 66%, 92%);
+  padding: 25px;
+  --expChart-transition: all 0.4s ease-in-out;
+}
+
+/* - Soft red: hsl(10, 79%, 65%)
+- Cyan: hsl(186, 34%, 60%)
+
+- Dark brown: hsl(25, 47%, 15%)
+- Medium brown: hsl(28, 10%, 53%)
+- Cream: hsl(27, 66%, 92%)
+- Very pale orange: hsl(33, 100%, 98%) */
+
+/* MAIN CONTAINER  */
+
+.expChart-container {
+  width: 540px;
+}
+
+/* TOP  */
+
+.expChart-header {
+  display: flex;
+  background-color: hsl(10, 79%, 65%);
+  padding: 30px;
+  border-radius: 15px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/* TOP LEFT  */
+
+.expChart-balance-info {
+  color: hsl(33, 100%, 98%);
+}
+.expChart-balance-info-title {
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+.expChart-balance-info-total {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* TOP RIGHT LOGO  */
+
+.expChart-logo {
+}
+
+/* BOTTOM - GRAPH  */
+
+.expChart-graph {
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 15px;
+  padding: 40px;
+  color: hsl(25, 47%, 15%);
+  display: flex;
+  flex-direction: column;
+}
+
+.expChart-graph-title {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* DATA SECTION  */
+
+.expChart-graph-data-container {
+  border-bottom: 1px solid hsl(27, 66%, 92%);
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 20px;
+}
+
+.expChart-graph-data-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.expChart-graph-data-vis {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: var(--expChart-transition);
+  cursor: pointer;
+  position: relative;
+}
+.expChart-graph-data-vis:hover {
+  background-color: hsl(10, 100%, 76%);
+}
+
+.expChart-graph-data-vis > span {
+  color: hsl(33, 100%, 98%);
+  background-color: hsl(25, 47%, 15%);
+  border-radius: 5px;
+  font-size: min(0.8em, 3vw);
+  position: absolute;
+  opacity: 0;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--expChart-transition);
+  padding: 5px;
+}
+
+.expChart-graph-data-vis:hover > span {
+  opacity: 1;
+}
+
+.expChart-graph-data-vis-highest {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.expChart-graph-data-vis-highest:hover {
+  background-color: hsl(186, 49%, 74%);
+}
+
+.expChart-graph-data-day {
+  font-size: 0.8em;
+  color: hsl(28, 10%, 53%);
+  width: 100%;
+  text-align: center;
+}
+
+/* STATS SECTION  */
+
+.expChart-graph-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* STATS LEFT  */
+
+.expChart-graph-stats-left {
+}
+.expChart-graph-stats-left-desc {
+  color: hsl(28, 10%, 53%);
+  font-size: 0.8em;
+}
+.expChart-graph-stats-left-total {
+  font-size: 2em;
+  font-weight: 700;
+
+  padding: 0;
+}
+
+/* STATS RIGHT  */
+
+.expChart-graph-stats-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 5px 0px;
+}
+.expChart-graph-stats-right-rate {
+  font-size: 0.8em;
+  text-align: right;
+}
+.expChart-graph-stats-right-desc {
+  color: hsl(28, 10%, 53%);
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 500px) {
+  .expChart {
+    padding: 15px;
+  }
+
+  /* CONTAINERS  */
+
+  .expChart-container {
+    width: 300px;
+  }
+
+  .expChart-header {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .expChart-graph {
+    padding: 15px;
+  }
+
+  .expChart-graph-data-container {
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    grid-template-columns: repeat(7, minmax(15px, 1fr));
+    column-gap: 10px;
+  }
+
+  /* PARTS  */
+
+  .expChart-balance-info-title {
+    font-size: 0.7em;
+  }
+  .expChart-balance-info-total {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .expChart-graph-title {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  .expChart-graph-data-day {
+    font-size: 0.6em;
+  }
+
+  .expChart-graph-data-vis > span {
+    top: -30px;
+  }
+
+  .expChart-graph-stats-left-desc,
+  .expChart-graph-stats-right-rate,
+  .expChart-graph-stats-right-desc {
+    font-size: 0.7em;
+  }
+  .expChart-graph-stats-left-total {
+    font-size: 1.5em;
+  }
+}
