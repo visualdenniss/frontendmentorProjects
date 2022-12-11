@@ -20,6 +20,7 @@ import NewsHome from './components/junior/newsHome/NewsHome';
 import GithubUser from './components/junior/githubUser/GithubUser';
 import Error from './Error';
 import ExpChart from './components/junior/ExpChart/ExpChart';
+import Pricing from './components/junior/priceColumns/Pricing';
 
 const App = () => {
 
@@ -47,12 +48,13 @@ AOS.init({
                 <Route path='/components/news-homepage' element={<NewsHome></NewsHome>}/>
                 <Route path='/components/github-user' element={<GithubUser></GithubUser>}/>
                 <Route path='/components/expense-chart' element={<ExpChart></ExpChart>}/>
+                <Route path='/components/pricing-toggle' element={<Pricing></Pricing>}/>
                 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                <Route path='/build' element={<ExpChart></ExpChart>}/>
+                {/* <Route path='/build' element={<Pricing></Pricing>}/> */}
                 <Route path='*' element={<Error></Error>}></Route>
             </Routes>
             </Router>

@@ -36,6 +36,15 @@ export const componentCardData = [
         link:"/components/expense-chart",
     },
     {
+        id:"12",
+        title: "Pricing component with toggle",
+        desc: "Animated toggle to choose pricing plans", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/Challenges/pzkdrqu0lizrk8qgmiti.jpg",
+        category:"junior",
+        type: "component", 
+        link:"/components/pricing-toggle",
+    },
+    {
         id:"3",
         title: "Product preview card",
         desc: "Responsive Product component, built with CSS Flexbox", 
