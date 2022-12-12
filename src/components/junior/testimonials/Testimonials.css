@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+.testimonials {
+  min-height: 100vh;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 13px;
+  background-color: hsl(0, 0%, 81%);
+  padding: 1.5rem;
+}
+
+.testimonials-container {
+  width: min(95%, 70em);
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+}
+
+/* TESTIMONIAL  */
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 30px 25px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+/* AUTHOR  */
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.testimonial-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 81%);
+  margin-right: 15px;
+}
+
+.testimonial-author-info {
+}
+
+.testimonial-author-name {
+  font-size: 0.9em;
+  margin-bottom: 3px;
+}
+
+.testimonial-author-desc {
+  font-size: 0.7em;
+  opacity: 0.5;
+}
+
+/* CONTENT  */
+
+.testimonial-title {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+.testimonial-text {
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+.testimonial-item:nth-of-type(1) {
+  grid-area: one;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+}
+.testimonial-item:nth-of-type(2) {
+  grid-area: two;
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+}
+.testimonial-item:nth-of-type(3) {
+  grid-area: three;
+  background-color: white;
+}
+.testimonial-item:nth-of-type(4) {
+  grid-area: four;
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+.testimonial-item:nth-of-type(5) {
+  grid-area: five;
+  background-color: white;
+}
+
+.testimonial-item:nth-of-type(3),
+.testimonial-item:nth-of-type(5) {
+  color: hsl(219, 29%, 14%);
+}
+
+/* ### Primary
+
+Moderate violet: hsl(263, 55%, 52%)
+Very dark grayish blue: hsl(217, 19%, 35%)
+Very dark blackish blue: hsl(219, 29%, 14%)
+White: hsl(0, 0%, 100%)
+
+### Neutral
+
+Light gray: hsl(0, 0%, 81%)
+Light grayish blue: hsl(210, 46%, 95%) */
+
+@media only screen and (min-width: 1100px) {
+  .testimonials-container {
+    grid-template-areas:
+      'one one two five'
+      'three four four five';
+    max-height: 600px;
+  }
+}
+
+@media screen and (min-width: 33em) {
+  .testimonials-container {
+    grid-template-areas:
+      'one one'
+      'two three'
+      'five five'
+      'four four';
+  }
+}
+
+@media screen and (min-width: 38em) {
+  .testimonials-container {
+    grid-template-areas:
+      'one one'
+      'two five'
+      'three five'
+      'four four';
+  }
+}
+
+@media screen and (min-width: 54em) {
+  .testimonials-container {
+    grid-template-areas:
+      'one one two'
+      'five five five'
+      'three four four';
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .testimonials-container {
+    grid-template-areas:
+      'one one two five'
+      'three four four five';
+  }
+}

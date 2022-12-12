@@ -107,4 +107,13 @@ export const componentCardData = [
         type: "component", 
         link:"/components/advice-gen",
     }, 
+    {
+        id:"13",
+        title: "Testimonials grid section",
+        desc: "Multiple complex layouts for different device sizes with CSS Grid", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/Challenges/h05k6b7pqcylnhsw8pqs.jpg",
+        category:"junior",
+        type: "component", 
+        link:"/components/testimonials",
+    }, 
 ]
