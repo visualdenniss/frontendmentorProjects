@@ -9,6 +9,15 @@ export const componentCardData = [
         link:"/components/news-homepage",
     },
     {
+        id:"14",
+        title: "Room homepage",
+        desc: "Responsive homepage built with CSS Grid, including Image gallery with slider function and mobile toggle navbar menu", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/m1v21ubdjc2n75bl8p7n.jpg",
+        category:"intermediate",
+        type: "component", 
+        link:"/components/room-homepage",
+    },
+    {
         id:"10",
         title: "Github User Search",
         desc: "Fully responsive, interactive component allowing users to search real GitHub Users and displays user data using Fetch API. Includes Light & Dark modes.", 

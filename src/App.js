@@ -22,6 +22,7 @@ import Error from './Error';
 import ExpChart from './components/junior/ExpChart/ExpChart';
 import Pricing from './components/junior/priceColumns/Pricing';
 import Testimonials from './components/junior/testimonials/Testimonials';
+import RoomHome from './components/intermediate/RoomHome/RoomHome';
 
 const App = () => {
 
@@ -51,12 +52,13 @@ AOS.init({
                 <Route path='/components/expense-chart' element={<ExpChart></ExpChart>}/>
                 <Route path='/components/pricing-toggle' element={<Pricing></Pricing>}/>
                 <Route path='/components/testimonials' element={<Testimonials></Testimonials>}/>
+                <Route path='/components/room-homepage' element={<RoomHome></RoomHome>}/>
                 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                {/* <Route path='/build' element={<Pricing></Pricing>}/> */}
+                {/* <Route path='/build' element={<RoomHome></RoomHome>}/> */}
                 <Route path='*' element={<Error></Error>}></Route>
             </Routes>
             </Router>

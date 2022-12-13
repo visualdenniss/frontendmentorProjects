@@ -6,6 +6,7 @@ const Card = ({card}) => {
     return (
         <div data-aos="fade-up"    
             data-aos-delay="100"
+            data-aos-offset="-25"
             data-aos-duration="400"  className='card'>
                     <img src={card.img} alt=""/>
             <div className="app-main-components-card-title">
