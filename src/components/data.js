@@ -1,5 +1,14 @@
 export const componentCardData = [
     {
+        id:"15",
+        title: "Multi-step form",
+        desc: "Modern, fully responsive multi-step form with form validation and state management using React JS", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/tvh6nxttohpyf5w6o3z8.jpg",
+        category:"intermediate",
+        type: "component", 
+        link:"/components/multi-step-form",
+    },
+    {
         id:"9",
         title: "News homepage",
         desc: "Multi-sectioned News Landing page, optimized responsive view for tablet and mobile devices as well.", 

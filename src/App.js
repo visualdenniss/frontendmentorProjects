@@ -54,12 +54,14 @@ AOS.init({
                 <Route path='/components/pricing-toggle' element={<Pricing></Pricing>}/>
                 <Route path='/components/testimonials' element={<Testimonials></Testimonials>}/>
                 <Route path='/components/room-homepage' element={<RoomHome></RoomHome>}/>
+                <Route path='/components/multi-step-form' element={<MultiStepForm></MultiStepForm>}/>
                 
+
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                <Route path='/build' element={<MultiStepForm></MultiStepForm>}/>
+                {/* <Route path='/build' element={<MultiStepForm></MultiStepForm>}/> */}
                 <Route path='*' element={<Error></Error>}></Route>
             </Routes>
             </Router>
