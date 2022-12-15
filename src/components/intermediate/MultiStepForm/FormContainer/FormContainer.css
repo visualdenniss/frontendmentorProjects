@@ -14,7 +14,7 @@
 @media only screen and (max-width: 700px) {
   .multi-step-form-section {
     background: white;
-    margin: -75px 15px 0px;
+    margin: -75px 15px 120px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 }

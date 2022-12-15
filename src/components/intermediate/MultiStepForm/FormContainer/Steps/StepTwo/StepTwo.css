@@ -114,15 +114,25 @@
   color: hsl(213, 96%, 18%);
 }
 
+@media only screen and (max-width: 700px) {
+  .multi-step-form-step-two-plan > p {
+    margin-top: 5px;
+    font-size: 0.7em;
+    margin-left: 0px;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .multi-step-form-step-two-plans {
     display: flex;
     flex-direction: column;
+    gap: 0px;
   }
 
   .multi-step-form-step-two-plan {
     display: flex;
     align-items: center;
+    margin-bottom: 15px;
   }
 
   .multi-step-form-step-two-plan-name {
@@ -131,5 +141,22 @@
 
   .multi-step-form-step-two-plan-icon {
     margin-bottom: 0px;
+  }
+
+  .multi-step-form-step-two-plan > p {
+    margin-top: 0px;
+    font-size: 0.6em;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .multi-step-form-step-two-plan-name {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  .multi-step-form-step-two-plan-price {
+    font-size: 0.7em;
   }
 }
