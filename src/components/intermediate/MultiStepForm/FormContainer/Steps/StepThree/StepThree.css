@@ -1,0 +1,64 @@
+.multi-step-form-step-three {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.multi-step-form-step-three-add-ons {
+  list-style-type: none;
+  /* border: 2px solid red; */
+  display: grid;
+  gap: 15px;
+}
+
+.multi-step-form-step-three-add-on {
+  border: 1px solid hsl(229, 24%, 87%);
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+  transition: var(--multi-step-form-transition);
+}
+
+.multi-step-form-step-three-add-on:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.multi-step-form-step-three-add-on-checked {
+  border: 1px solid hsl(243, 100%, 62%);
+  background-color: hsl(245, 100%, 98%);
+}
+
+.multi-step-form-step-three-add-on > input {
+}
+
+.multi-step-form-step-three-add-on-labels {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.multi-step-form-step-three-add-on-labels > label:first-of-type {
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+}
+.multi-step-form-step-three-add-on-labels > label:last-of-type {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.multi-step-form-step-three-add-on-price {
+  margin-left: auto;
+  color: hsl(243, 100%, 62%);
+  font-size: 0.9em;
+}

@@ -1,0 +1,59 @@
+.multi-step-form-nav {
+  margin-top: auto;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.multi-step-form-nav-back-btn {
+  border: none;
+  background-color: transparent;
+  color: hsl(231, 11%, 63%);
+  font-weight: 500;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: var(--multi-step-form-transition);
+}
+
+.multi-step-form-nav-back-btn:hover {
+  color: hsl(213, 96%, 18%);
+}
+
+.multi-step-form-nav-next-btn {
+  padding: 15px 25px;
+  background-color: hsl(213, 96%, 18%);
+  color: hsl(231, 100%, 99%);
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: var(--multi-step-form-transition);
+
+  /* For first page  */
+  margin-left: auto;
+}
+
+.multi-step-form-nav-next-btn:hover {
+  background-color: hsl(213, 60%, 42%);
+}
+
+.multi-step-form-nav-confirm-btn {
+  background-color: hsl(243, 100%, 62%);
+}
+
+.multi-step-form-nav-confirm-btn:hover {
+  background-color: hsl(243, 98%, 77%);
+}
+
+@media only screen and (max-width: 700px) {
+  .multi-step-form-nav {
+    position: fixed;
+    bottom: 0;
+    background: white;
+    width: 100%;
+    left: 0;
+    padding: 15px;
+  }
+}

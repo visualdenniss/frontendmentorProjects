@@ -23,6 +23,7 @@ import ExpChart from './components/junior/ExpChart/ExpChart';
 import Pricing from './components/junior/priceColumns/Pricing';
 import Testimonials from './components/junior/testimonials/Testimonials';
 import RoomHome from './components/intermediate/RoomHome/RoomHome';
+import MultiStepForm from './components/intermediate/MultiStepForm/MultiStepForm';
 
 const App = () => {
 
@@ -58,7 +59,7 @@ AOS.init({
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                {/* <Route path='/build' element={<RoomHome></RoomHome>}/> */}
+                <Route path='/build' element={<MultiStepForm></MultiStepForm>}/>
                 <Route path='*' element={<Error></Error>}></Route>
             </Routes>
             </Router>

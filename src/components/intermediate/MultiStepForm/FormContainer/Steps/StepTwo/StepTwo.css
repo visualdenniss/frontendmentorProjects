@@ -1,0 +1,135 @@
+.multi-step-form-step-two {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* UL  */
+
+.multi-step-form-step-two-plans {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+/* LI  */
+
+.multi-step-form-step-two-plan {
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  transition: var(--multi-step-form-transition);
+}
+
+.multi-step-form-step-two-plan:hover {
+  border: 1px solid hsl(243, 100%, 62%);
+}
+
+.multi-step-form-step-two-plan-icon {
+  margin-bottom: 40px;
+}
+.multi-step-form-step-two-plan-name {
+  color: hsl(213, 96%, 18%);
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.multi-step-form-step-two-plan-price {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.8em;
+}
+
+.multi-step-form-step-two-plan-active {
+  border: 1px solid hsl(243, 100%, 62%);
+  background-color: hsl(245, 100%, 98%);
+}
+
+.multi-step-form-step-two-plan > p {
+  color: hsl(213, 96%, 18%);
+  margin-top: 5px;
+  font-size: 0.7em;
+}
+
+/* TOGGLE  */
+
+.multi-step-form-step-two-toggle {
+  background-color: hsl(245, 100%, 98%);
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: gray;
+}
+
+.multi-step-form-step-two-toggle-container {
+  width: 35px;
+  background: hsl(213, 96%, 18%);
+  height: 21px;
+  border-radius: 15px;
+  margin: 0px 20px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.multi-step-form-step-two-toggle-circle {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: hsl(240, 78%, 98%);
+  transition: all 0.2s ease-in-out;
+}
+
+.multi-step-form-step-two-toggle-container:active
+  .multi-step-form-step-two-toggle-circle {
+  width: 17px;
+  border-radius: 20px;
+}
+
+.multi-step-form-step-two-toggle-circle-annual {
+  transform: translateX(14px);
+}
+
+.multi-step-form-step-two-toggle-container:active
+  .multi-step-form-step-two-toggle-circle-annual {
+  width: 17px;
+  transform: translateX(12px);
+}
+
+.multi-step-form-step-active-billing {
+  color: hsl(213, 96%, 18%);
+}
+
+@media only screen and (max-width: 450px) {
+  .multi-step-form-step-two-plans {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .multi-step-form-step-two-plan {
+    display: flex;
+    align-items: center;
+  }
+
+  .multi-step-form-step-two-plan-name {
+    margin: 0px 10px 0px;
+  }
+
+  .multi-step-form-step-two-plan-icon {
+    margin-bottom: 0px;
+  }
+}

@@ -1,0 +1,104 @@
+.multi-step-form-step-four {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.multi-step-form-step-four-summary-container {
+  background-color: hsl(245, 100%, 98%);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* PLAN SUMMARY  */
+
+.multi-step-form-step-four-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(231, 11%, 63%);
+}
+
+.multi-step-form-step-four-summary-plan {
+}
+
+.multi-step-form-step-four-summary-plan-name {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+  font-size: 1em;
+  margin-bottom: 3px;
+}
+
+.multi-step-form-step-four-summary-plan-change {
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  cursor: pointer;
+  color: inherit;
+  font-size: 0.8em;
+  transition: var(--multi-step-form-transition);
+}
+
+.multi-step-form-step-four-summary-plan-change:hover {
+  color: hsl(243, 98%, 77%);
+}
+
+.multi-step-form-step-four-summary-plan-amount {
+  color: hsl(213, 96%, 18%);
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* ADD ONS  */
+
+.multi-step-form-step-four-summary-add-ons {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.multi-step-form-step-four-summary-add-on {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px 0px;
+}
+
+.multi-step-form-step-four-summary-add-on:first-of-type {
+  border-top: 1px solid hsl(229, 24%, 87%);
+}
+
+.multi-step-form-step-four-summary-add-on-name {
+  font-size: 0.8em;
+  color: hsl(231, 11%, 63%);
+}
+
+.multi-step-form-step-four-summary-add-on-price {
+  color: hsl(213, 60%, 42%);
+  font-size: 0.8em;
+}
+
+/* TOTAL  */
+
+.multi-step-form-step-four-total {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.multi-step-form-step-four-total-text {
+  color: hsl(231, 11%, 63%);
+  font-size: 0.9em;
+}
+
+.multi-step-form-step-four-total-amount {
+  color: hsl(243, 100%, 62%);
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 400px) {
+  .multi-step-form-step-four-total-text {
+    font-size: 0.8em;
+    font-weight: 500;
+  }
+}

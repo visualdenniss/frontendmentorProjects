@@ -1,0 +1,62 @@
+.multi-step-form-step-one {
+  /* border: 2px solid green; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.multi-step-form-step-title {
+  color: hsl(213, 96%, 18%);
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+.multi-step-form-step-desc {
+  color: hsl(231, 11%, 63%);
+  margin-bottom: 30px;
+  font-size: 0.9em;
+}
+.multi-step-form-person-form {
+  color: hsl(213, 96%, 18%);
+  display: flex;
+  flex-direction: column;
+}
+
+.multi-step-form-person-form > .multi-step-form-person-form-info > label {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+.multi-step-form-person-form-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.multi-step-form-person-form-error {
+  font-size: 0.8em;
+  color: hsl(354, 84%, 57%);
+  display: none;
+}
+
+.multi-step-form-person-form > input {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid hsl(229, 24%, 87%);
+  font-weight: 500;
+  font-size: 0.9em;
+  color: hsl(213, 96%, 18%);
+}
+
+.multi-step-form-person-form > input:focus {
+  border: 1px solid hsl(243, 100%, 62%);
+  outline: none;
+}
+
+.multi-step-form-person-form-field-error {
+  border: 1px solid hsl(354, 84%, 57%) !important;
+}
+
+@media only screen and (max-width: 700px) {
+  .multi-step-form-step-one {
+  }
+}

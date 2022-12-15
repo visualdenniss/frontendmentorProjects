@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+.multi-step-form {
+  min-height: 100vh;
+  font-family: 'Ubuntu', sans-serif;
+  /* paragraph */
+  font-size: 16px;
+  padding: 15px;
+
+  background-color: hsl(213, 96%, 18%);
+  background-color: hsl(243, 100%, 62%);
+  background-color: hsl(228, 100%, 84%);
+  background-color: hsl(206, 94%, 87%);
+  background-color: hsl(354, 84%, 57%);
+
+  background-color: hsl(231, 11%, 63%);
+  background-color: hsl(229, 24%, 87%);
+  background-color: hsl(217, 100%, 97%);
+  background-color: hsl(231, 100%, 99%);
+  background-color: hsl(0, 0%, 100%);
+
+  background-color: hsl(231, 100%, 99%);
+
+  --multi-step-form-transition: all 0.6s ease-in-out;
+}
+.multi-step-form-wrapper {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  max-width: 900px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  height: 600px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media only screen and (max-width: 700px) {
+  .multi-step-form {
+    display: block !important;
+    padding: 0;
+    background-color: hsl(206, 79%, 94%);
+  }
+  .multi-step-form-wrapper {
+    flex-direction: column;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 0px;
+    background: hsl(206, 79%, 94%);
+    /* border: 1px solid red; */
+    padding: 0;
+  }
+}

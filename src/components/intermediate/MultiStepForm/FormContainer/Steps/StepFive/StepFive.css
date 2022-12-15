@@ -1,0 +1,21 @@
+.multi-step-form-step-five {
+  height: 100%;
+}
+
+.multi-step-form-step-five-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.multi-step-form-thanks-title {
+  margin: 30px 0px 20px;
+  font-size: 1.8em;
+  color: hsl(213, 96%, 18%);
+}
+
+.multi-step-form-thanks-text {
+  text-align: center;
+  color: hsl(231, 11%, 63%);
+  font-size: 1em;
+}
