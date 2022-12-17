@@ -24,6 +24,8 @@ import Pricing from './components/junior/priceColumns/Pricing';
 import Testimonials from './components/junior/testimonials/Testimonials';
 import RoomHome from './components/intermediate/RoomHome/RoomHome';
 import MultiStepForm from './components/intermediate/MultiStepForm/MultiStepForm';
+import ToDo from './components/intermediate/ToDo/ToDo';
+import StaticJobs from './components/intermediate/StaticJobs/StaticJobs';
 
 const App = () => {
 
@@ -55,13 +57,16 @@ AOS.init({
                 <Route path='/components/testimonials' element={<Testimonials></Testimonials>}/>
                 <Route path='/components/room-homepage' element={<RoomHome></RoomHome>}/>
                 <Route path='/components/multi-step-form' element={<MultiStepForm></MultiStepForm>}/>
+                <Route path='/components/todo' element={<ToDo></ToDo>}/>
+                <Route path='/components/static-jobs' element={<StaticJobs></StaticJobs>}/>
+
                 
 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
 
                 {/* Working on currently */}
-                {/* <Route path='/build' element={<MultiStepForm></MultiStepForm>}/> */}
+                {/* <Route path='/build' element={<StaticJobs></StaticJobs>}/> */}
                 <Route path='*' element={<Error></Error>}></Route>
             </Routes>
             </Router>

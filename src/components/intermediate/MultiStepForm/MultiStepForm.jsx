@@ -36,7 +36,11 @@ const MultiStepForm = () => {
             selectedPlan, setSelectedPlan,
             addOnsList, setAddOnsList
             }}>
-        <div className='multi-step-form df'>
+        <div className='multi-step-form df'
+        data-aos="fade-in"
+        data-aos-delay="150"
+        data-aos-duration="1000"
+        >
             <main className="multi-step-form-wrapper">
                 <Sidebar step={step}></Sidebar>
                 <FormContainer></FormContainer>

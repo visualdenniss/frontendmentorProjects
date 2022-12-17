@@ -1,0 +1,50 @@
+.todo-container {
+}
+
+.todo-list {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: var(--todo-box-shadow);
+}
+
+.todo-add {
+  border: none;
+  border-bottom: none !important;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: var(--todo-box-shadow) !important;
+  transition: var(--todo-transition);
+}
+
+.todo-add-input {
+  border-radius: 5px;
+  outline: none;
+  color: var(--todo-color);
+  background: transparent;
+  height: 100%;
+  font-size: 1em;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: var(--todo-transition);
+}
+
+.todo-add-icon {
+  transition: var(--todo-transition);
+  opacity: 0;
+}
+
+.todo-add-box:hover .todo-add-icon {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+  .todo-list {
+    overflow: visible;
+    border-radius: 5px;
+  }
+
+  .todo-add {
+    border-radius: 5px !important;
+  }
+}

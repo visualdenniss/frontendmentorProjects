@@ -1,0 +1,105 @@
+/* FILTER INPUT  */
+
+.static-jobs-filter-section {
+  background-color: #fff;
+  padding: 1rem 2.5rem;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: -4.25em;
+  border-radius: 5px;
+  box-shadow: 0 0.9375rem 1.25rem -0.3125rem rgba(13, 113, 130, 0.15);
+  animation: job-filter-appear 0.5s ease;
+}
+
+@keyframes job-filter-appear {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .static-jobs-filter-section {
+    padding: 1rem 15px;
+  }
+}
+
+.static-jobs-filter-section > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.static-jobs-applied-filter {
+  display: flex;
+  margin: 0.5em;
+  animation: filter-btn-fadeIn 0.3s ease;
+}
+
+@keyframes filter-btn-fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.static-jobs-applied-filter-name {
+  color: hsl(180, 29%, 50%);
+  border: none;
+  padding: 8px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: hsl(180, 52%, 96%);
+  font-weight: 700;
+  transition: var(--static-jobs-transition);
+}
+
+.static-jobs-filter-remove-btn {
+  background: hsl(180, 29%, 50%);
+  display: grid;
+  place-items: center;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  padding: 0px 5px;
+  cursor: pointer;
+  transition: var(--static-jobs-transition);
+}
+
+.static-jobs-filter-remove-btn:hover {
+  background: hsl(180, 14%, 20%);
+}
+
+.static-jobs-clear-filter-btn {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: hsl(180, 8%, 52%);
+  cursor: pointer;
+  transition: var(--static-jobs-transition);
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.static-jobs-clear-filter-btn:hover {
+  color: hsl(180, 29%, 50%);
+}
+
+.static-jobs-clear-filter-btn:after {
+  content: '';
+  position: relative;
+  width: 0%;
+  height: 3px;
+  background: hsl(180, 29%, 50%);
+  display: block;
+  bottom: -2px;
+  transition: var(--static-jobs-transition);
+}
+
+.static-jobs-clear-filter-btn:hover:after {
+  width: 100%;
+}

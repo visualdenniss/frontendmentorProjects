@@ -1,0 +1,9 @@
+.static-jobs-list {
+  padding-top: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .static-jobs-list {
+    padding-top: 3rem;
+  }
+}

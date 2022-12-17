@@ -1,0 +1,17 @@
+.todo-list-info {
+  border-bottom: none !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-incomplete-counter {
+  font-size: 0.7em;
+  color: var(--todo-inactive-color);
+  transition: var(--todo-transition);
+}
+
+@media only screen and (max-width: 600px) {
+  .todo-list-info {
+    position: relative;
+  }
+}

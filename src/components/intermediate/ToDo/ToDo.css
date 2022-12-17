@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+.todo {
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  height: 100%;
+  padding-bottom: 80px;
+
+  /* ### Primary */
+
+  --todo-Bright-Blue: hsl(220, 98%, 61%);
+  --todo-Check-Background: hsl(192, 100%, 67%), hsl(280, 87%, 65%);
+
+  /* ### Light Theme */
+
+  --todo-Very-Light-Gray-light: hsl(0, 0%, 98%);
+  --todo-Very-Light-Grayish-Blue-light: hsl(236, 33%, 92%);
+  --todo-Light-Grayish-Blue-light: hsl(233, 11%, 84%);
+  --todo-Dark-Grayish-Blue-light: hsl(236, 9%, 61%);
+  --todo-Very-Dark-Grayish-Blue-light: hsl(235, 19%, 35%);
+
+  /* ### Dark Theme */
+
+  --todo-Very-Dark-Blue: hsl(235, 21%, 11%);
+  --todo-Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --todo-Light-Grayish-Blue: hsl(234, 39%, 85%);
+
+  /* (hover) */
+  --todo-Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+
+  --todo-Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --todo-Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --todo-Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+
+  --todo-transition: all 0.4s ease-in-out;
+  transition: var(--todo-transition);
+}
+
+.todo-dark {
+  --todo-bg: var(--todo-Very-Dark-Blue);
+  --todo-text-color: var(--todo-Light-Grayish-Blue);
+  --todo-task-text-hover: var(--todo-Light-Grayish-Blue-hover);
+  --todo-color-hover: var(--todo-Light-Grayish-Blue-hover);
+  --todo-inactive-color: var(--todo-Dark-Grayish-Blue);
+  --todo-inactive-color-border: var(--todo-Dark-Grayish-Blue);
+
+  --todo-task-bg: var(--todo-Very-Dark-Desaturated-Blue);
+  --todo-box-shadow: none;
+
+  background-color: var(--todo-bg);
+  color: var(--todo-Light-Grayish-Blue);
+}
+
+.todo-light {
+  --todo-bg: var(--todo-Very-Light-Grayish-Blue-light);
+  --todo-color: var(--todo-Very-Dark-Grayish-Blue-light);
+  --todo-task-text-hover: hsl(280, 87%, 65%);
+  --todo-color-hover: var(--todo-Very-Dark-Grayish-Blue-light);
+  --todo-inactive-color: var(--todo-Dark-Grayish-Blue-light);
+  --todo-inactive-color-border: var(--todo-Light-Grayish-Blue-light);
+
+  --todo-task-bg: var(--todo-Very-Light-Gray-light);
+
+  background-color: var(--todo-bg);
+  color: var(--todo-color);
+  --todo-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.todo-bg-img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* MAIN  */
+
+.todo-wrapper {
+  margin: 0 auto;
+  top: 70px;
+  width: 100%;
+  max-width: 530px;
+  margin-top: -250px;
+  z-index: 1000;
+  position: relative;
+}
+
+/* HEADER  */
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.todo-title {
+  font-size: 2em;
+  letter-spacing: 10px;
+  color: var(--todo-Very-Light-Gray-light);
+  transition: var(--todo-transition);
+}
+
+.todo-theme-switch {
+  cursor: pointer;
+  display: block;
+}
+
+/* ADD INPUT  */
+
+@media only screen and (max-width: 600px) {
+  .todo {
+    padding-bottom: 180px;
+  }
+
+  .todo-bg-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .todo-wrapper {
+    margin-top: -180px;
+    width: 90%;
+  }
+}
