@@ -21,7 +21,7 @@ const StaticJobs = () => {
 
     const filteredJobs = allJobs.filter((job) => {
     return categories.every((item) => job.filterableCategories.includes(item))
-  })
+    })
 
 
     useEffect(()=>{

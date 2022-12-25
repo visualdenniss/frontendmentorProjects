@@ -10,7 +10,7 @@ const Job = ({job}) => {
 
     const handleFilter = (e) => {
         const category = e.target.textContent
-        setCategories([...categories, category])
+        !categories.includes(category) && setCategories([...categories, category])
     }
 
     return (
