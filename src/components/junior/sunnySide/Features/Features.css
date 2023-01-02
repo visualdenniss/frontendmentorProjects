@@ -1,0 +1,196 @@
+.sunnySide-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "transform egg"
+    "glass standout"
+    "cherry orange";
+}
+
+.sunnySide-features-article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.sunnySide-features-article > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sunnySide-features-article > h2,
+.sunnySide-features-article > p {
+  z-index: 1000;
+}
+
+.sunnySide-features-img:first-of-type {
+  grid-area: egg;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sunnySide-features-img:nth-of-type(2) {
+  grid-area: glass;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sunnySide-features-article:first-of-type {
+  grid-area: transform;
+}
+.sunnySide-features-article:nth-of-type(2) {
+  grid-area: standout;
+}
+.sunnySide-features-article:nth-of-type(3) {
+  grid-area: cherry;
+}
+.sunnySide-features-article:nth-of-type(4) {
+  grid-area: orange;
+}
+
+.sunnySide-features-article-content {
+  max-width: 450px;
+  margin: 40px;
+}
+
+.sunnySide-features-article-content > h2 {
+  width: 80%;
+  font-size: 32px;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+  margin-bottom: 40px;
+}
+.sunnySide-features-article-content > p {
+  color: hsl(232, 10%, 55%);
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+.sunnySide-features-article-content > button {
+  background-color: none;
+  border: none;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  color: hsl(212, 27%, 19%);
+  height: 20px;
+  width: 120px;
+}
+
+.sunnySide-features-article-content > button > div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 1000;
+}
+
+.sunnySide-features-article-content > button::after {
+  content: "";
+  width: 110%;
+  position: absolute;
+  bottom: 0px;
+  height: 8px;
+  left: -5%;
+  border-radius: 10px;
+  opacity: 0.3;
+  transition: all 0.4s ease-in-out;
+}
+
+.yellow-btn::after {
+  background-color: hsl(51, 100%, 49%);
+}
+.pinkish-btn::after {
+  background-color: hsl(7, 99%, 70%);
+}
+
+.sunnySide-features-article-content > button:hover::after {
+  opacity: 1;
+}
+
+.cherry,
+.orange {
+  flex-direction: column;
+  padding-top: 45%;
+}
+
+.cherry > p {
+  color: hsl(167, 40%, 24%);
+  font-family: "Barlow", sans-serif;
+  opacity: 0.8;
+}
+.cherry > h2 {
+  color: hsl(167, 40%, 24%);
+}
+
+.orange > h2 {
+  color: hsl(198, 62%, 26%);
+}
+.orange > p {
+  color: hsl(198, 62%, 26%);
+  font-family: "Barlow", sans-serif;
+  opacity: 0.8;
+}
+
+.cherry > p,
+.orange > p {
+  max-width: 338px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 900px) {
+  .cherry,
+  .orange {
+    padding-top: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sunnySide-features {
+    display: block;
+  }
+
+  .cherry,
+  .orange {
+    padding-top: 40%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .cherry,
+  .orange {
+    padding-top: 60%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .cherry,
+  .orange {
+    padding-top: 65%;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .cherry,
+  .orange {
+    padding-top: 70%;
+    padding-bottom: 20px;
+  }
+}

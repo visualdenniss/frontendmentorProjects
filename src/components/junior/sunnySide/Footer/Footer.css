@@ -1,0 +1,48 @@
+.sunnySide-footer {
+  background-color: hsl(168, 46%, 68%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0px;
+}
+
+.sunnySide-footer > ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.sunnySide-footer > ul:first-of-type {
+  margin: 40px 0px 80px;
+}
+
+.sunnySide-footer > ul:first-of-type > li {
+  font-size: 14px;
+  color: hsl(168, 34%, 41%);
+  font-family: "Barlow", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.sunnySide-footer > ul:first-of-type > li:hover {
+  color: white;
+}
+
+.sunnySide-footer > ul:first-of-type > li:nth-child(2) {
+  margin: 0px 40px;
+}
+
+.sunnySide-footer-social-media > img {
+  margin-left: 25px;
+  width: 17px;
+  cursor: pointer;
+}
+
+.sunnySide-footer-social-media > img:hover {
+  filter: brightness(5);
+}
+
+.sunnySide-footer-social-media > img:first-of-type {
+  margin-left: 0;
+}

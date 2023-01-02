@@ -17,4 +17,13 @@ export const pagesData = [
         type: "multi", 
         link:"https://easybank-landingp.netlify.app/",
     },
+    {
+        id:"3",
+        title: "Sunnyside agency landing page",
+        desc: "Modern and colorful landing page with multiple sections and different image layouts using CSS Grid and Flexbox. Mobile and Tablet friendly", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/wqzotbyfysz9pbfk9jus.jpg",
+        category:"junior",
+        type: "multi", 
+        link:"/pages/sunnyside",
+    },
 ]

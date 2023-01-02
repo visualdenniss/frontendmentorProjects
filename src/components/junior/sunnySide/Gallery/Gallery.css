@@ -1,0 +1,15 @@
+.sunnySide-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sunnySide-gallery > img {
+  width: 100%;
+  display: block;
+}
+
+@media only screen and (max-width: 800px) {
+  .sunnySide-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

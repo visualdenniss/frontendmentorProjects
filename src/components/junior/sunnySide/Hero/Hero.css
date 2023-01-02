@@ -1,0 +1,37 @@
+.sunnySide-hero {
+  background: url("../assets//sunnyside-agency-landing-page-main/images/desktop/image-header.jpg")
+    no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  padding: 180px;
+  text-align: center;
+}
+
+.sunnySide-hero > h1 {
+  font-size: 68px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: white;
+  margin-bottom: 90px;
+}
+
+.sunnySide-hero-arrow {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.sunnySide-hero-arrow:hover {
+  transform: translateY(10px);
+}
+
+@media only screen and (max-width: 800px) {
+  .sunnySide-hero > h1 {
+    font-size: 9vw;
+  }
+
+  .sunnySide-hero {
+    padding: 180px 20px;
+  }
+}

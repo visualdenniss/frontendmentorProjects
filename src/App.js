@@ -26,6 +26,7 @@ import RoomHome from './components/intermediate/RoomHome/RoomHome';
 import MultiStepForm from './components/intermediate/MultiStepForm/MultiStepForm';
 import ToDo from './components/intermediate/ToDo/ToDo';
 import StaticJobs from './components/intermediate/StaticJobs/StaticJobs';
+import SunnySide from './components/junior/sunnySide/SunnySide';
 
 const App = () => {
 
@@ -64,9 +65,10 @@ AOS.init({
 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
+                <Route path='/pages/sunnyside' element={<SunnySide></SunnySide>}/>
 
                 {/* Working on currently */}
-                {/* <Route path='/build' element={<StaticJobs></StaticJobs>}/> */}
+                <Route path='/build' element={<SunnySide></SunnySide>}/>
                 <Route path='*' element={<Error></Error>}></Route>
             </Routes>
             </Router>

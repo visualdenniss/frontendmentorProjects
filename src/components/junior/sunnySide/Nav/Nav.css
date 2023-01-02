@@ -1,0 +1,175 @@
+.sunnySide-header {
+  position: absolute;
+  color: hsl(0, 0%, 100%);
+  font-family: "Barlow", sans-serif;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px 30px;
+}
+
+.sunnySide-header-nav {
+  max-width: 1350px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 30px 0px;
+  justify-content: space-between;
+  margin-right: 30px;
+  position: relative;
+}
+
+.sunnySide-logo > img {
+  display: block;
+}
+.sunnySide-nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.sunnySide-nav-link {
+  margin-left: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #f2f2f2;
+  position: relative;
+}
+
+.sunnySide-nav-link:hover {
+  color: white;
+}
+
+.sunnySide-nav-link::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  bottom: -10px;
+  border-radius: 10px;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.sunnySide-nav-link:hover:after {
+  width: 100%;
+}
+
+.sunnySide-nav-link:last-of-type:hover:after {
+  width: 0%;
+}
+
+.sunnySide-nav-link > button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  transition: all 0.2s ease-in-out;
+}
+
+.sunnySide-nav-link > button:hover {
+  background-color: rgb(106, 204, 250);
+  color: white;
+}
+
+/* HAMBURGER  */
+
+.sunnySide-nav-hamburger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* MOBILE NAV  */
+
+.sunnySide-nav-mobile-links {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -315px;
+  background-color: white;
+  /* height: 300px; */
+  padding-top: 40px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms cubic-bezier(0.335, 0.01, 0.03, 1.36);
+}
+
+.sunnySide-nav-mobile-links-active {
+  opacity: 1;
+  visibility: visible;
+  bottom: -330px;
+}
+
+.sunnySide-nav-mobile-links:before {
+  content: "";
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  top: -20px;
+  position: absolute;
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+.sunnySide-nav-mobile-link {
+  margin-left: 0px;
+  cursor: pointer;
+  font-size: 18px;
+  color: hsl(232, 10%, 55%);
+  position: relative;
+  margin-bottom: 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sunnySide-nav-mobile-link:hover {
+  color: hsl(212, 27%, 19%);
+}
+
+.sunnySide-nav-mobile-link > button {
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: hsl(51, 100%, 49%);
+  cursor: pointer;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  transition: all 0.2s ease-in-out;
+}
+
+.sunnySide-nav-mobile-link > button:hover {
+  background-color: hsl(7, 99%, 70%);
+  color: white;
+}
+
+@media only screen and (max-width: 700px) {
+  .sunnySide-nav-links {
+    display: none;
+  }
+
+  .sunnySide-nav-mobile-links {
+    display: flex;
+  }
+
+  .sunnySide-nav-hamburger-btn {
+    display: block;
+  }
+
+  .sunnySide-header-nav {
+    margin-right: 0;
+  }
+}
