@@ -6,23 +6,23 @@ import PlanetSection from './PlanetSection/PlanetSection'
 import { useLocation } from 'react-router-dom';
 
 const PlanetFacts = () => {
-    const [planet,setPlanet] = useState(planets.find((planet) => (planet.name).toLowerCase() === 'mercury'))
+    const [planet,setPlanet] = useState(planets.find((planet) => planet.name === 'mercury'))
     let location = (useLocation().pathname).split('/')
 
     useEffect(() => {
         { location[3] === '' || planet === '' ? 
-        setPlanet(planets.find((planet) => (planet.name).toLowerCase() === 'mercury'))
+        setPlanet(planets.find((planet) => (planet.name) === 'mercury'))
         : 
-        setPlanet(planets.find((planet) => (planet.name).toLowerCase() === location[3]))
+        setPlanet(planets.find((planet) => (planet.name) === location[3]))
         }
-    },[location] )
+    },[location])
+
+    useEffect(()=>{
+        setPlanet(planets.find((planet) => (planet.name) === 'mercury'))
+    },[])
 
     return (
-        <div className='planetFacts'
-        data-aos="fade-in"    
-        data-aos-delay="250"
-        data-aos-duration="500" 
-        >
+        <div className='planetFacts'>
             <Nav planets={planets}></Nav>
             <PlanetSection planet={planet} location={location}></PlanetSection>
         </div>
