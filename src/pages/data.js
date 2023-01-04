@@ -26,4 +26,13 @@ export const pagesData = [
         type: "multi", 
         link:"/pages/sunnyside",
     },
+    {
+        id:"4",
+        title: "Planets fact site",
+        desc: "8-page Site", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/wrljilk72cxhipdjyhpa.jpg",
+        category:"junior",
+        type: "multi", 
+        link:"/pages/planet-facts",
+    },
 ]

@@ -27,6 +27,7 @@ import MultiStepForm from './components/intermediate/MultiStepForm/MultiStepForm
 import ToDo from './components/intermediate/ToDo/ToDo';
 import StaticJobs from './components/intermediate/StaticJobs/StaticJobs';
 import SunnySide from './components/junior/sunnySide/SunnySide';
+import PlanetFacts from './pages/intermediate/PlanetFacts/PlanetFacts';
 
 const App = () => {
 
@@ -61,14 +62,25 @@ AOS.init({
                 <Route path='/components/todo' element={<ToDo></ToDo>}/>
                 <Route path='/components/static-jobs' element={<StaticJobs></StaticJobs>}/>
 
-                
-
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
                 <Route path='/pages/sunnyside' element={<SunnySide></SunnySide>}/>
 
+                {/* Planet Facts Routers  */}
+
+                <Route path='/pages/planet-facts' element={<PlanetFacts></PlanetFacts>}/>
+                <Route path='/pages/planet-facts/mercury' element={<PlanetFacts></PlanetFacts>}/>
+                <Route path='/pages/planet-facts/venus' element={<PlanetFacts></PlanetFacts>}/>
+                <Route path='/pages/planet-facts/earth' element={<PlanetFacts></PlanetFacts>}/>
+                <Route path='/pages/planet-facts/mars' element={<PlanetFacts></PlanetFacts>}/>
+                <Route path='/pages/planet-facts/jupiter' element={<PlanetFacts></PlanetFacts>}/>
+                <Route path='/pages/planet-facts/saturn' element={<PlanetFacts></PlanetFacts>}/>
+                <Route path='/pages/planet-facts/uranus' element={<PlanetFacts></PlanetFacts>}/>
+                <Route path='/pages/planet-facts/neptune' element={<PlanetFacts></PlanetFacts>}/>
+
+
                 {/* Working on currently */}
-                <Route path='/build' element={<SunnySide></SunnySide>}/>
+                <Route path='/build' element={<PlanetFacts></PlanetFacts>}/>
                 <Route path='*' element={<Error></Error>}></Route>
             </Routes>
             </Router>

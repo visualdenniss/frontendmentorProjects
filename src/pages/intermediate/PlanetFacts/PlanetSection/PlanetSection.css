@@ -1,0 +1,518 @@
+.planetFacts-planet-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+.planetFacts-main-content-container {
+  display: grid;
+  grid-template-areas:
+    "illustration intro"
+    "illustration tabs";
+  grid-template-columns: 2.2fr 1fr;
+}
+
+/* TABS  */
+
+.planetFacts-tabs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-area: tabs;
+}
+
+.planetFacts-tab-btn {
+  font-family: "Spartan";
+  font-size: 12;
+  line-height: 25px;
+  letter-spacing: 2.57px;
+  font-weight: 700;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  text-transform: uppercase;
+  width: 350px;
+  border: 1px solid hsl(240, 17%, 26%);
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 11px;
+  padding-left: 28px;
+  transition: all 0.4s ease;
+}
+
+.planetFacts-tab-btn:hover {
+  background-color: #38384f;
+}
+
+.planetFacts-tab-btn-index {
+  opacity: 0.5;
+  margin-right: 25px;
+}
+
+.planetFacts-tab-mobile {
+  display: none;
+}
+
+.planetFacts-tab-desktop {
+  display: block;
+}
+
+.planetFacts-tab-btn-active {
+  border: none;
+}
+
+.planetFacts-tab-btn-active.planet-mercury-btn {
+  background-color: #419ebb;
+}
+
+.planetFacts-tab-btn-active.planet-venus-btn {
+  background-color: #eda249;
+}
+.planetFacts-tab-btn-active.planet-earth-btn {
+  background-color: #6f2ed6;
+}
+.planetFacts-tab-btn-active.planet-mars-btn {
+  background-color: #d14c32;
+}
+.planetFacts-tab-btn-active.planet-jupiter-btn {
+  background-color: #d83a34;
+}
+.planetFacts-tab-btn-active.planet-saturn-btn {
+  background-color: #cd5120;
+}
+.planetFacts-tab-btn-active.planet-uranus-btn {
+  background-color: #1ec2a4;
+}
+.planetFacts-tab-btn-active.planet-neptune-btn {
+  background-color: #2d68f0;
+}
+
+/* TEXT CONTENT */
+
+.planetFacts-text-content {
+  grid-area: intro;
+  margin-top: auto;
+  margin-bottom: 39px;
+}
+
+.planetFacts-planet-title {
+  font-size: 80px;
+  font-family: "Antonio", sans-serif;
+  line-height: 103px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 23px;
+}
+
+.planetFacts-planet-description {
+  font-family: "Spartan";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 23px;
+}
+
+.planetFacts-source-link-text {
+  font-size: 14px;
+  line-height: 25px;
+  font-family: "Spartan";
+  color: white;
+  opacity: 0.5;
+  font-weight: 400;
+  display: flex;
+}
+
+.planetFacts-source-link {
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.planetFacts-source-link > svg {
+  margin-left: 8px;
+}
+
+/* ILLUSTRATION  */
+
+.planetFacts-illustration-container {
+  grid-area: illustration;
+  max-height: 754px;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.planetFacts-illustration-container > img {
+}
+
+.planetFacts-geology-img {
+  position: absolute;
+  bottom: 107px;
+  max-width: 163px;
+}
+
+/* STATS */
+
+.planetFacts-stats {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+
+.planetFacts-stat {
+  flex: 1;
+  border: 1px solid hsl(240, 17%, 26%);
+  padding-top: 20px;
+  padding-left: 23px;
+  padding-bottom: 27px;
+}
+
+.planetFacts-stat-title {
+  font-family: "Spartan";
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: white;
+  opacity: 0.5;
+  margin-bottom: 4px;
+}
+
+.planetFacts-stats-info {
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51.76px;
+  letter-spacing: -1.5px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .planetFacts-planet-section {
+    padding: 0px 40px;
+  }
+
+  .planetFacts-main-content-container {
+    grid-template-areas:
+      "illustration illustration"
+      "intro tabs";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* IMG  */
+
+  .planetFacts-illustration-container {
+    max-height: 460px;
+  }
+
+  .planetFacts-illustration-container > img:first-of-type {
+    max-width: 369px;
+  }
+
+  .planetFacts-geology-img {
+    bottom: 20px;
+    max-width: 120px;
+  }
+
+  /* TEXT  */
+
+  .planetFacts-text-content {
+    margin-bottom: 27px;
+  }
+
+  .planetFacts-planet-title {
+    font-size: 48px;
+    line-height: 62.11px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+
+  .planetFacts-planet-description {
+    font-size: 11px;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+
+  .planetFacts-source-link-text {
+    font-size: 12px;
+  }
+
+  /* BTN  */
+
+  .planetFacts-tab-btn {
+    font-size: 9px;
+    letter-spacing: 1.93px;
+    width: 281px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+  }
+
+  .planetFacts-tabs-container {
+    margin-left: auto;
+    margin-top: auto;
+    padding-bottom: 72px;
+  }
+
+  /* STATS  */
+
+  .planetFacts-stats {
+    width: 100%;
+    gap: 11px;
+  }
+
+  .planetFacts-stat {
+    padding-top: 16px;
+    padding-left: 15px;
+    padding-bottom: 19px;
+  }
+
+  .planetFacts-stat-title {
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: 0.73px;
+    margin-bottom: 6px;
+  }
+
+  .planetFacts-stats-info {
+    font-size: 24px;
+    line-height: 31.05px;
+    letter-spacing: -0.9px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .planetFacts-planet-section {
+    padding: 0px;
+    padding-bottom: 47px;
+  }
+  .planetFacts-main-content-container {
+    display: block;
+  }
+
+  .planetFacts-illustration-container {
+    max-height: 304px;
+  }
+
+  .planetFacts-illustration-container > img:first-of-type {
+    max-width: 224px;
+  }
+
+  .planetFacts-geology-img {
+    bottom: 20px;
+    max-width: 80px;
+  }
+
+  .planetFacts-text-content {
+    margin-bottom: 29px;
+    text-align: center;
+    padding: 0px 24px;
+  }
+  .planetFacts-planet-title {
+    font-size: 40px;
+    line-height: 51.67px;
+    margin-bottom: 16px;
+  }
+
+  .planetFacts-planet-description {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  .planetFacts-source-link-text {
+    justify-content: center;
+  }
+
+  .planetFacts-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 24px 13px 24px;
+  }
+
+  .planetFacts-stats {
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 24px;
+  }
+
+  .planetFacts-stat-title {
+    margin-bottom: 0px;
+    margin-top: 3px;
+  }
+
+  .planetFacts-stats-info {
+    font-size: 20px;
+    line-height: 25.88px;
+    letter-spacing: -0.75px;
+  }
+
+  /* TABS  */
+
+  .planetFacts-tabs-container {
+    display: flex;
+    flex-direction: row;
+    gap: 43px;
+    grid-area: tabs;
+    border-bottom: 1px solid hsl(240, 17%, 26%);
+    padding-bottom: 0px;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .planetFacts-tab-btn {
+    flex: 1;
+    font-size: 9;
+    line-height: 10.08px;
+    letter-spacing: 1.93px;
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 50%);
+    text-transform: uppercase;
+    width: auto;
+    border: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    padding-left: 0px;
+    transition: all 0.4s ease;
+    position: relative;
+  }
+
+  .planetFacts-tab-btn:hover {
+    background-color: #38384f;
+  }
+
+  .planetFacts-tab-btn-index {
+    display: none;
+  }
+
+  .planetFacts-tab-mobile {
+    display: block;
+  }
+
+  .planetFacts-tab-desktop {
+    display: none;
+  }
+
+  .planetFacts-tab-btn-active {
+    background-color: transparent;
+    color: white;
+    position: relative;
+  }
+  .planetFacts-tab-btn-active.planet-mercury-btn {
+    background-color: transparent;
+  }
+  .planetFacts-tab-btn-active.planet-venus-btn {
+    background-color: transparent;
+  }
+  .planetFacts-tab-btn-active.planet-earth-btn {
+    background-color: transparent;
+  }
+  .planetFacts-tab-btn-active.planet-mars-btn {
+    background-color: transparent;
+  }
+  .planetFacts-tab-btn-active.planet-jupiter-btn {
+    background-color: transparent;
+  }
+  .planetFacts-tab-btn-active.planet-saturn-btn {
+    background-color: transparent;
+  }
+  .planetFacts-tab-btn-active.planet-uranus-btn {
+    background-color: transparent;
+  }
+  .planetFacts-tab-btn-active.planet-neptune-btn {
+    background-color: transparent;
+  }
+
+  .planetFacts-tab-btn::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: all 0.4s ease;
+  }
+
+  .planetFacts-tab-btn-active.planet-mercury-btn::after {
+    background-color: #419ebb;
+    transform: scaleX(1);
+  }
+
+  .planetFacts-tab-btn-active.planet-venus-btn::after {
+    background-color: #eda249;
+    transform: scaleX(1);
+  }
+  .planetFacts-tab-btn-active.planet-earth-btn::after {
+    background-color: #6f2ed6;
+    transform: scaleX(1);
+  }
+  .planetFacts-tab-btn-active.planet-mars-btn::after {
+    background-color: #d14c32;
+    transform: scaleX(1);
+  }
+  .planetFacts-tab-btn-active.planet-jupiter-btn::after {
+    background-color: #d83a34;
+    transform: scaleX(1);
+  }
+  .planetFacts-tab-btn-active.planet-saturn-btn::after {
+    background-color: #cd5120;
+    transform: scaleX(1);
+  }
+  .planetFacts-tab-btn-active.planet-uranus-btn::after {
+    background-color: #1ec2a4;
+    transform: scaleX(1);
+  }
+  .planetFacts-tab-btn-active.planet-neptune-btn::after {
+    background-color: #2d68f0;
+    transform: scaleX(1);
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .planetFacts-tabs-container {
+    gap: 20px;
+  }
+}
+
+/* ANIMATIONS  */
+
+.planetFacts-planet-img-animation {
+  animation: planetImgFade 0.6s ease-out;
+}
+
+@keyframes planetImgFade {
+  from {
+    opacity: 0.2;
+    scale: 0.8;
+    rotate: 30deg;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+    rotate: 0deg;
+  }
+}
+.planetFacts-planet-desc-animation {
+  animation: planetFade 0.6s ease-out;
+}
+
+@keyframes planetFade {
+  from {
+    opacity: 0.2;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

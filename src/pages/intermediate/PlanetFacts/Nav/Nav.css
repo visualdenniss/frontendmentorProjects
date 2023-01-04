@@ -1,0 +1,406 @@
+.planetFacts-nav-container {
+  width: 100%;
+  padding: 0 44px 0 32px;
+  height: 85px;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 20%);
+}
+
+.planetFacts-nav {
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.planetFacts-nav > h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: "Antonio", sans-serif;
+  letter-spacing: -1.05px;
+  font-weight: 400;
+}
+
+.planetFacts-nav-links {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 33px;
+}
+
+.planetFacts-nav-links > li {
+  height: 100%;
+}
+
+.planetFacts-nav-link {
+  text-transform: uppercase;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-size: 11px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  color: hsla(0, 0%, 100%, 0.75);
+  transition: all 0.4s ease;
+}
+
+.planetFacts-nav-link::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  top: -5px;
+  transform: scaleX(0);
+  transition: all 0.4s ease;
+}
+
+.planetFacts-nav-link:hover {
+  color: white;
+}
+
+.planetFacts-nav-link:hover::before {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+.planetFacts-nav-links-mobile {
+  display: none;
+}
+
+/* individual colors for planets  */
+
+.planet-mercury:hover::before {
+  background-color: #419ebb;
+}
+.planet-venus:hover::before {
+  background-color: #eda249;
+}
+.planet-earth:hover::before {
+  background-color: #6f2ed6;
+}
+.planet-mars:hover::before {
+  background-color: #d14c32;
+}
+.planet-jupiter:hover::before {
+  background-color: #d83a34;
+}
+.planet-saturn:hover::before {
+  background-color: #cd5120;
+}
+.planet-uranus:hover::before {
+  background-color: #1ec2a4;
+}
+.planet-neptune:hover::before {
+  background-color: #2d68f0;
+}
+
+.planetFacts-nav-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .planetFacts-nav-container {
+    padding: 32px 24px 27px 24px;
+    height: auto;
+  }
+  .planetFacts-nav {
+    flex-direction: column;
+  }
+
+  .planetFacts-nav > h2 {
+    margin-bottom: 39px;
+  }
+
+  .planetFacts-nav-link::before {
+    height: 4px;
+    width: 100%;
+    top: initial;
+    bottom: -27px;
+    transform: scaleX(0);
+    transition: all 0.4s ease;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .planetFacts-nav-container {
+    padding: 16px 24px;
+  }
+  .planetFacts-nav-links {
+    display: none;
+  }
+
+  .planetFacts-nav {
+    flex-direction: row;
+  }
+
+  .planetFacts-nav > h2 {
+    margin-bottom: 0px;
+  }
+
+  /* HAMBURGER  */
+
+  .planetFacts-nav-toggle {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 24px;
+    height: 17px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+
+  .planetFacts-nav-toggle-hamburger {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    transition: transform 200ms ease 0s;
+  }
+
+  .planetFacts-nav-toggle-hamburger::before,
+  .planetFacts-nav-toggle-hamburger::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: inherit;
+    height: inherit;
+    background-color: rgb(255, 255, 255);
+    transition: top 200ms ease 0.12s, transform 200ms ease 0s;
+  }
+
+  .planetFacts-nav-toggle-hamburger::before {
+    top: -6px;
+  }
+
+  .planetFacts-nav-toggle-hamburger::after {
+    top: 6px;
+  }
+
+  /* HAMBURGER ACTIVE  */
+
+  .planetFacts-nav-toggle-hamburger-active {
+    transform: rotate(45deg);
+    transition: transform 200ms ease 0.12s;
+  }
+
+  .planetFacts-nav-toggle-hamburger-active::before {
+    top: 0px;
+    opacity: 0;
+    transition: top 200ms ease 0s, opacity 200ms ease 0s;
+  }
+
+  .planetFacts-nav-toggle-hamburger-active::after {
+    top: 0px;
+    transform: rotate(-90deg);
+    transition: top 200ms ease 0s, transform 200ms ease 0.12s;
+  }
+
+  /* MOBILE NAV LINKS  */
+
+  .planetFacts-nav-links-mobile {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    /* inset: 69.5px 0px 0px; */
+    top: 69.5px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 24px;
+    background: rgba(7, 7, 34, 0);
+    width: 100%;
+    z-index: 999;
+    list-style-type: none;
+    /* transform: translateX(-100%); */
+    transition: all 0.4s ease 0.6s;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .planetFacts-nav-links-mobile-active {
+    background: rgb(7, 7, 34);
+    /* transform: translateX(0%); */
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    pointer-events: auto;
+  }
+
+  .planets-nav-mobile-link {
+    justify-content: space-between;
+    padding: 20px 0 20px 44px;
+    letter-spacing: 1.36px;
+    line-height: 25px;
+    font-family: "Spartan";
+    font-weight: 700;
+    font-size: 15px;
+    align-items: center;
+    margin-top: 0;
+    border-bottom: 1px solid hsl(240, 17%, 26%);
+  }
+
+  .planets-nav-mobile-link::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: hsl(196, 83%, 93%);
+    border-radius: 50%;
+    -webkit-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+  }
+
+  .planetFacts-nav-link::before,
+  .planetFacts-nav-link:hover::before {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: -2px;
+    height: 20px;
+    width: 20px;
+  }
+
+  /* INDIVIDUAL COLORS  */
+
+  .planetFacts-nav-links-mobile .planet-mercury::before {
+    background-color: #419ebb;
+  }
+
+  .planetFacts-nav-links-mobile .planet-venus::before {
+    background-color: #eda249;
+  }
+
+  .planetFacts-nav-links-mobile .planet-earth::before {
+    background-color: #6f2ed6;
+  }
+
+  .planetFacts-nav-links-mobile .planet-mars::before {
+    background-color: #d14c32;
+  }
+  .planetFacts-nav-links-mobile .planet-jupiter::before {
+    background-color: #d83a34;
+  }
+  .planetFacts-nav-links-mobile .planet-saturn::before {
+    background-color: #cd5120;
+  }
+
+  .planetFacts-nav-links-mobile .planet-uranus::before {
+    background-color: #1ec2a4;
+  }
+  .planetFacts-nav-links-mobile .planet-neptune::before {
+    background-color: #2d68f0;
+  }
+
+  .planet-mercury,
+  .planet-venus,
+  .planet-earth,
+  .planet-mars,
+  .planet-jupiter,
+  .planet-saturn,
+  .planet-uranus,
+  .planet-neptune {
+    transform: translateX(-120%);
+    opacity: 0;
+    transition: all 0.4s ease;
+  }
+
+  .planetFacts-nav-links-mobile-active .planet-mercury,
+  .planetFacts-nav-links-mobile-active .planet-venus,
+  .planetFacts-nav-links-mobile-active .planet-earth,
+  .planetFacts-nav-links-mobile-active .planet-mars,
+  .planetFacts-nav-links-mobile-active .planet-jupiter,
+  .planetFacts-nav-links-mobile-active .planet-saturn,
+  .planetFacts-nav-links-mobile-active .planet-uranus,
+  .planetFacts-nav-links-mobile-active .planet-neptune {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: all 0.4s ease;
+  }
+
+  .planet-mercury {
+    transition-delay: 0.45s;
+  }
+
+  .planet-venus {
+    transition-delay: 0.4s;
+  }
+
+  .planet-earth {
+    transition-delay: 0.35s;
+  }
+
+  .planet-mars {
+    transition-delay: 0.3s;
+  }
+
+  .planet-jupiter {
+    transition-delay: 0.25s;
+  }
+
+  .planet-saturn {
+    transition-delay: 0.2s;
+  }
+
+  .planet-uranus {
+    transition-delay: 0.15s;
+  }
+
+  .planet-neptune {
+    transition-delay: 0.1s;
+  }
+
+  .planetFacts-nav-links-mobile-active .planet-mercury {
+    transition-delay: 0s;
+  }
+  .planetFacts-nav-links-mobile-active .planet-venus {
+    transition-delay: 0.1s;
+  }
+  .planetFacts-nav-links-mobile-active .planet-earth {
+    transition-delay: 0.15s;
+  }
+
+  .planetFacts-nav-links-mobile-active .planet-earth {
+    transition-delay: 0.15s;
+  }
+
+  .planetFacts-nav-links-mobile-active .planet-mars {
+    transition-delay: 0.2s;
+  }
+
+  .planetFacts-nav-links-mobile-active .planet-jupiter {
+    transition-delay: 0.25s;
+  }
+
+  .planetFacts-nav-links-mobile-active .planet-saturn {
+    transition-delay: 0.3s;
+  }
+
+  .planetFacts-nav-links-mobile-active .planet-uranus {
+    transition-delay: 0.35s;
+  }
+
+  .planetFacts-nav-links-mobile-active .planet-neptune {
+    transition-delay: 0.4s;
+  }
+
+  .planets-nav-mobile-link > img {
+    width: 9px;
+    height: 14px;
+  }
+}

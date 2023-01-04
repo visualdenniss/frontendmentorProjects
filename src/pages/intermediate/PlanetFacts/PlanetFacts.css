@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100;300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "Spartan";
+  src: url("./assets/fonts/Spartan-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("./assets/fonts/Spartan-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+.planetFacts {
+  --planet-white: #ffffff;
+  --planet-bg: #070724;
+  --planet-btn-hover: #38384f;
+  --planet-span: #838391;
+
+  --planet-mercury: #419ebb;
+  --planet-venus: #eda249;
+  --planet-earth: #6f2ed6;
+  --planet-mars: #d14c32;
+  --planet-jupiter: #d83a34;
+  --planet-saturn: #cd5120;
+  --planet-uranus: #1ec2a4;
+  --planet-neptune: #2d68f0;
+  min-height: 100vh;
+  background: url("../../../../public/assets/planets-images/background-stars.svg")
+    var(--planet-bg);
+  background-size: cover;
+  font-family: "Antonio", sans-serif;
+
+  color: var(--planet-white);
+  padding-bottom: 40px;
+}
