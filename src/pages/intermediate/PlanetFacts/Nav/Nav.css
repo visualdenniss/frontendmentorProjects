@@ -18,7 +18,7 @@
 .planetFacts-nav > h2 {
   font-size: 28px;
   text-transform: uppercase;
-  font-family: "Antonio", sans-serif;
+  font-family: 'Antonio', sans-serif;
   letter-spacing: -1.05px;
   font-weight: 400;
 }
@@ -37,7 +37,7 @@
 
 .planetFacts-nav-link {
   text-transform: uppercase;
-  font-family: "Spartan", sans-serif;
+  font-family: 'Spartan', sans-serif;
   font-weight: 700;
   line-height: 25px;
   letter-spacing: 1px;
@@ -55,7 +55,7 @@
 }
 
 .planetFacts-nav-link::before {
-  content: "";
+  content: '';
   position: absolute;
   height: 4px;
   width: 100%;
@@ -173,7 +173,7 @@
 
   .planetFacts-nav-toggle-hamburger::before,
   .planetFacts-nav-toggle-hamburger::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0px;
     left: 0px;
@@ -238,6 +238,7 @@
     opacity: 1;
     transition: opacity 0.2s ease;
     pointer-events: auto;
+    height: 150%;
   }
 
   .planets-nav-mobile-link {
@@ -245,7 +246,7 @@
     padding: 20px 0 20px 44px;
     letter-spacing: 1.36px;
     line-height: 25px;
-    font-family: "Spartan";
+    font-family: 'Spartan';
     font-weight: 700;
     font-size: 15px;
     align-items: center;
@@ -255,7 +256,7 @@
 
   .planets-nav-mobile-link::before {
     position: absolute;
-    content: "";
+    content: '';
     top: 50%;
     left: 0;
     width: 20px;
