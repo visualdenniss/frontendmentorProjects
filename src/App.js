@@ -62,6 +62,7 @@ AOS.init({
                 <Route path='/components/multi-step-form' element={<MultiStepForm></MultiStepForm>}/>
                 <Route path='/components/todo' element={<ToDo></ToDo>}/>
                 <Route path='/components/static-jobs' element={<StaticJobs></StaticJobs>}/>
+                <Route path='/components/product-page' element={<ProductPage></ProductPage>}/>
 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>

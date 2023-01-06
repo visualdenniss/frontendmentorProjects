@@ -9,6 +9,15 @@ export const componentCardData = [
         link:"/components/multi-step-form",
     },
     {
+        id:"18",
+        title: "E-commerce product page",
+        desc: "Lightbox Desktop Image Gallery & Slider Images Gallery for mobile, Functions to add items to cart. Smooth mobile Nav", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/fhzpdnabrek50hvhftnl.jpg",
+        category:"intermediate",
+        type: "component", 
+        link:"/components/product-page",
+    },
+    {
         id:"9",
         title: "News homepage",
         desc: "Multi-sectioned News Landing page, optimized responsive view for tablet and mobile devices as well.", 

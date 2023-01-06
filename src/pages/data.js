@@ -9,6 +9,15 @@ export const pagesData = [
         link:"https://archstudios.netlify.app/",
     },
     {
+        id:"4",
+        title: "Planets fact site",
+        desc: "Each planet from our solar system has a dedicated page with three subsections. Smooth Mobile Nav Menu.", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/wrljilk72cxhipdjyhpa.jpg",
+        category:"junior",
+        type: "multi", 
+        link:"/pages/planet-facts",
+    },
+    {
         id:"2",
         title: "Easybank landing page",
         desc: "Landing page with multiple sections done with CSS Flexbox and Grid. Optimized for mobile devices", 
@@ -25,14 +34,5 @@ export const pagesData = [
         category:"junior",
         type: "multi", 
         link:"/pages/sunnyside",
-    },
-    {
-        id:"4",
-        title: "Planets fact site",
-        desc: "8-page Site", 
-        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/wrljilk72cxhipdjyhpa.jpg",
-        category:"junior",
-        type: "multi", 
-        link:"/pages/planet-facts",
     },
 ]

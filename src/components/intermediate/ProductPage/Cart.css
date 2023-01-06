@@ -13,10 +13,29 @@
   grid-template-rows: auto 1fr;
 }
 
-.product-page-cart-title {
+.product-page-cart-top {
   padding: 20px;
   border-bottom: 0.5px solid hsl(220, 14%, 75%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-page-cart-title {
   font-weight: 700;
+}
+
+.product-page-cart-top > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.product-page-cart-top > button > svg > path {
+  transition: all 0.2s ease;
+}
+
+.product-page-cart-top > button:hover > svg > path {
+  fill: hsl(26, 100%, 55%);
 }
 
 .product-page-empty-cart {
