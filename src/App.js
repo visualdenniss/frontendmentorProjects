@@ -28,6 +28,7 @@ import ToDo from './components/intermediate/ToDo/ToDo';
 import StaticJobs from './components/intermediate/StaticJobs/StaticJobs';
 import SunnySide from './components/junior/sunnySide/SunnySide';
 import PlanetFacts from './pages/intermediate/PlanetFacts/PlanetFacts';
+import ProductPage from './components/intermediate/ProductPage/ProductPage';
 
 const App = () => {
 
@@ -80,7 +81,7 @@ AOS.init({
 
 
                 {/* Working on currently */}
-                <Route path='/build' element={<PlanetFacts></PlanetFacts>}/>
+                <Route path='/build' element={<ProductPage></ProductPage>}/>
                 <Route path='*' element={<Error></Error>}></Route>
             </Routes>
             </Router>

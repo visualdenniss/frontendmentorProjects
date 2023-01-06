@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+.product-page {
+  min-height: 100vh;
+  font-weight: 700;
+  font-weight: 400;
+  font-size: 16px;
+
+  /* Primary  */
+
+  color: hsl(26, 100%, 55%);
+  color: hsl(25, 100%, 94%);
+
+  /* Neutral  */
+
+  color: hsl(220, 13%, 13%);
+  color: hsl(219, 9%, 45%);
+  color: hsl(220, 14%, 75%);
+  color: hsl(223, 64%, 98%);
+  color: hsl(0, 0%, 100%);
+
+  /* Black (with 75% opacity for lightbox background) */
+  color: hsl(0, 0%, 0%);
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(223, 64%, 98%);
+
+  position: relative;
+  padding-bottom: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .product-page {
+    padding: 0px 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product-page {
+    padding: 0px;
+  }
+}

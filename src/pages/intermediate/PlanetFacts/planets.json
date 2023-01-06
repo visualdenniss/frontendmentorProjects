@@ -187,7 +187,7 @@
       "temperature": "-201°c",
       "images": {
         "planet": "../../assets/planets-images/planet-neptune.svg",
-        "internal": "..././assets/planets-images/planet-neptune-internal.svg",
+        "internal": "../../assets/planets-images/planet-neptune-internal.svg",
         "geology": "../../assets/planets-images/geology-neptune.png"
       }
     }

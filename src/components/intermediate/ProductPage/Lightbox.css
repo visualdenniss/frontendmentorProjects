@@ -1,0 +1,143 @@
+/* LIGHTBOX  */
+
+.product-page-lightbox {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
+
+.product-page-lightbox-display {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-page-lightbox-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.75;
+}
+
+.product-page-lightbox-gallery {
+  width: 50%;
+  z-index: 1000;
+  position: relative;
+  max-width: 440px;
+}
+
+.product-page-lightbox-gallery > svg {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.product-page-lightbox-gallery > svg > path {
+  transition: all 0.2s ease;
+  transform: scale(1.2);
+}
+
+.product-page-lightbox-gallery > svg:hover > path {
+  fill: hsl(26, 100%, 55%);
+}
+
+.product-page-lightbox-main-img {
+  position: relative;
+  padding: 0;
+}
+
+.product-page-lightbox-main-img > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.product-page-lightbox-main-img > button > svg > path {
+  transition: all 0.2s ease;
+}
+
+.product-page-lightbox-main-img > button:hover > svg > path {
+  stroke: hsl(26, 100%, 55%);
+}
+
+.product-page-lightbox-prev-btn {
+  padding-right: 3px;
+  left: -17.5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.product-page-lightbox-next-btn {
+  padding-left: 3px;
+  right: -17.5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.product-page-lightbox-thumbnails {
+  padding: 0px 40px;
+}
+
+.product-page-lightbox-thumbnail-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-page-lightbox-thumbnail-img:hover > img {
+  opacity: 1;
+}
+
+.product-page-lightbox-thumbnail-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.product-page-lightbox-thumbnail-img-selected {
+  outline: 2px solid hsl(26, 100%, 55%);
+}
+
+.product-page-lightbox-thumbnail-img:hover:after {
+  opacity: 0.3;
+}
+
+.product-page-lightbox-thumbnail-img-selected:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0px;
+  right: 0;
+  background-color: white;
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 800px) {
+  .product-page-lightbox {
+    display: none;
+  }
+}

@@ -1,0 +1,106 @@
+.product-page-cart-container {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: hsl(223, 64%, 98%);
+  position: absolute;
+  top: 90px;
+  right: 40px;
+  width: 300px;
+  min-height: 200px;
+  border-radius: 10px;
+  z-index: 50;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.product-page-cart-title {
+  padding: 20px;
+  border-bottom: 0.5px solid hsl(220, 14%, 75%);
+  font-weight: 700;
+}
+
+.product-page-empty-cart {
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(219, 9%, 45%);
+}
+
+.product-page-cart-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-page-cart-item {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(219, 9%, 45%);
+  align-items: center;
+}
+
+.product-page-cart-item-img {
+  width: 40px;
+  height: 40px;
+}
+
+.product-page-cart-item-title {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.product-page-cart-item-price {
+  font-size: 13px;
+}
+
+.product-page-cart-item-price > span {
+  font-weight: 700;
+  color: hsl(220, 13%, 13%);
+}
+
+.product-page-cart-remove-item-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-page-cart-remove-item-btn:hover {
+  filter: brightness(0.2);
+}
+
+.product-page-cart-checkout-btn {
+  padding: 10px 0px;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.product-page-cart-checkout-btn:hover {
+  background-color: hsla(26, 100%, 55%, 0.75);
+}
+
+@media only screen and (max-width: 500px) {
+  .product-page-cart-container {
+    top: 80px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+  }
+
+  .product-page-cart-item-details {
+    margin-right: auto;
+    margin-left: 15px;
+  }
+
+  .product-page-cart-checkout-btn {
+    padding: 15px 0px;
+  }
+}
