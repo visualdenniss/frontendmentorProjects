@@ -8,9 +8,16 @@
   width: 300px;
   min-height: 200px;
   border-radius: 10px;
-  z-index: 50;
+  z-index: 20;
   display: grid;
   grid-template-rows: auto 1fr;
+}
+
+@media only screen and (min-width: 1100px) {
+  .product-page-cart-container {
+    top: 60px;
+    right: 0px;
+  }
 }
 
 .product-page-cart-top {

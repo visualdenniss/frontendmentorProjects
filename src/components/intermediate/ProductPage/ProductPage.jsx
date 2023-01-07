@@ -14,7 +14,9 @@ const ProductPage = () => {
         data-aos-delay="200"
         data-aos-duration="600" 
         >
+ 
             <Nav amount={amount} cartItems={cartItems} setCartItems={setCartItems}></Nav>
+
             <Product amount={amount} setAmount={setAmount} setCartItems={setCartItems} cartItems={cartItems}></Product>
         </div>
     )

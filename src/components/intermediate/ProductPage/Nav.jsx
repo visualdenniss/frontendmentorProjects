@@ -49,8 +49,8 @@ const Nav = ({setCartItems, cartItems, amount}) => {
                 <div className="product-page-header-avatar">
                     <img src={avatar} alt="" />
                 </div>
-            </div>
             {showCart && <Cart amount={amount} cartItems={cartItems} setCartItems={setCartItems} setShowCart={setShowCart}></Cart>}
+            </div>
         </header>
     )
 }

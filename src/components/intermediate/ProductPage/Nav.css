@@ -65,6 +65,12 @@
   align-items: center;
 }
 
+@media only screen and (min-width: 1100px) {
+  .product-page-header-right {
+    position: relative;
+  }
+}
+
 .product-page-header-chart {
   background-color: transparent;
   border: none;

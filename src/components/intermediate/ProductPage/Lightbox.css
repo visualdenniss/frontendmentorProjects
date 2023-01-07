@@ -18,6 +18,7 @@
 .product-page-lightbox-display {
   opacity: 1;
   visibility: visible;
+  z-index: 50;
 }
 
 .product-page-lightbox-overlay {
