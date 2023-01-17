@@ -1,0 +1,205 @@
+.coffee-why {
+  padding: 100px 80px 0px;
+  border-radius: 10px;
+  background: url("../assets/images/about/desktop/bg-quality.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fefcf7;
+  max-height: 580px;
+  margin-bottom: 350px;
+}
+
+.coffee-why-title {
+  text-align: center;
+  color: #fefcf7;
+  font-family: "Fraunces", serif;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.coffee-why-desc {
+  text-align: center;
+  color: #fefcf7;
+  font-family: "Barlow", sans-serif;
+  font-size: 15.45px;
+  max-width: 510px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  opacity: 0.75;
+  line-height: 25px;
+}
+
+.coffee-why-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.coffee-why-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 55px 50px;
+  background-color: #0e8784;
+  border-radius: 10px;
+}
+
+.coffee-why-text-container > img {
+  display: block;
+  min-height: 72px;
+}
+
+.coffee-why-text-container > h3 {
+  color: #fefcf7;
+  font-family: "Fraunces", serif;
+  text-align: center;
+  margin: 60px 0px 30px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.coffee-why-text-container > p {
+  color: #fefcf7;
+  opacity: 0.75;
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .coffee-why {
+    padding: 80px 40px 0px;
+    max-height: 600px;
+    margin-bottom: 500px;
+  }
+
+  .coffee-why-desc {
+    margin-bottom: 60px;
+  }
+  .coffee-why-items {
+    display: block;
+    gap: 0px;
+  }
+
+  .coffee-why-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    padding: 40px;
+    padding-left: 70px;
+    align-items: center;
+    gap: 40px;
+    justify-content: flex-start;
+  }
+
+  .coffee-why-item > img {
+    width: 55px;
+    height: 100%;
+  }
+
+  .coffee-why-text-container > h3 {
+    text-align: left;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .coffee-why-text-container > p {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .coffee-why {
+    margin-bottom: 475px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .coffee-why {
+    padding: 80px 20px 0px;
+    max-height: 900px;
+  }
+  .coffee-why-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 40px;
+    align-items: center;
+    gap: 0px;
+    justify-content: center;
+  }
+
+  .coffee-why-text-container > h3 {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+
+  .coffee-why-text-container > p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .coffee-why {
+    margin-bottom: 500px;
+  }
+
+  .coffee-why-title {
+    font-size: 30px;
+  }
+
+  .coffee-why-desc {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .coffee-why-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 60px 20px 40px;
+    align-items: center;
+    gap: 0px;
+    justify-content: center;
+  }
+
+  .coffee-why-text-container > h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  }
+
+  .coffee-why-text-container > p {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .coffee-why {
+    margin-bottom: 550px;
+  }
+
+  .coffee-why-title {
+    font-size: 24px;
+  }
+
+  .coffee-why-desc {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .coffee-why-text-container > h3 {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .coffee-why-text-container > p {
+    font-size: 12px;
+  }
+}

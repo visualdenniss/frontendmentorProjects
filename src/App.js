@@ -29,6 +29,12 @@ import StaticJobs from './components/intermediate/StaticJobs/StaticJobs';
 import SunnySide from './components/junior/sunnySide/SunnySide';
 import PlanetFacts from './pages/intermediate/PlanetFacts/PlanetFacts';
 import ProductPage from './components/intermediate/ProductPage/ProductPage';
+import DineRestaurant from './pages/intermediate/DineRestaurant/DineRestaurant';
+import DineBooking from './pages/intermediate/DineRestaurant/DineBooking';
+import CoffeeRoasters from './pages/intermediate/CoffeeRoasters/CoffeeRoasters';
+import CoffeeAbout from './pages/intermediate/CoffeeRoasters/CoffeeAbout';
+import CoffeePlan from './pages/intermediate/CoffeeRoasters/CoffeePlan';
+
 
 const App = () => {
 
@@ -81,8 +87,19 @@ AOS.init({
                 <Route path='/pages/planet-facts/neptune' element={<PlanetFacts></PlanetFacts>}/>
 
 
+                 {/* Dine Booking Routes  */}
+
+                 <Route path='/pages/dine-restaurant' element={<DineRestaurant></DineRestaurant>}/>
+                 <Route path='/pages/dine-restaurant/booking' element={<DineBooking></DineBooking>}/>
+
+                 {/* Coffee Roasters Routes  */}
+
+                 <Route path='/pages/coffee-roasters' element={<CoffeeRoasters></CoffeeRoasters>}></Route>
+                 <Route path='/pages/coffee-roasters/about' element={<CoffeeAbout></CoffeeAbout>}></Route>
+                 <Route path='/pages/coffee-roasters/create-your-plan' element={<CoffeePlan></CoffeePlan>}></Route>
+
                 {/* Working on currently */}
-                <Route path='/build' element={<ProductPage></ProductPage>}/>
+                <Route path='/build' element={<DineRestaurant></DineRestaurant>}/>
                 <Route path='*' element={<Error></Error>}></Route>
             </Routes>
             </Router>

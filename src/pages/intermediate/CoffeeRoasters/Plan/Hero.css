@@ -1,0 +1,25 @@
+.coffee-plan-hero {
+  background: url("../assets/images/plan/desktop/image-hero-blackcup.jpg");
+  background-size: cover;
+  padding: 115px 80px;
+  border-radius: 10px;
+  margin-bottom: 200px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .coffee-plan-hero {
+    background: url("../assets/images/plan/tablet/image-hero-blackcup.jpg");
+    background-size: cover;
+    padding: 80px 40px;
+    margin-bottom: 120px;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .coffee-plan-hero {
+    background: url("../assets/images/plan/mobile/image-hero-blackcup.jpg");
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+  }
+}

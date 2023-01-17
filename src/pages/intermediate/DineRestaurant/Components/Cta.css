@@ -1,0 +1,58 @@
+.dine-cta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 85px 150px;
+  background: url("../assets/images/homepage/ready-bg-desktop.jpg");
+  background-size: cover;
+}
+
+.dine-cta-title {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+@media screen and (max-width: 1240px) {
+  .dine-cta {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 60px 60px;
+    background: url("../assets/images/homepage/ready-bg-tablet.jpg");
+    background-size: cover;
+  }
+
+  .dine-cta-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dine-cta-title {
+    font-size: min(38px, 5vw);
+  }
+}
+@media screen and (max-width: 600px) {
+  .dine-cta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 95px 20px 75px;
+    background: url("../assets/images/homepage/ready-bg-mobile.jpg");
+    background-size: cover;
+  }
+  .dine-cta-title {
+    font-size: 36px;
+    text-align: center;
+    line-height: 45px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .dine-cta-title {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}

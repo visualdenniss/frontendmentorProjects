@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Spartan";
+  src: url("./assets/fonts/Spartan-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("./assets/fonts/Spartan-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Spartan";
+  src: url("./assets/fonts/Spartan-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("./assets/fonts/Spartan-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+.dine {
+  min-height: 100vh;
+  font-family: "Spartan";
+
+  --dine-clr-beaver: #9e7f67;
+  --dine-clr-codGray: #121212;
+  --dine-clr-mirage: #17192b;
+  --dine-clr-ebonyClay: #242b38;
+  --dine-clr-shuttleGray: #5c687a;
+  --dine-clr-white: #fff;
+  --dine-clr-error: #b64949;
+  --dine-fw-bold: 700;
+  --dine-fw-semi-bold: 600;
+  --dine-fw-regular: 400;
+  --dine-fw-light: 300;
+
+  color: var(--dine-clr-ebonyClay);
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: inset 0 1px 1px 0 hsl(0deg 0% 100% / 10%),
+    0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%);
+}

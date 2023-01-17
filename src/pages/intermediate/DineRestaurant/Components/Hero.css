@@ -1,0 +1,127 @@
+.dine-hero {
+  height: 100vh;
+  max-height: 820px;
+  background: url("../assets/images/homepage/hero-bg-desktop.jpg");
+  background-size: cover;
+  padding: 50px 150px;
+  min-height: 820px;
+}
+
+.dine-hero-title {
+  font-size: 64px;
+  line-height: 122%;
+  letter-spacing: -0.8px;
+  margin-top: 150px;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.dine-hero-subtitle {
+  font-size: 18px;
+  color: white;
+  letter-spacing: -0.225px;
+  line-height: 167%;
+  max-width: 480px;
+  margin-bottom: 40px;
+}
+
+.dine-hero-cta {
+  display: inline-block;
+  padding: 20px 53px;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dine-hero-cta-light {
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+}
+
+.dine-hero-cta-light:hover {
+  color: var(--dine-clr-codGray);
+  border: 1px solid white;
+  background-color: white;
+}
+
+@media only screen and (max-width: 1150px) {
+  .dine-hero {
+    min-height: 990px;
+    background: url("../assets/images/homepage/hero-bg-tablet.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    /* min-height: 100vh; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: var(--dine-clr-codGray);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 200px;
+  }
+  .dine-hero-title {
+    font-size: 48px;
+    text-align: center;
+    line-height: 140%;
+    margin-top: 40px;
+  }
+
+  .dine-hero-subtitle {
+    text-align: center;
+    max-width: 640px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .dine-hero {
+    min-height: 950px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dine-hero {
+    min-height: initial;
+    background: url("../assets/images/homepage/hero-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--dine-clr-codGray);
+    background-position: top;
+    padding-bottom: 140px;
+    /* height: 100vh; */
+    padding-top: 230px;
+    height: auto;
+  }
+
+  .dine-hero-title {
+    font-size: 32px;
+    text-align: center;
+    line-height: 140%;
+    margin-top: 30px;
+  }
+
+  .dine-hero-subtitle {
+    text-align: center;
+    max-width: 640px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .dine-hero {
+    padding-bottom: 100px;
+    padding-top: 200px;
+  }
+
+  .dine-hero-title {
+    font-size: 28px;
+    text-align: center;
+    line-height: 140%;
+  }
+}

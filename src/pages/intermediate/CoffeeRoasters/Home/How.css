@@ -1,0 +1,126 @@
+.coffee-how {
+  padding: 0px 80px;
+  margin-bottom: 200px;
+}
+
+.coffee-how-title {
+  color: #83888f;
+  font-size: 20px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin-bottom: 60px;
+}
+
+.coffee-how-steps {
+  list-style-type: none;
+  display: flex;
+}
+
+.coffee-how-step {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 20px 70px 0px;
+  position: relative;
+  width: 33.3%;
+}
+
+.coffee-deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.coffee-deco-circle {
+  content: "";
+  border: 2px solid #0e8784;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.coffee-deco-line {
+  flex: 1;
+  background-color: #fdd6ba;
+  height: 2px;
+  /* width: 100%; */
+}
+
+.coffee-how-step:last-of-type .coffee-deco-line {
+  display: none;
+}
+
+.coffee-how-step > span {
+  color: #fdd6ba;
+  font-family: "Fraunces", serif;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.coffee-how-step-title {
+  color: #2c343e;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin: 40px 0px 50px;
+  font-size: 32px;
+  max-width: 200px;
+}
+
+.coffee-how-step-desc {
+  font-family: "Barlow", sans-serif;
+  color: #2c343e;
+  opacity: 0.75;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .coffee-how {
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .coffee-how {
+    margin-bottom: 150px;
+  }
+  .coffee-how-step {
+    padding: 80px 20px 40px 0px;
+  }
+  .coffee-how-step-title {
+    margin: 30px 0px;
+    font-size: 28px;
+  }
+  .coffee-how-step-desc {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .coffee-how-title {
+    font-size: 28px;
+  }
+  .coffee-how {
+    display: grid;
+    place-items: center;
+    margin-top: 500px;
+  }
+  .coffee-deco {
+    display: none;
+  }
+  .coffee-how-steps {
+    flex-direction: column;
+  }
+
+  .coffee-how-step {
+    padding: 0px 20px 40px 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .coffee-how-step-title {
+    max-width: unset;
+    margin-top: 20px;
+  }
+}

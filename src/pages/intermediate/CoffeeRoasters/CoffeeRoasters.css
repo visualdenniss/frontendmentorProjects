@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:opsz,wght@9..144,900&display=swap");
+
+.coffee {
+  background-color: #fefcf7;
+  min-height: 100vh;
+  font-family: "Fraunces", serif;
+  font-family: "Barlow", sans-serif;
+  padding: 0px 80px;
+}
+
+.coffee-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 110px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .coffee {
+    padding: 0px 40px;
+  }
+}

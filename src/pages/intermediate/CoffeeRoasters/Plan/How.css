@@ -1,0 +1,34 @@
+.coffee-plan-how {
+  background: url("../assets/images/about/desktop/bg-quality.png");
+  background-size: cover;
+  border-radius: 10px;
+  padding: 100px 80px;
+  margin-top: -80px;
+  margin-bottom: 150px;
+}
+
+.coffee-plan-how h3,
+.coffee-plan-how p {
+  color: #fefcf7;
+}
+
+@media only screen and (max-width: 750px) {
+  .coffee-plan-how {
+    background: url("../assets/images/about/desktop/bg-quality.png");
+    background-size: cover;
+    border-radius: 10px;
+    padding: 80px 40px;
+    margin-top: -80px;
+    margin-bottom: 150px;
+  }
+
+  .coffee-plan-how h3 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .coffee-plan-how {
+    padding: 40px 20px;
+  }
+}

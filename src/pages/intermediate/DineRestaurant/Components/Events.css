@@ -1,0 +1,226 @@
+.dine-events {
+  padding: 150px;
+  display: flex;
+  position: relative;
+}
+
+.dine-events::before {
+  content: "";
+  background: url("../assets/images/patterns/pattern-curve-top-left.svg");
+  top: 0;
+  left: 0;
+  width: 547px;
+  height: 320px;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.dine-events-img-holder {
+  position: relative;
+}
+
+.dine-events-img-holder:before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -45px;
+  height: 76px;
+  width: 160px;
+  display: block;
+  background: url("../assets/images/patterns/pattern-lines.svg");
+}
+
+.dine-events-img {
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  display: block;
+}
+
+.dine-hero-cta-dark {
+  color: white;
+  border: 1px solid white;
+  background-color: var(--dine-clr-codGray);
+  align-self: flex-start;
+}
+
+.dine-link {
+  margin-top: auto;
+  margin-bottom: 80px;
+}
+
+.dine-hero-cta-dark:hover {
+  color: var(--dine-clr-codGray);
+  border: 1px solid var(--dine-clr-codGray);
+  background-color: white;
+}
+
+.dine-events-content {
+  padding-left: 120px;
+  padding-top: 60px;
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+}
+.dine-events-title {
+  font-size: 40px;
+}
+
+.dine-events-desc {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 20px 0px 20px;
+  max-width: 440px;
+}
+
+.dine-events-options {
+  list-style-type: none;
+}
+
+.dine-events-options-title {
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #5c687abb;
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.dine-events-options-title:hover {
+  color: var(--dine-clr-codGray);
+  transition: all 0.4s ease;
+}
+
+.dine-events-options-title-selected {
+  color: var(--dine-clr-codGray);
+}
+
+.dine-events-options-title-selected::before {
+  content: "";
+  background-color: #9e7f67;
+  width: 100px;
+  top: 6px;
+  left: -120px;
+  position: absolute;
+  height: 1px;
+}
+
+@media screen and (max-width: 1275px) {
+  .dine-events {
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 40px;
+    padding-bottom: 100px;
+  }
+
+  .dine-events::before {
+    width: 400px;
+  }
+
+  .dine-events-content {
+    padding-left: 0px;
+    padding-top: 60px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .dine-events-img {
+    min-height: 360px;
+  }
+
+  .dine-events-options-title::before {
+    content: "";
+    background-color: #9e7f67;
+    position: absolute;
+    height: 1px;
+    bottom: -10px;
+    width: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: unset;
+    transition: all 0.4s ease;
+  }
+
+  .dine-events-options-title:hover::before {
+    width: 50px;
+  }
+  .dine-events-options-title-selected::before {
+    bottom: -10px;
+    width: 50px;
+    left: 50%;
+    right: unset;
+    transform: translateX(-50%);
+    top: unset;
+  }
+
+  .dine-events-options {
+    display: flex;
+    gap: 60px;
+    order: -1;
+    margin-bottom: 70px;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+  }
+
+  .dine-link {
+    margin-top: 70px;
+    margin-bottom: 0px;
+    align-self: center;
+  }
+
+  .dine-events-options-title {
+    margin-bottom: 0px;
+  }
+
+  .dine-events-desc {
+    margin: 20px 0px 00px;
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .dine-events {
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 20px;
+    padding-bottom: 120px;
+  }
+  .dine-events::before {
+    display: none;
+  }
+
+  .dine-events-img-holder:before {
+    display: none;
+  }
+
+  .dine-events-img {
+    min-height: initial;
+    width: 100%;
+  }
+
+  .dine-events-options {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .dine-link {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dine-events-title {
+    font-size: min(32px, 9vw);
+  }
+  .dine-events-desc {
+    font-size: min(13px, 10vw);
+  }
+}

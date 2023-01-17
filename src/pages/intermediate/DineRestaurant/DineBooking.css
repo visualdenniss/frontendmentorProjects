@@ -1,0 +1,325 @@
+/* HERO SECTION  */
+
+.dine-booking-hero {
+  height: 100vh;
+  max-height: 600px;
+  background: url("./assets/images/booking/hero-bg-desktop.jpg");
+  background-size: cover;
+  padding: 50px 150px;
+}
+
+.dine-booking-hero-title {
+  font-size: 50px;
+  line-height: 122%;
+  letter-spacing: -0.8px;
+  margin-top: 150px;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.dine-booking-hero-subtitle {
+  font-size: 16px;
+  color: white;
+  letter-spacing: -0.225px;
+  line-height: 167%;
+  max-width: 450px;
+  margin-bottom: 40px;
+}
+
+/* FORM SECTION  */
+
+.dine-thank-you {
+  height: 440px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px !important;
+}
+
+.dine-error {
+  font-size: 12px;
+  color: rgb(250, 65, 65);
+}
+
+.dine-thank-you > p:first-of-type {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 40px 0px;
+}
+
+.dine-thank-you > p {
+  line-height: 30px;
+}
+.dine-thank-you > p > bold {
+  font-weight: 700;
+}
+
+.dine-booking-form-section {
+  padding-right: 150px;
+  position: relative;
+  z-index: 0;
+}
+
+.dine-booking-form-section::before {
+  content: "";
+  background: url("./assets/images/patterns/pattern-curve-top-left.svg");
+  bottom: -110px;
+  width: 890px;
+  height: 320px;
+  position: absolute;
+  transform: rotateX(180deg) rotateY(180deg);
+  background-repeat: no-repeat;
+}
+
+.dine-booking-form {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  padding: 45px;
+  background-color: white;
+  margin-top: -355px;
+  margin-left: auto;
+  margin-bottom: 110px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.dine-booking-form::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: -85px;
+  height: 76px;
+  width: 160px;
+  display: block;
+  background: url("./assets/images/patterns/pattern-lines.svg");
+  z-index: -1;
+}
+
+.dine-booking-form > input {
+  padding: 20px 10px;
+  border: none;
+  border-bottom: 1px solid var(--dine-clr-codGray);
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Spartan";
+}
+
+.dine-booking-form > input:focus {
+  outline: 1px solid var(--dine-clr-codGray);
+}
+
+.dine-booking-form > input::placeholder {
+  font-size: 16px;
+  font-family: "Spartan";
+}
+
+fieldset {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: none;
+  margin: 10px 0px;
+}
+
+fieldset > p {
+  margin-right: auto;
+}
+
+.dine-booking-select-container > select {
+  margin-left: 10px;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid var(--dine-clr-codGray);
+  width: 90px;
+  font-size: 14px;
+  text-align: start;
+  font-family: "Spartan";
+  opacity: 0.5;
+}
+
+.dine-booking-form > button {
+  margin-top: 25px;
+  width: 100%;
+  margin-bottom: 0;
+  position: relative;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.dine-booking-form-counter {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--dine-clr-codGray);
+  margin: 10px 0px;
+}
+
+.dine-booking-form-counter > * {
+  padding: 20px 20px;
+  border: none;
+  font-size: 16px;
+  font-family: "Spartan";
+  font-weight: 700;
+}
+
+.dine-booking-form-counter > button {
+  color: var(--dine-clr-beaver);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 1260px) {
+  .dine-booking-hero-subtitle {
+    font-size: 16px;
+    color: white;
+    letter-spacing: -0.225px;
+    line-height: 167%;
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+  .dine-booking-hero {
+    height: 100vh;
+    max-height: 600px;
+    background: url("./assets/images/booking/hero-bg-tablet.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dine-booking-hero-title {
+    margin-top: 80px;
+  }
+
+  .dine-booking-hero-subtitle {
+    font-size: 16px;
+    color: white;
+    letter-spacing: -0.225px;
+    line-height: 167%;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .dine-booking-form-section::before {
+    content: "";
+    background: url("./assets/images/patterns/pattern-curve-top-left.svg");
+    bottom: -110px;
+    width: 600px;
+    height: 320px;
+    position: absolute;
+    transform: rotateX(180deg) rotateY(180deg);
+    background-repeat: no-repeat;
+  }
+
+  .dine-booking-form-section {
+    padding-right: 0px;
+  }
+
+  .dine-booking-form {
+    margin: 0 auto;
+    margin-top: -125px;
+    margin-bottom: 110px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dine-booking-form-section::before,
+  .dine-booking-form::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .dine-booking-hero {
+    max-height: 540px;
+    background: url("./assets/images/booking/hero-bg-mobile.jpg");
+    background-size: cover;
+  }
+  .dine-booking-hero {
+    padding: 40px;
+  }
+  .dine-booking-hero-title {
+    margin-top: 40px;
+  }
+
+  .dine-booking-form-section {
+    padding: 0px 40px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .dine-booking-select-container > select {
+    margin: 0;
+  }
+  .dine-booking-select-container > select:nth-of-type(2) {
+    margin: 0px 10px;
+  }
+
+  .dine-booking-form {
+    margin: 0 auto;
+    margin-top: -145px;
+    margin-bottom: 110px;
+    width: 100%;
+  }
+
+  fieldset {
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    margin: 10px 0px;
+  }
+
+  fieldset > p {
+    margin: 10px 0px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .dine-booking-hero {
+    padding: 20px;
+    padding-top: 60px;
+  }
+  .dine-booking-hero-title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .dine-booking-form-section {
+    padding: 0px 20px;
+  }
+  .dine-booking-form {
+    margin-top: -120px;
+  }
+  .dine-booking-select-container > select {
+    font-size: 12px;
+    width: 85px;
+  }
+
+  .dine-booking-form-counter {
+    text-align: center;
+  }
+  .dine-booking-form-counter > * {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .dine-booking-hero-title {
+    font-size: 36px;
+  }
+
+  .dine-booking-hero-subtitle {
+    font-size: 14px;
+  }
+
+  .dine-booking-form > button {
+    font-size: 14px;
+    text-align: center;
+    padding: 15px;
+    line-height: 20px;
+  }
+}

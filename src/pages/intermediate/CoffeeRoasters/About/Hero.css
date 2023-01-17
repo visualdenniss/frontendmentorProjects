@@ -1,0 +1,25 @@
+.coffee-about-hero {
+  background: url("../assets/images/about/desktop/image-hero-whitecup.jpg");
+  background-size: cover;
+  padding: 115px 80px;
+  border-radius: 10px;
+  margin-bottom: 160px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .coffee-about-hero {
+    background: url("../assets/images/about/tablet/image-hero-whitecup.jpg");
+    background-size: cover;
+    padding: 80px 40px;
+    margin-bottom: 120px;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  .coffee-about-hero {
+    background: url("../assets/images/about/mobile/image-hero-whitecup.jpg");
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+  }
+}

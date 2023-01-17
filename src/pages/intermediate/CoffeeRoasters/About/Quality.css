@@ -1,0 +1,91 @@
+.coffee-about-quality {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 80px 80px;
+  gap: 80px;
+  background: url("../assets/images/about/desktop/bg-quality.png");
+  background-size: cover;
+  margin-bottom: 200px;
+  border-radius: 10px;
+}
+
+.coffee-about-quality > img {
+  border-radius: 10px;
+  margin-top: -160px;
+}
+
+.coffee-about-quality-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.coffee-about-quality-text > h1 {
+  font-family: "Fraunces", serif;
+  color: #fefcf7;
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.coffee-about-quality-text > p {
+  font-family: "Barlow", sans-serif;
+  color: #fefcf7;
+  opacity: 0.75;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 50px;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .coffee-about-quality {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 40px;
+    gap: 80px;
+    margin-bottom: 100px;
+  }
+  .coffee-about-quality > img {
+    border-radius: 10px;
+    /* margin-top: 0px; */
+    order: -1;
+  }
+
+  .coffee-about-quality-text {
+    text-align: center;
+  }
+
+  .coffee-about-quality-text > p {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .coffee-about-quality {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px 40px;
+    gap: 0px;
+    margin-bottom: 100px;
+  }
+
+  .coffee-about-quality-text > h1 {
+    font-family: "Fraunces", serif;
+    color: #fefcf7;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+
+  .coffee-about-quality-text > p {
+    font-family: "Barlow", sans-serif;
+    color: #fefcf7;
+    opacity: 0.75;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    padding-right: 0px;
+  }
+}

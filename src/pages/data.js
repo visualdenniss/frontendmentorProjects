@@ -18,6 +18,15 @@ export const pagesData = [
         link:"/pages/planet-facts",
     },
     {
+        id:"6",
+        title: "Coffeeroasters subscription site",
+        desc: "Multi pages with lots of different layouts optimized for mobile and tablet. Interactive subscription form as an accordion. ", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/qwfjjtc2edfogm32keno.jpg",
+        category:"intermediate",
+        type: "multi", 
+        link:"/pages/coffee-roasters",
+    },
+    {
         id:"2",
         title: "Easybank landing page",
         desc: "Landing page with multiple sections done with CSS Flexbox and Grid. Optimized for mobile devices", 
@@ -25,6 +34,15 @@ export const pagesData = [
         category:"intermediate",
         type: "multi", 
         link:"https://easybank-landingp.netlify.app/",
+    },
+    {
+        id:"5",
+        title: "Dine restaurant website",
+        desc: "2-page commercial App consisting of Homepage with multiple sections including subsections, separate Booking page with Form", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/glyb3m1iuyv9y8zzmmxc.jpg",
+        category:"intermediate",
+        type: "multi", 
+        link:"/pages/dine-restaurant",
     },
     {
         id:"3",

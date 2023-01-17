@@ -11,7 +11,7 @@ const Footer = ({socialMed}) => {
                 <li>Projects</li>
             </ul>
             <ul className='sunnySide-footer-social-media'>
-                {socialMed.map((item)=>
+                {socialMed?.map((item)=>
                 <img src={item} alt="" />
                 )}
             </ul>

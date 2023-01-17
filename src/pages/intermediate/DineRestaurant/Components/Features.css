@@ -1,0 +1,212 @@
+.dine-features {
+  position: relative;
+}
+
+.dine-features::before {
+  content: "";
+  position: absolute;
+  top: 250px;
+  left: 0;
+  height: 320px;
+  width: 895px;
+  display: block;
+  background: url("../assets/images/patterns/pattern-curve-top-right.svg");
+}
+
+.dine-features::after {
+  content: "";
+  position: absolute;
+  top: unset;
+  left: unset;
+  right: 0;
+  bottom: 0;
+  height: 320px;
+  width: 895px;
+  display: block;
+  background: url("../assets/images/patterns/pattern-curve-top-left.svg");
+}
+
+.dine-features-container {
+  padding: 0px 150px;
+}
+
+.dine-feature-item {
+  display: flex;
+}
+
+.dine-feature-item:first-of-type {
+  margin-bottom: 115px;
+}
+
+.dine-feature-item-img-container {
+}
+
+.dine-feature-item-img-container > img {
+  display: block;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.dine-feature-item-img-container:first-of-type > img {
+  margin-top: -70px;
+}
+
+.dine-feature-text-content {
+}
+
+.dine-feature-text-content > h2 {
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: -0.5px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.dine-feature-text-content > h2::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 7px;
+  background: url("../assets/images/patterns/pattern-divide.svg");
+  top: -60px;
+  left: 4px;
+}
+.dine-feature-text-content > p {
+  font-size: 17px;
+  letter-spacing: -0.225px;
+  line-height: 167%;
+}
+
+.dine-feature-text-content-top {
+  padding-left: 120px;
+  padding-top: 230px;
+}
+
+.dine-feature-text-content-bottom {
+  padding-right: 130px;
+  padding-top: 260px;
+}
+
+.dine-feature-item-img-container:last-of-type {
+  margin-bottom: -70px;
+  position: relative;
+  z-index: 3;
+}
+.dine-feature-item-img-container:last-of-type::after {
+  content: "";
+  position: absolute;
+  top: 280px;
+  right: -120px;
+  height: 76px;
+  width: 160px;
+  display: block;
+  background: url("../assets/images/patterns/pattern-lines.svg");
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1150px) {
+  .dine-feature-text-content > h2 {
+    font-size: 32px;
+  }
+  .dine-feature-text-content > p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .dine-feature-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dine-features::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 320px;
+    width: 380px;
+    display: block;
+    background: url("../assets/images/patterns/pattern-curve-top-right.svg");
+  }
+
+  .dine-feature-text-content-top,
+  .dine-feature-text-content-bottom {
+    padding-left: 0px;
+    padding-top: 100px;
+    text-align: center;
+    padding-right: 0px;
+  }
+
+  .dine-feature-text-content > h2 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+
+  .dine-feature-text-content > h2::before {
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .dine-feature-text-content > p {
+    font-size: 16px;
+  }
+
+  .dine-feature-item:last-of-type {
+    flex-direction: column-reverse;
+    padding-bottom: 120px;
+  }
+
+  .dine-feature-item-img-container:last-of-type::after {
+    top: 50%;
+  }
+
+  .dine-feature-item-img-container:last-of-type {
+    margin-bottom: 0px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .dine-features::after {
+    content: "";
+    position: absolute;
+    top: unset;
+    left: unset;
+    right: 0;
+    bottom: 0;
+    height: 320px;
+    width: 377px;
+    display: block;
+    background: url("../assets/images/patterns/pattern-curve-top-left.svg");
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dine-features-container {
+    padding: 0px 40px;
+  }
+
+  .dine-feature-text-content > h2 {
+    font-size: 30px;
+  }
+
+  .dine-features::before,
+  .dine-features::after,
+  .dine-feature-item-img-container:last-of-type::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .dine-feature-text-content > h2 {
+    font-size: 30px;
+  }
+  .dine-feature-text-content > p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .dine-feature-text-content > h2 {
+    font-size: 24px;
+  }
+}

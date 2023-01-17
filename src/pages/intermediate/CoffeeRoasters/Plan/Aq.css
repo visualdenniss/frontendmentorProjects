@@ -1,0 +1,330 @@
+.coffee-plan-aq {
+  padding: 0px 80px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-bottom: 150px;
+}
+
+.coffee-plan-aq-steps {
+  list-style-type: none;
+  padding-right: 120px;
+  margin-top: -20px;
+}
+
+.coffee-plan-aq-steps > li {
+  border-bottom: 1px solid #83888f;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+}
+
+.coffee-plan-aq-steps > li > span {
+  padding: 20px 0px;
+  color: #83888f;
+  opacity: 0.5;
+  margin-right: 15px;
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.coffee-plan-aq-steps > li > h4 {
+  color: #83888f;
+  font-family: "Fraunces", serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+/* FORM  */
+
+.coffee-plan-aq-form,
+.coffee-plan-aq-form ul {
+  list-style-type: none;
+}
+
+.coffee-plan-aq-form-item-disabled {
+}
+
+/* QUESTION  */
+
+.coffee-plan-aq-form-item-question {
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+  color: #83888f;
+  font-weight: 900;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.coffee-plan-aq-form-item-question:hover {
+  color: #2c343e;
+}
+
+.coffee-plan-aq-form-item-disabled .coffee-plan-aq-form-item-question {
+  pointer-events: none;
+  opacity: 0.4;
+  filter: grayscale(1);
+  cursor: not-allowed;
+}
+
+.coffee-plan-aq-form-item-question::after {
+  content: url("../assets/images/plan/desktop/icon-arrow.svg");
+  transition: all 0.4s ease;
+  margin-left: 10px;
+}
+
+.coffee-plan-aq-form-item-question-open::after {
+  transform: rotate(180deg);
+}
+
+.coffee-plan-aq-form-item-disabled .coffee-plan-aq-form-item-question::after {
+  transform: rotate(0deg);
+}
+
+/* ANSWERS  */
+
+.coffee-plan-aq-form-answers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+  margin-bottom: 0px;
+  opacity: 0;
+}
+
+.coffee-plan-aq-form-answers-open {
+  max-height: 300px;
+  opacity: 1;
+  margin-bottom: 90px;
+}
+
+.coffee-plan-aq-form-item-disabled .coffee-plan-aq-form-answers {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-out;
+  margin-bottom: 0px;
+  opacity: 0;
+}
+
+.coffee-plan-aq-form-answer-item {
+  background-color: #f4f1eb;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  padding: 30px 30px 60px;
+  border-radius: 10px;
+}
+
+.coffee-plan-aq-form-answer-item:hover {
+  background-color: #fdd6ba;
+}
+
+.coffee-plan-aq-form-answer-title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #2c343e;
+}
+
+.coffee-plan-aq-form-answer-desc {
+  opacity: 0.75;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.coffee-plan-aq-form-answer-item-selected {
+  background-color: #0e8784;
+  color: #f4f1eb;
+}
+
+.coffee-plan-aq-form-answer-item-selected .coffee-plan-aq-form-answer-title {
+  color: #f4f1eb;
+}
+
+/* SUMMARY  */
+
+.coffee-form-order-summary {
+  padding: 30px 60px;
+  background-color: #2c343e;
+  margin-bottom: 40px;
+}
+
+.coffee-form-order-summary > h5 {
+  color: #83888f;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.coffee-form-order-summary > p {
+  color: #f4f1eb;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 35px;
+}
+.coffee-form-order-summary > p > span {
+  color: #0e8784;
+}
+
+.coffee-plan-aq-form > .coffee-hero-cta {
+  display: block;
+  margin-left: auto;
+}
+
+/* LIGHTBOX  */
+.coffee-summary-lightbox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.753);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+}
+
+.coffee-summary-content {
+  background-color: #f4f1eb;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 540px;
+  margin: 0px 40px;
+}
+
+.coffee-summary-content > h3 {
+  background-color: #2c343e;
+  padding: 48px 56px 40px;
+  color: #f4f1eb;
+  font-size: 28px;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  /* border-radius: 10px 10px 0px 0px; */
+}
+
+.coffee-summary-content-text {
+  padding: 56px;
+}
+
+.coffee-summary-content-text > p:first-of-type {
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  color: #83888f;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.coffee-summary-content-text > p:first-of-type > span {
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  color: #0e8784;
+  font-size: 24px;
+}
+
+.coffee-summary-content-text > p:last-of-type {
+  font-size: 15px;
+  color: #2c343e;
+  line-height: 25px;
+  margin-bottom: 48px;
+}
+
+.coffee-summary-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.coffee-summary-details > p {
+  font-size: 32px;
+  font-weight: 900;
+  font-family: "Fraunces", serif;
+  color: #2c343e;
+}
+
+@media only screen and (max-width: 1200px) {
+  .coffee-plan-aq {
+    padding: 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .coffee-plan-aq-steps {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .coffee-plan-aq {
+    padding: 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .coffee-plan-aq-form-answers {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .coffee-plan-aq-form-answers-open {
+    max-height: 700px;
+    margin-bottom: 60px;
+  }
+
+  .coffee-plan-aq-form-answer-item {
+    padding: 20px 20px 40px;
+    margin-bottom: 20px;
+  }
+
+  .coffee-plan-aq-form-answer-title {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c343e;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .coffee-summary-content {
+    max-width: 90%;
+    margin: 0px 20px;
+  }
+
+  .coffee-summary-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .coffee-summary-content > h3 {
+    background-color: #2c343e;
+    padding: 40px 20px;
+    color: #f4f1eb;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+    /* border-radius: 10px 10px 0px 0px; */
+  }
+
+  .coffee-summary-content-text {
+    padding: 40px 20px;
+  }
+
+  .coffee-summary-details > p {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+}
