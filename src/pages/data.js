@@ -1,5 +1,14 @@
 export const pagesData = [
     {
+        id:"7",
+        title: "Photosnap multi-page website",
+        desc: "Four pages App with beautiful image galleries and diverse page layouts. Fully responsive for all devices.", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/bgjwz6i6nfnqngx7ae36.jpg",
+        category:"advanced",
+        type: "multi", 
+        link:"https://photosnap-demo.netlify.app/",
+    },
+    {
         id:"1",
         title: "Arch Studio multi-page website",
         desc: "App with inner pages such as Home, Portfolio, About and Contact pages. Fully mobile and tablet friendly.", 

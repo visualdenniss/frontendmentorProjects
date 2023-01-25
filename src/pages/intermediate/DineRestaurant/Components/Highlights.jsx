@@ -44,7 +44,19 @@ const Highlights = () => {
                     <ul className="dine-highlights-items">
                         {highlightsData.map((item)=>(
                         <li className="dine-highlights-item">
-                            <img src={item.imgDesktop} srcSet={`${item.imgDesktop}, ${item.imgMobile} 700w`} alt="" className="dine-highlights-thumbnail" />
+                        <picture>
+                            <source media='(max-width:700px)'
+                            srcSet={`${item.imgMobile} 700w`}
+                            sizes="700px"
+                            />
+                            <source media='(min-width:701px)'
+                            srcSet={`${item.imgDesktop} 701w`}
+                            sizes="701px"
+                            />
+                            <img src={item.imgDesktop} className="dine-events-img" className="dine-highlights-thumbnail"
+                        alt="" />
+                        </picture> 
+                            {/* <img src={item.imgDesktop} srcSet={`${item.imgDesktop}, ${item.imgMobile} 700w`} alt="" className="dine-highlights-thumbnail" /> */}
                             <div className="dine-highlights-item-text">
                                 <h4 className="dine-highlights-item-title">
                                       {item.title}

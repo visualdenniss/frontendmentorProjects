@@ -14,7 +14,24 @@ const Features = () => {
             <div className="dine-features-container">
                 <div className="dine-feature-item">
                     <div className="dine-feature-item-img-container">
-                        <img src={enjoyPc} srcSet={`${enjoyPc}, ${enjoyTablet} 1150w, ${enjoyMobile} 600w`} alt="" />
+                        <picture>
+                            <source media='(max-width:600px)'
+                            srcSet={`${enjoyMobile} 600w`}
+                            sizes="600px"
+                            />
+                            <source media='(max-width:1150px)'
+                            srcSet={`${enjoyTablet} 1150w`}
+                            sizes="1150px"
+                            />
+                            <source media='(min-width:1151px)'
+                            srcSet={`${enjoyPc} 1151w`}
+                            sizes="1151px"
+                            />
+                            <img src={enjoyPc} 
+                        alt="" />
+                        </picture>
+                        {/* <img src={enjoyPc} srcSet={`${enjoyMobile} 600w, ${enjoyTablet} 1150w, ${enjoyPc} 1440w`} 
+                        alt="" /> */}
                     </div>
                     <div className="dine-feature-text-content dine-feature-text-content-top">
                         <h2>Enjoyable place for all the family</h2>
@@ -27,7 +44,23 @@ const Features = () => {
                         <p>All our ingredients come directly from our farm or local fishery. So you can be sure that you’re eating the freshest, most sustainable food.</p>
                     </div>
                     <div className="dine-feature-item-img-container">
-                        <img src={localPc} srcSet={`${localPc}, ${localTablet} 1150w, ${localMobile} 600w`} alt="" />
+                    <picture>
+                            <source media='(max-width:600px)'
+                            srcSet={`${localMobile} 600w`}
+                            sizes="600px"
+                            />
+                            <source media='(max-width:1150px)'
+                            srcSet={`${localTablet} 1150w`}
+                            sizes="1150px"
+                            />
+                            <source media='(min-width:1151px)'
+                            srcSet={`${localPc} 1151w`}
+                            sizes="1151px"
+                            />
+                            <img src={localPc} 
+                        alt="" />
+                        </picture>
+                        {/* <img src={localPc} srcSet={`${localPc}, ${localTablet} 1150w, ${localMobile} 600w`} alt="" /> */}
                     </div>
                 </div>
             </div>

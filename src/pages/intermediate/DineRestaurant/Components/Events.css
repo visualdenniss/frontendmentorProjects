@@ -31,6 +31,7 @@
 }
 
 .dine-events-img {
+  position: relative;
   z-index: 10;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
   display: block;

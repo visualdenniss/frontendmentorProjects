@@ -6,7 +6,7 @@
   margin-bottom: 260px;
 }
 
-.coffee-about-commitment > img {
+.coffee-about-commitment > picture > img {
   border-radius: 10px;
   /* width: 100%; */
 }
@@ -50,7 +50,7 @@
     margin-bottom: 20px;
   }
 
-  .coffee-about-commitment > img {
+  .coffee-about-commitment > picture > img {
     border-radius: 10px;
     height: 100%;
     width: 100%;
@@ -58,7 +58,7 @@
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 768px) {
   .coffee-about-commitment {
     display: flex;
     flex-direction: column;
@@ -68,8 +68,14 @@
     margin-top: 0px;
   }
 
-  .coffee-about-commitment > img {
-    max-height: 400px;
+  .coffee-about-commitment > picture {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  .coffee-about-commitment > picture > img {
+    /* max-height: 400px; */
+    /* object-fit: cover; */
+    /* max-width: 400px; */
   }
 
   .coffee-about-commitment-text > h1 {

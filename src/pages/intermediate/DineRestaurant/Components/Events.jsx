@@ -44,7 +44,23 @@ const Events = () => {
     return (
         <section className='dine-events'>
             <div className="dine-events-img-holder">
-            <img src={eventsData[currentIndex].imgDesktop} srcSet={`${eventsData[currentIndex].imgDesktop}, ${eventsData[currentIndex].imgTablet} 1275w, ${eventsData[currentIndex].imgMobile} 725w,`} alt="" className="dine-events-img" />
+            <picture>
+                <source media='(max-width:725px)'
+                            srcSet={`${eventsData[currentIndex].imgMobile} 725w`}
+                            sizes="725px"
+                            />
+                            <source media='(max-width:1275px)'
+                            srcSet={`${eventsData[currentIndex].imgTablet} 1275w`}
+                            sizes="1275px"
+                            />
+                            <source media='(min-width:1276px)'
+                            srcSet={`${eventsData[currentIndex].imgDesktop} 1276w`}
+                            sizes="1276px"
+                            />
+                            <img src={eventsData[currentIndex].imgDesktop} className="dine-events-img"
+                        alt="" />
+                        </picture>   
+            {/* <img src={eventsData[currentIndex].imgDesktop} srcSet={`${eventsData[currentIndex].imgDesktop}, ${eventsData[currentIndex].imgTablet} 1275w, ${eventsData[currentIndex].imgMobile} 725w,`} alt="" className="dine-events-img" /> */}
             </div>
             <div className="dine-events-content">
                 <h2 className="dine-events-title">

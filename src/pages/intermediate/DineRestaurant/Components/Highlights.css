@@ -88,6 +88,10 @@
 }
 
 @media only screen and (max-width: 850px) {
+  .dine-highlights {
+    padding: 120px 100px 0px;
+  }
+
   .dine-highlights-item-title {
     margin-bottom: 15px;
     line-height: 120%;
@@ -96,11 +100,6 @@
   .dine-highlights-item-desc {
     font-size: 14px;
     line-height: 25px;
-  }
-
-  .dine-highlights-thumbnail {
-    object-fit: cover;
-    width: 100%;
   }
 }
 
@@ -159,5 +158,13 @@
   .dine-highlights .dine-feature-text-content > p {
     font-size: 13.5px;
     margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .dine-highlights-item > picture {
+    width: 100%;
+  }
+  .dine-highlights-item > picture > img {
+    width: 100%;
   }
 }
