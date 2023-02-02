@@ -1,12 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Nav.css'
 import logo from '../assets/sunnyside-agency-landing-page-main/images/logo.svg'
 import hamburger from '../assets/sunnyside-agency-landing-page-main/images/icon-hamburger.svg'
+import HamburgerSunny from './HamburgerSunny'
 
 const Nav = () => {
 
+  const [showMenu, setShowMenu] = useState(false)
+  const toggleMenu = () => setShowMenu(prev => !prev)
+
     const handleMobileNav = () => {
         document.querySelector('.sunnySide-nav-mobile-links').classList.toggle('sunnySide-nav-mobile-links-active')
+        toggleMenu();
     }
 
     return (
@@ -23,11 +28,7 @@ const Nav = () => {
                   <button>Contact</button>
                 </li>
               </ul>
-              <button className='sunnySide-nav-hamburger-btn'
-              onClick={handleMobileNav}
-              >
-                <img src={hamburger} alt="" />
-              </button>
+              <HamburgerSunny handleMobileNav={handleMobileNav} showMenu={showMenu}></HamburgerSunny>
               <ul className='sunnySide-nav-mobile-links'
               >
                 <li className="sunnySide-nav-mobile-link">About</li>

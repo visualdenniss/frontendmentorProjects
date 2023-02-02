@@ -79,15 +79,6 @@
   color: white;
 }
 
-/* HAMBURGER  */
-
-.sunnySide-nav-hamburger-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  display: none;
-}
-
 /* MOBILE NAV  */
 
 .sunnySide-nav-mobile-links {
@@ -163,10 +154,6 @@
 
   .sunnySide-nav-mobile-links {
     display: flex;
-  }
-
-  .sunnySide-nav-hamburger-btn {
-    display: block;
   }
 
   .sunnySide-header-nav {

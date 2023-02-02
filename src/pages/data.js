@@ -1,5 +1,14 @@
 export const pagesData = [
     {
+        id:"8",
+        title: "Galleria slideshow site",
+        desc: "Art Gallery Slideshow with masonry layout, slideshow logic with auto/manual play and lightbox view", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/mctvqcomxdsv3cgawo4f.jpg",
+        category:"intermediate",
+        type: "multi", 
+        link:"https://galleria-demo.netlify.app/",
+    },
+    {
         id:"7",
         title: "Photosnap multi-page website",
         desc: "Four pages App with beautiful image galleries and diverse page layouts. Fully responsive for all devices.", 

@@ -1,0 +1,54 @@
+/* HAMBURGER  */
+
+.hamburger-sunny-container {
+  width: 26px;
+  height: 16px;
+  cursor: pointer;
+  z-index: 1000;
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .hamburger-sunny-container {
+    display: block;
+  }
+}
+
+.hamburger-sunny {
+  width: 26px;
+  height: 2px;
+  transition: all 300ms ease-in-out;
+  display: block;
+  transform-origin: 3px 1px;
+  margin-bottom: 5.75px;
+  background-color: white;
+}
+
+.hamburger-sunny:first-of-type,
+.hamburger-sunny:last-of-type {
+  content: "";
+  display: block;
+  transition: all 300ms ease-in-out;
+}
+
+.hamburger-sunny:last-of-type {
+  margin-bottom: 0px;
+}
+
+/* HAMBURGER ACTIVE  */
+
+.hamburger-sunny-active:nth-of-type(2) {
+  opacity: 0;
+}
+
+.hamburger-sunny-active:first-of-type {
+  transform: rotate(45deg);
+  width: 28px;
+}
+
+.hamburger-sunny-active:last-of-type {
+  transform: rotate(-45deg);
+  width: 28px;
+}
