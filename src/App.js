@@ -34,6 +34,7 @@ import DineBooking from './pages/intermediate/DineRestaurant/DineBooking';
 import CoffeeRoasters from './pages/intermediate/CoffeeRoasters/CoffeeRoasters';
 import CoffeeAbout from './pages/intermediate/CoffeeRoasters/CoffeeAbout';
 import CoffeePlan from './pages/intermediate/CoffeeRoasters/CoffeePlan';
+import ResultsSummary from './components/newbie/resultsSummary/ResultsSummary';
 
 
 const App = () => {
@@ -69,6 +70,7 @@ AOS.init({
                 <Route path='/components/todo' element={<ToDo></ToDo>}/>
                 <Route path='/components/static-jobs' element={<StaticJobs></StaticJobs>}/>
                 <Route path='/components/product-page' element={<ProductPage></ProductPage>}/>
+                <Route path='/components/results-summary' element={<ResultsSummary></ResultsSummary>}/>
 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>

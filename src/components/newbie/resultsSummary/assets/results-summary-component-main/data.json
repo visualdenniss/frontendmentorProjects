@@ -1,0 +1,22 @@
+[
+  {
+    "category": "Reaction",
+    "score": 80,
+    "icon": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1677677972/results-summary-fm/icon-reaction_ndjnfe.svg"
+  },
+  {
+    "category": "Memory",
+    "score": 92,
+    "icon": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1677677971/results-summary-fm/icon-memory_wfz5by.svg"
+  },
+  {
+    "category": "Verbal",
+    "score": 61,
+    "icon": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1677677971/results-summary-fm/icon-verbal_gh6zg4.svg"
+  },
+  {
+    "category": "Visual",
+    "score": 72,
+    "icon": "https://res.cloudinary.com/dg7sswqcr/image/upload/v1677677971/results-summary-fm/icon-visual_nqgtfm.svg"
+  }
+]

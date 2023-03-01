@@ -17,14 +17,19 @@ const Home = () => {
                     data-aos="fade-right"  
                     className="app-main-title-front-span">FRONT</span>END</h1>
                 <p className="app-main-home-desc">Compilation of <br/>
-                    <span className="app-main-span"> frontendmentor.io </span> challenges <br/>
+                <a href="https://www.frontendmentor.io/challenges" target="_blank">
+                <span className="app-main-span"> frontendmentor.io </span>
+                </a>
+                 challenges <br/>
                 </p>
                 <p className="app-main-home-desc">coded by 
+                    <a href="https://visualdevweb.de/" target="_blank" >
                     <span className="app-main-span"> visualDev</span>
+                    </a>
                 </p>
-                <p className="app-main-home-contact">Need a web developer? 
+                <a href="https://visualdevweb.de/" target="_blank" className="app-main-home-contact">Need a web developer? 
                     <span className="app-main-span"> Hire me.</span>
-                </p>
+                </a>
             </div>
                 <div className="app-main-left-deco">01</div>
             <div data-aos="fade-down"

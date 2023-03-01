@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 .components {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: var(--main-app-bg);
   color: var(--main-app-primary);
   padding: 20px 80px;
+  padding-top: 20px;
   min-height: 100vh;
 }
 
 .components-title {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -36,7 +37,7 @@
 }
 
 .components-title:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0px;
   left: 50%;

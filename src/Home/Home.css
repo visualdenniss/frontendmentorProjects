@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --main-app-primary: #253354;
-  --main-app-bg: rgb(244, 244, 244);
-  --main-secondary: #364a7b;
-  --main-app-hover: #5770b3;
+  --main-app-primary: #222222;
+  --main-app-bg: #f2f2f2;
+  --main-secondary: #222222;
+  --main-app-hover: #222222;
 }
 
 .app-main-home {
@@ -12,7 +12,7 @@
   overflow: hidden;
   padding: 0px 80px;
   display: flex;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: var(--main-app-primary);
   background-color: var(--main-app-bg);
   position: relative;
@@ -58,9 +58,10 @@
 }
 
 .app-main-title-front-span::before {
-  content: '';
+  content: "";
   /* background: linear-gradient(to right, #e4707017, #e47070); */
-  background: linear-gradient(to right, var(--main-app-bg), #2d3d67);
+  background: linear-gradient(to right, var(--main-app-bg), #222222);
+  background: #222222;
   /* background-color: #e47070; */
   position: absolute;
   height: 100%;
@@ -72,6 +73,10 @@
 .app-main-home-desc {
   font-size: 2.25vw;
   line-height: 1.5;
+}
+
+.app-main-home-desc a {
+  text-decoration: none;
 }
 
 .app-main-span {
@@ -88,6 +93,8 @@
 .app-main-home-contact {
   margin-top: 40px;
   font-size: 1.5vw;
+  color: var(--main-secondary);
+  text-decoration: none;
 }
 
 .app-main-right {
@@ -147,7 +154,7 @@
 }
 
 .app-main-item-btn::before {
-  content: '';
+  content: "";
   width: 0%;
   height: 100%;
   background-color: var(--main-secondary);
