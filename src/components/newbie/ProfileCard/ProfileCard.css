@@ -41,6 +41,7 @@
   display: grid;
   place-items: center;
   width: 100%;
+  overflow: hidden;
 }
 .profile-card-header-body > img {
   width: 105px;
@@ -51,6 +52,7 @@
 
 .profile-card-bio {
   margin: 1.11111111em 0.22222222em 0.4em 0px;
+  overflow: hidden;
 }
 
 .profile-card-name {
