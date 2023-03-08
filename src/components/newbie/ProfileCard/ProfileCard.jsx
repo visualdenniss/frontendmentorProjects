@@ -25,7 +25,7 @@ const ProfileCard = () => {
         <div className='profile-card-wrapper'>
             <motion.main {...basicFadeUpProfile}
             className='profile-card-main' role='main'>
-                <header className="profile-card-header">
+                <div className="profile-card-header">
                     <div className="profile-card-header-body">
                     <motion.img {...basicScaleUpProfile}               
                     src={avatar} alt="Avatar of Victor Crest" />
@@ -40,7 +40,7 @@ const ProfileCard = () => {
                     className="profile-card-location">
                         London
                     </motion.p>
-                </header>
+                </div>
                 <ul className="profile-card-stats" aria-label="Profile stats">
                         {statsData.map((stat, index)=> {
                             return (

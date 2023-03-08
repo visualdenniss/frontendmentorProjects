@@ -13,6 +13,7 @@
   background-color: hsl(185, 75%, 39%);
   background-position: right 52vw bottom 35vh, left 48vw top 52vh;
   background-repeat: no-repeat, no-repeat;
+  padding: 1.5em;
 }
 
 .profile-card-main {
@@ -101,4 +102,15 @@
   font-size: 0.644em;
   letter-spacing: 2.096px;
   color: hsl(227deg, 10%, 46%);
+}
+
+@media only screen and (max-width: 22.5em) {
+  .profile-card-header-body > img {
+    width: 95px;
+    height: 95px;
+  }
+
+  .profile-card-header {
+    padding: 3.86133333em 1.77777778em 1.28888889em;
+  }
 }
