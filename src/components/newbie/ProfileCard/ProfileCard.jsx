@@ -2,7 +2,7 @@ import React from 'react'
 import './ProfileCard.css'
 import avatar from './assets/images/image-victor.jpg'
 import {motion} from 'framer-motion'
-import {basicFadeUpProfile,  basicFadeUp2Profile, basicScaleUpProfile } from './animation'
+import {basicFadeUpProfile,  basicFadeUp2Profile, basicFadeUp3Profile ,basicScaleUpProfile } from './animation'
 
 const ProfileCard = () => {
 
@@ -36,7 +36,7 @@ const ProfileCard = () => {
                     <span className='profile-card-age'>26</span></motion.h2>
                     </div>
                     </div>
-                    <motion.p {...basicFadeUp2Profile}                 
+                    <motion.p {...basicFadeUp3Profile}               
                     className="profile-card-location">
                         London
                     </motion.p>
@@ -48,7 +48,7 @@ const ProfileCard = () => {
                                 initial={{opacity:0, scale: 0}}
                                 animate={{opacity:1, scale: 1, 
                                 transition: {
-                                    delay: 1.8 + (0.2 * index),
+                                    delay: 1.4 + (0.2 * index),
                                     ease: 'easeOut',
                                     duration: .6,
                                 }}}

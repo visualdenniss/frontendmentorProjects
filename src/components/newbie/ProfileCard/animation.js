@@ -18,6 +18,16 @@ export const basicFadeUp2Profile = {
         }}
 }
 
+export const basicFadeUp3Profile = {
+    initial:{opacity:0, y: 30},
+    animate:{opacity:1, y: 0,  
+        transition: {
+            delay: .8,
+            ease: 'easeOut',
+            duration: .8,
+        }}
+}
+
 export const basicScaleUpProfile = {
     initial:{opacity:0.2, scale: 0.2},
     animate:{opacity:1, scale: 1, 
