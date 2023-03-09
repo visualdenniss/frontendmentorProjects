@@ -36,6 +36,8 @@ import CoffeeAbout from './pages/intermediate/CoffeeRoasters/CoffeeAbout';
 import CoffeePlan from './pages/intermediate/CoffeeRoasters/CoffeePlan';
 import ResultsSummary from './components/newbie/resultsSummary/ResultsSummary';
 import ProfileCard from './components/newbie/ProfileCard/ProfileCard';
+import StatsPreview from './components/newbie/StatsPreview/StatsPreview';
+
 
 
 const App = () => {
@@ -73,6 +75,7 @@ AOS.init({
                 <Route path='/components/product-page' element={<ProductPage></ProductPage>}/>
                 <Route path='/components/results-summary' element={<ResultsSummary></ResultsSummary>}/>
                 <Route path='/components/profile-card' element={<ProfileCard></ProfileCard>}/>
+                <Route path='/components/stats-preview' element={<StatsPreview></StatsPreview>}/>
 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>
