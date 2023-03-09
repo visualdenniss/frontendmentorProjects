@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 
-/* ### Primary
-
-- Very dark blue (main background): hsl(233, 47%, 7%)
-- Dark desaturated blue (card background): hsl(244, 38%, 16%)
-- Soft violet (accent): hsl(277, 64%, 61%)
-
-### Neutral
-
-- White (main heading, stats): hsl(0, 0%, 100%)
-- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
-- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6) */
-
 .stats-preview-main {
   min-height: 100vh;
   display: grid;
@@ -20,27 +8,28 @@
   font-family: "Lexend Deca", sans-serif;
   font-family: "Inter", sans-serif;
   background: hsl(233, 47%, 7%);
-  padding: 20px;
+  padding: 1.333em;
 }
 /* CARD  */
 .stats-preview-card {
   display: flex;
   background-color: hsl(244, 38%, 16%);
-  border-radius: 8px;
+  border-radius: 0.533em;
   overflow: hidden;
-  max-width: 1110px;
+  max-width: 74em;
 }
 
 /* LEFT  */
 
 .stats-preview-left {
-  padding: 71px 71.501px 59px 71px;
+  padding: 4.733em 4.767em 3.933em 4.733em;
 }
 .stats-preview-left > h2 {
   color: hsl(0, 0%, 100%);
-  font-size: 36px;
+  font-size: 2.4em;
   line-height: 43.92px;
   font-weight: 700;
+  overflow: hidden;
 }
 .stats-preview-left > h2 > span {
   color: hsl(277, 64%, 61%);
@@ -48,49 +37,49 @@
 .stats-preview-left > p {
   color: hsla(0, 0%, 100%, 0.75);
   font-size: 1em;
-  line-height: 25.05px;
-  max-width: 375px;
-  margin-top: 25px;
+  line-height: 1.67em;
+  max-width: 25em;
+  margin-top: 1.667em;
+  overflow: hidden;
 }
 
 /* STATS LIST  */
 
 .stats-preview-stats {
   display: flex;
-  margin-top: 70px;
-  line-height: 32px;
-  gap: 60px;
+  margin-top: 2.917em;
+  line-height: 1.33em;
+  gap: 2.5em;
   justify-content: flex-start;
-  font-size: 24px;
+  font-size: 1.6em;
 }
 
 .stats-preview-stat {
 }
 
 .stats-preview-stat:first-of-type {
-  margin-right: 5px;
+  margin-right: 0.2083em;
 }
 .stats-preview-stat > span {
   color: hsl(0, 0%, 100%);
-  font-size: 24px;
+  font-size: 1em;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 0.67em;
 }
 .stats-preview-stat > p {
   color: hsla(0, 0%, 100%, 0.6);
   font-family: "Lexend Deca", sans-serif;
   text-transform: uppercase;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.96px;
-  margin-top: 6px;
+  font-size: 0.5em;
+  line-height: 1.33em;
+  letter-spacing: 0.08em;
+  margin-top: 0.5em;
 }
 
 /* RIGHT  */
 
 .stats-preview-right {
   max-width: 539.7px;
-  max-height: 445.75px;
   width: 100%;
   background-color: hsl(277, 64%, 61%);
 }
@@ -112,6 +101,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .stats-preview-main {
+    padding: 2.4em 1.333em;
+  }
+
   .stats-preview-card {
     flex-direction: column-reverse;
     overflow: hidden;
@@ -126,14 +119,15 @@
     text-align: center;
   }
 
+  .stats-preview-left > p {
+    margin: 0 auto;
+    margin-top: 1.67em;
+  }
+
   .stats-preview-stats {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-  }
-
-  .stats-preview-stat:not(:first-child) {
-    margin-bottom: 30px;
   }
 }
