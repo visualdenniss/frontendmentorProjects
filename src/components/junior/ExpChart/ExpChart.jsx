@@ -26,8 +26,6 @@ const ExpChart = () => {
     }
 
 
-
-
     useEffect(()=>{
     addStyle()
 
@@ -35,7 +33,7 @@ const ExpChart = () => {
     setTimeout(()=> {
 
         const counters = document.querySelectorAll('.expChart-graph-stats-left-total');
-        const speed = 700;
+        const speed = 500;
     
         counters.forEach( counter => {
         const animate = () => {
