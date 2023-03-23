@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+.comment-section-container {
+  min-height: 100vh;
+  font-size: calc((16 / 16) * 1rem);
+  padding: 1rem;
+  font-family: "Rubik", sans-serif;
+
+  --comment-section-transition: all 0.4s ease;
+
+  /* ### Primary */
+
+  --comment-section-Moderate-blue: hsl(238, 40%, 52%);
+  --comment-section-Soft-Red: hsl(358, 79%, 66%);
+  --comment-section-Light-grayish-blue: hsl(239, 57%, 85%);
+  --comment-section-Pale-red: hsl(357, 100%, 86%);
+
+  /* ### Neutral */
+
+  --comment-section-Dark-blue: hsl(212, 24%, 26%);
+  --comment-section-Grayish-Blue: hsl(211, 10%, 45%);
+  --comment-section-Light-gray: hsl(223, 19%, 93%);
+  --comment-section-Very-light-gray: hsl(228, 33%, 97%);
+  --comment-section-White: hsl(0, 0%, 100%);
+
+  background-color: var(--comment-section-Very-light-gray);
+  color: var(--comment-section-Grayish-Blue);
+}
+
+.comment-section-main {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.comment-section-section {
+  max-width: calc((730 / 16) * 1rem);
+  margin: 0 auto;
+}

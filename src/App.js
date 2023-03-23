@@ -37,6 +37,7 @@ import CoffeePlan from './pages/intermediate/CoffeeRoasters/CoffeePlan';
 import ResultsSummary from './components/newbie/resultsSummary/ResultsSummary';
 import ProfileCard from './components/newbie/ProfileCard/ProfileCard';
 import StatsPreview from './components/newbie/StatsPreview/StatsPreview';
+import CommentSection from './components/intermediate/CommentSection/CommentSection';
 
 
 
@@ -76,6 +77,7 @@ AOS.init({
                 <Route path='/components/results-summary' element={<ResultsSummary></ResultsSummary>}/>
                 <Route path='/components/profile-card' element={<ProfileCard></ProfileCard>}/>
                 <Route path='/components/stats-preview' element={<StatsPreview></StatsPreview>}/>
+                <Route path='/components/comment-section' element={<CommentSection></CommentSection>}/>
 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>

@@ -1,0 +1,68 @@
+.comment-section-add-comment-form {
+  margin: 0 auto;
+  margin-top: calc((15 / 16) * 1rem);
+
+  background-color: var(--comment-section-White);
+  padding: calc((24 / 16) * 1rem);
+  border-radius: calc((8 / 16) * 1rem);
+
+  display: flex;
+  align-items: flex-start;
+  gap: calc((13 / 16) * 1rem);
+  width: 100%;
+}
+
+.comment-section-add-comment-form-reply {
+  margin-top: -0.6rem;
+}
+
+.comment-section-add-comment-form > img {
+  width: calc((37 / 16) * 1rem);
+  height: calc((37 / 16) * 1rem);
+}
+
+.comment-section-add-comment-form > textarea,
+.comment-section-comment-editing-field {
+  height: calc((95 / 16) * 1rem);
+  overflow: scroll;
+  flex: 1;
+  border-radius: 0.5rem;
+  border: 1px solid var(--comment-section-Light-gray);
+  color: inherit;
+  font-family: inherit;
+  padding: 1rem calc((20 / 16) * 1rem);
+  font-size: 1rem;
+  resize: none;
+  /* cursor: pointer; */
+  caret-color: var(--comment-section-Moderate-blue);
+  /* caret-shape: block; */
+}
+
+.comment-section-add-comment-form > textarea:focus,
+.comment-section-comment-editing-field:focus {
+  outline: 1px solid var(--comment-section-Moderate-blue);
+}
+
+.comment-section-add-comment-form > button,
+.comment-section-editing-btn {
+  background-color: var(--comment-section-Moderate-blue);
+  color: var(--comment-section-White);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  padding: 1rem calc((27 / 16) * 1rem);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--comment-section-transition);
+}
+
+.comment-section-add-comment-form > button:hover,
+.comment-section-editing-btn:hover {
+  opacity: 0.5;
+}
+
+.comment-section-editing-btn {
+  width: max-content;
+  margin-left: auto;
+}

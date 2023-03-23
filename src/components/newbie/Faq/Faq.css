@@ -16,11 +16,11 @@
 
   - Light grayish blue: hsl(240, 5%, 91%) */
 
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
 .faq-accordion {
   font-size: 12px;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   min-height: 100vh;
   height: 100%;
   background: linear-gradient(
@@ -46,7 +46,7 @@
 }
 
 .faq-accordion-container:before {
-  content: url('../Faq/assets/faq-accordion-card-main/images/illustration-woman-online-mobile.svg');
+  content: url("../Faq/assets/faq-accordion-card-main/images/illustration-woman-online-mobile.svg");
   position: absolute;
   min-width: 250px;
   top: -115px;
@@ -90,7 +90,7 @@
 }
 
 .faq-accordion-question-button:after {
-  content: url('../Faq/assets/faq-accordion-card-main/images/icon-arrow-down.svg');
+  content: url("../Faq/assets/faq-accordion-card-main/images/icon-arrow-down.svg");
   transition: all 0.2s ease-in-out;
 }
 
@@ -109,12 +109,14 @@
 
 .faq-accordion-answer {
   color: hsl(240, 6%, 50%);
-  max-height: 0;
+  height: 0px;
+  min-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out;
+  transition: all 0.3s ease;
 }
 .faq-accordion-answer-active {
-  max-height: 100px;
+  /* max-height: 100px; */
+  min-height: 50px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -125,16 +127,16 @@
     justify-content: flex-end;
     padding-top: 50px;
 
-    background: url('../Faq/assets/faq-accordion-card-main/images/illustration-woman-online-desktop.svg')
+    background: url("../Faq/assets/faq-accordion-card-main/images/illustration-woman-online-desktop.svg")
         bottom 3.1rem left -5.1rem no-repeat,
-      url('../Faq/assets/faq-accordion-card-main/images/bg-pattern-desktop.svg')
+      url("../Faq/assets/faq-accordion-card-main/images/bg-pattern-desktop.svg")
         bottom -10rem left -36rem no-repeat;
 
     background-color: white;
   }
 
   .faq-accordion-container:before {
-    content: url(' ../Faq/assets/faq-accordion-card-main/images/illustration-box-desktop.svg');
+    content: url(" ../Faq/assets/faq-accordion-card-main/images/illustration-box-desktop.svg");
     top: 60%;
     left: 3.5%;
     transform: translate(-50%, -55%);
