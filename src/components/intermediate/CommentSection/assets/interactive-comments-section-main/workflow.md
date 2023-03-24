@@ -19,6 +19,10 @@ Setup initial starter files and base styles, breakdown the ui into components st
 
 Build a static version of CommentSection, Individual Comments, Replies, Add a comment section below, Add Reply, Update your own comment or reply. Hover states for all. ✅
 
+Uploaded images to Cloudinary CDN ✅
+
+Uploaded data to FREE ONLINE JSON SERVER (npoint) ✅
+
 Missing: DELETE MODAL & Responsiveness.
 
 ### Step 3: Find the minimal but complete representation of UI state
@@ -42,24 +46,40 @@ Missing: DELETE MODAL & Responsiveness.
 
 So states:
 
-- currentUser
+- currentUser ✅
 
-- List of Comments/CommentItems/Replies/Reply
+- List of Comments ✅
 
-- isEditing
+- isEditing ✅
 
-- counter
+- counter ✅ (implement: allow voting only once a)for upvote comment ✅ b) for upvote reply c) for downvote comment d) for downvote reply , prevent self vote ✅)
 
 FUNCTIONS
 
-- Add new comment (Create)
+- Add new comment (Create) ✅
 
-- Add new reply (Create)
+- Add new reply to a comment itself ✅ or a reply to a reply ✅ (Create) (BUG: Replying to a brand new comment does not work) FIXED ✅
 
-- Get the full list of comments to render (Read)
+- Get the full list of comments to render (Read) ✅
 
-- Update the comment or reply (Update)
+- Update the comment ✅ or reply ✅ (Update)
 
-- Delete the comment or reply (Delete)
+- Delete the comment ✅ or reply ✅ (Delete)
 
-- Change currentUser
+- Change currentUser ✅
+
+TODOS:
+
+- FIX @replyingTo bug when replying to a reply.
+
+- Split Voting to own Component
+
+- Refactor States/Contexts
+
+- Add MODAL for DELETE
+
+- Refactor / Tidy up + Reducer Version
+
+- useLocalStorage after any updates, get the initials from a server.
+
+- ADD Responsiveness

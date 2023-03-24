@@ -1,16 +1,30 @@
-import React, {useState} from 'react'
+import React, {useContext} from 'react'
 import AddComment from '../../../AddComment/AddComment'
 import Reply from './Reply/Reply'
+import { CommentsContext } from '../../../../CommentSection'
 
-const Replies = () => {
-    const [replying, setReplying] = useState(true)
+const Replies = ({replies, isReplying ,setIsReplying, replyingToID, setReplyingToID}) => {
+
+
+    const [comments, setComments] = useContext(CommentsContext)
+
     return (
         <ul className='comment-section-replies-list'>
-            {/* Replies:  */}
-            <Reply></Reply>
-            {/* <Reply></Reply> */}
-            <AddComment replying={replying}></AddComment>
-            {/* <Reply></Reply> */}
+            {replies?.map((reply, index)=> <Reply 
+            key={index} 
+            isReplying={isReplying} 
+            setReplyingToID={setReplyingToID}
+            setIsReplying={setIsReplying} 
+            reply={reply}/>)}
+
+            {isReplying && 
+            <AddComment 
+            replyingToID={replyingToID} 
+            isReplying={isReplying}
+            comments={comments} 
+            setIsReplying={setIsReplying}
+            setComments={setComments}
+            ></AddComment>}
         </ul>
     )
 }

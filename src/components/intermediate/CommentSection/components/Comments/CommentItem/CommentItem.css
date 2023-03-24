@@ -41,6 +41,10 @@
   padding: calc((15 / 16) * 1rem) 0.9rem;
 }
 
+.comment-section-comment-counter button:disabled {
+  cursor: not-allowed;
+}
+
 .comment-section-comment-counter button:hover {
   filter: brightness(0.35);
 }
@@ -95,6 +99,17 @@
   color: var(--comment-section-Dark-blue);
   font-weight: 500;
   text-decoration: none;
+}
+
+.comment-section-replying-to {
+  margin-right: 0.2rem;
+  color: var(--comment-section-Moderate-blue);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.comment-section-replying-to-multi {
+  display: inline-block;
 }
 
 .comment-section-comment-right-buttons {

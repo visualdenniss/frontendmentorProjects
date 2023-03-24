@@ -2,12 +2,14 @@ import React from 'react'
 import CommentItem from './CommentItem/CommentItem'
 import './Comments.css'
 
-const Comments = () => {
+
+const Comments = ({comments}) => {
+
     return (
         <ul className='comment-section-comments'>
-            {/* for each comment comments.map(li) */}
-            <CommentItem></CommentItem>
-            {/* <CommentItem></CommentItem> */}
+            {comments && comments?.map((comment, index)=>{
+                return  <CommentItem key={index} comment={comment}></CommentItem>
+            })}
         </ul>
     )
 }

@@ -1,0 +1,48 @@
+.comment-section-header {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.comment-section-nav {
+}
+
+.comment-section-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.comment-section-list-item {
+}
+.comment-section-list-item > button {
+  outline: 2px solid transparent;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+  overflow: hidden;
+  transition: var(--comment-section-transition);
+}
+.comment-section-list-item > button > img {
+  width: 100%;
+  height: 100%;
+  transition: var(--comment-section-transition);
+  opacity: 0.65;
+}
+
+.comment-section-list-item > button:hover > img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.comment-section-active-user > button {
+  outline: 2px solid var(--comment-section-Moderate-blue);
+  opacity: 1;
+}
+.comment-section-active-user > button > img {
+  opacity: 1;
+}

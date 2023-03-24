@@ -1,10 +1,15 @@
 import React from 'react'
 import Comment from '../../Comment/Comment'
 
-const Reply = () => {
+const Reply = ({reply, setIsReplying, isReplying, setReplyingToID}) => {
     return (
         <li>
-            <Comment></Comment>
+            <Comment 
+            data={reply} 
+            isReplying={isReplying} 
+            setReplyingToID={setReplyingToID} 
+            setIsReplying={setIsReplying} 
+            type="reply"/>
         </li>
     )
 }
