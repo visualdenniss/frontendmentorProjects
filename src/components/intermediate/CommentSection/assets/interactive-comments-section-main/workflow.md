@@ -23,7 +23,7 @@ Uploaded images to Cloudinary CDN ✅
 
 Uploaded data to FREE ONLINE JSON SERVER (npoint) ✅
 
-Missing: DELETE MODAL ✅ & Responsiveness.
+Missing: DELETE MODAL ✅ & Responsiveness ✅.
 
 ### Step 3: Find the minimal but complete representation of UI state
 
@@ -74,7 +74,7 @@ TODOS:
 
 - Add MODAL for DELETE ✅
 
-- Split Voting to own Component
+- Split Voting to own Component ✅
 
 - Refactor States/Contexts
 
@@ -82,7 +82,7 @@ TODOS:
 
 - useLocalStorage after any updates, get the initials from a server.
 
-- ADD Responsiveness
+- ADD Responsiveness ✅
 
 - ANIMATIONS
 
