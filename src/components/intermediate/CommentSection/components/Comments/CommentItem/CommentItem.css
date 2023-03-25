@@ -46,7 +46,7 @@
 }
 
 .comment-section-comment-counter button:hover {
-  filter: brightness(0.35);
+  filter: brightness(0.45) saturate(5);
 }
 
 .comment-section-comment-counter p {
@@ -56,6 +56,10 @@
   /* border: 1px solid red; */
   display: grid;
   place-items: center;
+}
+
+.comment-section-voted {
+  filter: brightness(0.45) saturate(5);
 }
 
 /* Comment Right  */
@@ -151,4 +155,76 @@
   padding-left: calc((40 / 16) * 1rem);
   margin-left: calc((40 / 16) * 1rem);
   border-left: 2px solid var(--comment-section-Light-gray);
+}
+
+/* ********* MODAL ********* */
+
+.comment-section-delete-modal-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-section-delete-modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.comment-section-delete-modal {
+  position: relative;
+  z-index: 10;
+  background-color: var(--comment-section-White);
+  padding: calc((30 / 16) * 1rem);
+  border-radius: 0.5rem;
+  max-width: calc((400 / 16) * 1rem);
+}
+
+.comment-section-delete-modal > h2 {
+  color: var(--comment-section-Dark-blue);
+}
+
+.comment-section-delete-modal > p {
+  line-height: 1.5;
+  margin: calc((20 / 16) * 1rem) 0;
+}
+
+/* MODAL BUTTONS  */
+
+.comment-section-delete-modal-btns {
+  display: flex;
+  gap: calc((14 / 16) * 1rem);
+}
+
+.comment-section-cancel-delete-btn,
+.comment-section-delete-btn {
+  color: var(--comment-section-White);
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  padding: 1rem calc((27 / 16) * 1rem);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--comment-section-transition);
+  flex: 1;
+}
+
+.comment-section-cancel-delete-btn {
+  background-color: var(--comment-section-Grayish-Blue);
+}
+
+.comment-section-delete-btn {
+  background-color: var(--comment-section-Soft-Red);
+}
+
+.comment-section-cancel-delete-btn:hover,
+.comment-section-delete-btn:hover {
+  opacity: 0.5;
 }

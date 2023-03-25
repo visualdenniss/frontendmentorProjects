@@ -52,7 +52,7 @@ So states:
 
 - isEditing ✅
 
-- counter ✅ (implement: allow voting only once a)for upvote comment ✅ b) for upvote reply c) for downvote comment d) for downvote reply , prevent self vote ✅)
+- counter ✅ (implement: allow voting only once a)for upvote comment ✅ b) for upvote reply c) for downvote comment ✅ d) for downvote reply , prevent self vote ✅)
 
 FUNCTIONS
 
@@ -70,16 +70,49 @@ FUNCTIONS
 
 TODOS:
 
-- FIX @replyingTo bug when replying to a reply.
+- BUG @replyingTo bug when replying to a reply. FIXED ✅
+
+- Add MODAL for DELETE ✅
 
 - Split Voting to own Component
 
 - Refactor States/Contexts
-
-- Add MODAL for DELETE
 
 - Refactor / Tidy up + Reducer Version
 
 - useLocalStorage after any updates, get the initials from a server.
 
 - ADD Responsiveness
+
+- ANIMATIONS
+
+- PNG VS WEBP (Check use cases, when to use which..)
+
+- ADD ALT TAGS FOR IMGS + DO SOME AY11 CHECKING / ACCESSIBILITY TESTS
+
+VOTE SYSTEM
+
+FOR VOTING COMMENT=
+
+     CASES:
+
+     - UPVOTE CASES
+
+     User has not voted yet, and votes up => score +1 ✅, voted: true, direction: up, ✅
+
+     User has voted up and clicks on vote up again => score -1 ✅, remove from vote object. ✅
+
+     User has voted down, and clicks on vote up => score +2 ✅, voted: true, direction: up ✅.
+
+
+     - DOWNVOTE CASES
+
+     User has not voted yet, and votes down => score -1 ✅, voted: true, direction: down ✅,
+
+     User has voted down, and clicks on vote down again => score +1 ✅, remove from vote object ✅.
+
+     User has voted up and click on downvote => score -2 ✅, voted: true, direction: down ✅,
+
+FOR VOTING REPLY =
+
+Same 6 cases.
