@@ -38,6 +38,10 @@
   /* caret-shape: block; */
 }
 
+.comment-section-comment-editing-field {
+  line-height: 1.5;
+}
+
 .comment-section-add-comment-form > textarea:focus,
 .comment-section-comment-editing-field:focus {
   outline: 1px solid var(--comment-section-Moderate-blue);

@@ -23,7 +23,7 @@ Uploaded images to Cloudinary CDN ✅
 
 Uploaded data to FREE ONLINE JSON SERVER (npoint) ✅
 
-Missing: DELETE MODAL & Responsiveness.
+Missing: DELETE MODAL ✅ & Responsiveness.
 
 ### Step 3: Find the minimal but complete representation of UI state
 
@@ -90,7 +90,7 @@ TODOS:
 
 - ADD ALT TAGS FOR IMGS + DO SOME AY11 CHECKING / ACCESSIBILITY TESTS
 
-VOTE SYSTEM
+### VOTE SYSTEM ✅
 
 FOR VOTING COMMENT=
 
@@ -116,3 +116,20 @@ FOR VOTING COMMENT=
 FOR VOTING REPLY =
 
 Same 6 cases.
+
+     - UPVOTE CASES
+
+     User has not voted yet, and votes up => score +1 ✅, voted: true, direction: up, ✅
+
+     User has voted up and clicks on vote up again => score -1 ✅, remove from vote object ✅.
+
+     User has voted down, and clicks on vote up => score +2 ✅, voted: true, direction: up ✅.
+
+
+     - DOWNVOTE CASES
+
+     User has not voted yet, and votes down => score -1 ✅, voted: true, direction: down ✅,
+
+     User has voted down, and clicks on vote down again => score +1 ✅, remove from vote object ✅.
+
+     User has voted up and click on downvote => score -2 ✅, voted: true, direction: down ✅,

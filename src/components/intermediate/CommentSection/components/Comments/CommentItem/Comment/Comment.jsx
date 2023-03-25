@@ -133,17 +133,43 @@ const Comment = ({data, type, isReplying, setIsReplying, setReplyingToID}) => {
 
                 //check if user has voted already: 
                 if(hasVoted.find((vote)=>vote.id === currentUser.id)?.voted ) {
-                    updatedComments[commentIndex].replies[replyIndex] = { ...replyToUpdate, score: replyToUpdate.score - 1 }
-                    const newHasVoted = hasVoted.filter((vote)=>vote.id !== currentUser.id)
-                    setHasVoted(newHasVoted)
+
+                    const vote = hasVoted.find((vote)=> vote.id === currentUser.id)
+
+                    // User has voted up and clicks on vote up again
+                    if (vote.direction === 'up') {
+                        // score -1
+                     updatedComments[commentIndex].replies[replyIndex] = { ...replyToUpdate, score: replyToUpdate.score - 1 }
+                        // remove from vote object.
+                        const newHasVoted = hasVoted.filter((vote)=>vote.id !== currentUser.id)
+                        setHasVoted(newHasVoted)
+                    }
+                    // User has voted down, and clicks on vote up
+                    else if (vote.direction === 'down') {
+                        // score +2
+                        updatedComments[commentIndex].replies[replyIndex] = { ...replyToUpdate, score: replyToUpdate.score + 2 }
+                        //Update voted: true, direction: up.
+                        const voteToUpdate = hasVoted.find((vote)=>vote.id == currentUser.id)
+                        const voteIndex = hasVoted.indexOf(voteToUpdate)
+
+                        const updatedVotes = [...hasVoted]
+                        updatedVotes[voteIndex] = {...voteToUpdate, direction: 'up'}
+
+                        setHasVoted(updatedVotes)
+                    }
                     
                 }
+
+                // User has not voted yet, and votes up
                  else {
+                     //score +1
                     updatedComments[commentIndex].replies[replyIndex]  = { ...replyToUpdate, score: replyToUpdate.score + 1 }
+                    // voted: true, direction: up,
                     setHasVoted([...hasVoted,
                         {
                             id: currentUser.id, 
-                            voted: true, 
+                            voted: true,
+                            direction: 'up'
                         }
                     ])
 
@@ -214,17 +240,60 @@ const Comment = ({data, type, isReplying, setIsReplying, setReplyingToID}) => {
             
             else {
 
+
                 const commentToUpdate = comments.find(comment => comment.replies.find(reply => reply.id === data.id));
                 const replyToUpdate = commentToUpdate.replies.find(reply => reply.id === data.id);
         
                 const commentIndex = comments.indexOf(commentToUpdate);
                 const replyIndex = commentToUpdate.replies.indexOf(replyToUpdate);
-        
-                const updatedComments = [...comments];
-                updatedComments[commentIndex].replies[replyIndex] = { ...replyToUpdate, score: replyToUpdate.score - 1};
-                setComments(updatedComments)
-            }
 
+                const updatedComments = [...comments];
+
+                //check if user has voted already: 
+                if(hasVoted.find((vote)=>vote.id === currentUser.id)?.voted ) {
+
+                    const vote = hasVoted.find((vote)=> vote.id === currentUser.id)
+
+                    // User has voted down, and clicks on vote down again
+                    if (vote.direction === 'down') {
+                        // score +1
+                     updatedComments[commentIndex].replies[replyIndex] = { ...replyToUpdate, score: replyToUpdate.score + 1 }
+                        // remove from vote object.
+                        const newHasVoted = hasVoted.filter((vote)=>vote.id !== currentUser.id)
+                        setHasVoted(newHasVoted)
+                    }
+                    // User has voted up and click on downvote
+                    else if (vote.direction === 'up') {
+                        //  score -2
+                        updatedComments[commentIndex].replies[replyIndex] = { ...replyToUpdate, score: replyToUpdate.score - 2 }
+                        //voted: true, direction: down
+                        const voteToUpdate = hasVoted.find((vote)=>vote.id == currentUser.id)
+                        const voteIndex = hasVoted.indexOf(voteToUpdate)
+
+                        const updatedVotes = [...hasVoted]
+                        updatedVotes[voteIndex] = {...voteToUpdate, direction: 'down'}
+
+                        setHasVoted(updatedVotes)
+                    }
+                    
+                }
+
+                // User has not voted yet, and votes down
+                else {
+                    //score -1
+                   updatedComments[commentIndex].replies[replyIndex]  = { ...replyToUpdate, score: replyToUpdate.score - 1 }
+                   // voted: true, direction: down
+                   setHasVoted([...hasVoted,
+                       {
+                           id: currentUser.id, 
+                           voted: true,
+                           direction: 'down'
+                       }
+                   ])
+
+                }
+               setComments(updatedComments)                
+            }
 
         }
 
