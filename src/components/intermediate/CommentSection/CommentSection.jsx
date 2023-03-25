@@ -66,13 +66,14 @@ const CommentSection = () => {
                // THIS setTimeout IS ONLY FOR DEMO PURPOSE 
                // - TO MAKE SPINNER APPEAR LONGER ON SCREEN 
                // IN REAL APP, OFC would be no setTimeout 
-            //    setTimeout(()=>{
-            //        setComments(response.data.comments)
-            //        setIsLoading(false)
-            //    },2000)
+               setTimeout(()=>{
+                   setComments(response.data.comments)
+                   setIsLoading(false)
+               },2000)
 
-               setComments(response.data.comments)
-               setIsLoading(false)
+              //  setComments(response.data.comments)
+              //  setIsLoading(false)
+              
               } catch (err) {
                   console.log(err);
               }
