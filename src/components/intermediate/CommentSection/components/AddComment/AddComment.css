@@ -70,3 +70,35 @@
   width: max-content;
   margin-left: auto;
 }
+
+@media only screen and (max-width: 900px) {
+  .comment-section-add-comment-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "reply reply"
+      "img button";
+    gap: calc((13 / 16) * 1rem);
+    width: 100%;
+  }
+
+  .comment-section-add-comment-form > textarea {
+    grid-area: reply;
+  }
+
+  .comment-section-add-comment-form > img {
+    grid-area: img;
+  }
+  .comment-section-add-comment-form > button {
+    grid-area: button;
+    max-width: max-content;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .comment-section-add-comment-form {
+    padding: calc((15 / 16) * 1rem);
+  }
+}

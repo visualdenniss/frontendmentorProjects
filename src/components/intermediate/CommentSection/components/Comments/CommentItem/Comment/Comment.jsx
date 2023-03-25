@@ -344,11 +344,13 @@ const Comment = ({data, type, isReplying, setIsReplying, setReplyingToID}) => {
                  : 
                 <p className="comment-section-comment-body">
 
-                {type === 'reply' && Array.isArray(data.replyingTo) ? 
+                    {type === 'reply' && Array.isArray(data.replyingTo) && data.replyingTo.length > 0 ? 
                     data.replyingTo.map((reply) => <a className='comment-section-replying-to comment-section-replying-to-multi' href="#">@{reply}</a>) 
-                    : <a className='comment-section-replying-to' href="#">{data.replyingTo && '@'}{data?.replyingTo}</a> 
-                }
-                {data?.content}
+                    : data.replyingTo ? <a className='comment-section-replying-to' href="#">@{data?.replyingTo}</a> : null 
+                    }
+                    
+                    {data?.content}
+                    
                 </p>
                 }
 

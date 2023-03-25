@@ -36,3 +36,20 @@
   max-width: calc((730 / 16) * 1rem);
   margin: 0 auto;
 }
+
+@media only screen and (max-width: 900px) {
+  .comment-section-container {
+    padding: 1rem 5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .comment-section-container {
+    padding: 5rem calc((24 / 16) * 1rem);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .comment-section-container {
+    padding: 5rem calc((15 / 16) * 1rem);
+  }
+}

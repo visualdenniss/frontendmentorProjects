@@ -90,6 +90,8 @@ TODOS:
 
 - ADD ALT TAGS FOR IMGS + DO SOME AY11 CHECKING / ACCESSIBILITY TESTS
 
+- ADD REALTIME STAMPS
+
 ### VOTE SYSTEM ✅
 
 FOR VOTING COMMENT=
@@ -133,3 +135,12 @@ Same 6 cases.
      User has voted down, and clicks on vote down again => score +1 ✅, remove from vote object ✅.
 
      User has voted up and click on downvote => score -2 ✅, voted: true, direction: down ✅,
+
+BREAKPOINTS:
+
+900px
+800px
+650px
+400px
+370px
+340px
