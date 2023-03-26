@@ -20,7 +20,7 @@ const CommentSection = () => {
     const [comments, setComments] = useState("")
     const [isLoading, setIsLoading] = useState(false)
 
-    const [darkMode, setDarkMode] = useState(true)
+    const [darkMode, setDarkMode] = useState(false)
 
 
       useEffect(() => {
