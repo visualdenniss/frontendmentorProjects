@@ -20,7 +20,7 @@ const CommentSection = () => {
     const [comments, setComments] = useState("")
     const [isLoading, setIsLoading] = useState(false)
 
-    const [darkMode, setDarkMode] = useState(false)
+    const [darkMode, setDarkMode] = useState(true)
 
 
       useEffect(() => {
@@ -32,13 +32,13 @@ const CommentSection = () => {
                // THIS setTimeout IS ONLY FOR DEMO PURPOSE 
                // - TO MAKE SPINNER APPEAR LONGER ON SCREEN 
                // IN REAL APP, OFC would be no setTimeout 
-            //    setTimeout(()=>{
-            //        setComments(response.data.comments)
-            //        setIsLoading(false)
-            //    },2000)
+               setTimeout(()=>{
+                   setComments(response.data.comments)
+                   setIsLoading(false)
+               },2000)
 
-               setComments(response.data.comments)
-               setIsLoading(false)
+            //    setComments(response.data.comments)
+            //    setIsLoading(false)
               
               } catch (err) {
                   console.log(err);
