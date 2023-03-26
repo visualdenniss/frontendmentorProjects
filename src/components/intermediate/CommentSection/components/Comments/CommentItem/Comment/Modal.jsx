@@ -1,4 +1,7 @@
 import React from 'react'
+import {motion} from 'framer-motion'
+import { basicFadeIn, basicFadeUpProfile } from '../../../../animation'
+
 
 const Modal = ({setOpenModal, comments, setComments, id}) => {
 
@@ -30,15 +33,15 @@ const Modal = ({setOpenModal, comments, setComments, id}) => {
 
     return (
         <div className="comment-section-delete-modal-container">
-        <div className="comment-section-delete-modal-overlay"></div>
-        <div className="comment-section-delete-modal">
+        <motion.div {...basicFadeIn} className="comment-section-delete-modal-overlay"></motion.div>
+        <motion.div {...basicFadeUpProfile} className="comment-section-delete-modal">
             <h2>Delete comment</h2>
             <p>Are you sure you want to delete this comment? 😱 This will remove the comment and can't be undone. Like never ever. 😈</p>
         <div className="comment-section-delete-modal-btns">
         <button onClick={()=>setOpenModal(false)} className='comment-section-cancel-delete-btn'>Please, Don't</button>
         <button onClick={onDelete} className='comment-section-delete-btn'>Yes, Delete</button>
         </div>
-        </div>
+        </motion.div>
     </div>
     )
 }

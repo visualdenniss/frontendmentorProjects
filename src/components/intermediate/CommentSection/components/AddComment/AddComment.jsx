@@ -22,7 +22,7 @@ const AddComment = ({isReplying, setIsReplying, comments, setComments, replyingT
                 const updatedReplies = [...existingReplies, { 
                     id: uuidv4(),
                     content: content,  
-                    createdAt: "2 weeks ago",
+                    createdAt: "less than a minute ago",
                     score: 0,
                     replyingTo,
                     user: {
@@ -104,7 +104,7 @@ const AddComment = ({isReplying, setIsReplying, comments, setComments, replyingT
 
 
     return (
-        <form className={isReplying ? 'comment-section-add-comment-form-reply comment-section-add-comment-form' : 'comment-section-add-comment-form'}>
+        <form  className={isReplying ? 'comment-section-add-comment-form-reply comment-section-add-comment-form' : 'comment-section-add-comment-form'}>
             <picture>
                     <source srcSet={currentUser.image.png.webp} type="image/webp" />
                     <source srcSet={currentUser.image.png.png} type="image/png" />

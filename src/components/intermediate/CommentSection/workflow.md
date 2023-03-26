@@ -9,7 +9,7 @@ Step 5: Add inverse data flow
 ### Step 1: Break the UI into a component hierarchy
 
 Breakdown: ✅
-![Components Breakdown](./src/components/intermediate/CommentSection/assets/interactive-comments-section-main/design/desktop-design-breakdown.jpg)
+![Components Breakdown](./desktop-design-breakdown.jpg)
 
 Components Hierarchy: ✅
 
@@ -84,13 +84,15 @@ TODOS:
 
 - ADD Responsiveness ✅
 
-- ANIMATIONS
+- ANIMATIONS ✅
 
 - PNG VS WEBP (Check use cases, when to use which..) ✅
 
 - ADD ALT TAGS FOR IMGS ✅ + DO SOME AY11 CHECKING / ACCESSIBILITY TESTS
 
 - ADD REAL TIME STAMPS IN (TIME AGO FORMAT)
+
+- DARK MODE ✅
 
 ### VOTE SYSTEM ✅
 

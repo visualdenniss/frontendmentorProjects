@@ -58,3 +58,13 @@
     height: 2.5rem;
   }
 }
+@media only screen and (max-width: 370px) {
+  .comment-section-list {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .comment-section-list-item > button {
+    width: 2rem;
+    height: 2rem;
+  }
+}

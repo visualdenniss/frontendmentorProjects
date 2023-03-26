@@ -14,6 +14,7 @@
 
   display: flex;
   gap: calc((20 / 16) * 1rem);
+  animation: fadeINUP 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Comment Left  */
@@ -99,6 +100,11 @@
   border-radius: 0.1rem;
 }
 
+.comment-section-dark .comment-section-comment-details span {
+  color: rgb(228, 228, 228);
+  background-color: #7289da;
+}
+
 .comment-section-comment-details a {
   color: var(--comment-section-Dark-blue);
   font-weight: 500;
@@ -159,6 +165,10 @@
   border-left: 2px solid var(--comment-section-Light-gray);
 }
 
+.comment-section-dark .comment-section-replies-list {
+  border-left: 2px solid #2c2f33;
+}
+
 /* ********* MODAL ********* */
 
 .comment-section-delete-modal-container {
@@ -170,6 +180,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .comment-section-delete-modal-overlay {
@@ -177,11 +188,12 @@
   height: 100%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
 .comment-section-delete-modal {
   position: relative;
-  z-index: 10;
+  z-index: 1050;
   background-color: var(--comment-section-White);
   padding: calc((30 / 16) * 1rem);
   border-radius: 0.5rem;
@@ -351,5 +363,15 @@
   .comment-section-delete-btn {
     padding: 1rem calc((10 / 16) * 1rem);
     font-size: 0.75rem;
+  }
+}
+
+@keyframes fadeINUP {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }

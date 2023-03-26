@@ -25,6 +25,28 @@
 
   background-color: var(--comment-section-Very-light-gray);
   color: var(--comment-section-Grayish-Blue);
+
+  transition: var(--comment-section-transition);
+}
+
+.comment-section-dark {
+  /* ### Primary */
+
+  --comment-section-Moderate-blue: #7289da;
+  --comment-section-Soft-Red: hsl(358, 79%, 66%);
+  --comment-section-Light-grayish-blue: hsl(239, 57%, 85%);
+  --comment-section-Pale-red: hsl(357, 100%, 86%);
+
+  /* ### Neutral */
+
+  --comment-section-Dark-blue: #ffffff;
+  --comment-section-Grayish-Blue: hsl(225, 17%, 91%);
+  --comment-section-Light-gray: hsl(223, 19%, 93%);
+  --comment-section-Very-light-gray: #23272a;
+  --comment-section-White: #2c2f33;
+
+  background-color: var(--comment-section-Very-light-gray);
+  color: var(--comment-section-Grayish-Blue);
 }
 
 .comment-section-main {
@@ -37,6 +59,29 @@
   margin: 0 auto;
 }
 
+.comment-section-logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  text-decoration: none;
+  font-size: 3rem;
+  line-height: 0.75;
+}
+
+.comment-section-logo:hover {
+  animation: commentLogoMotion 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.comment-section-toggle {
+  position: absolute;
+  top: 4.5rem;
+  left: 1rem;
+}
+
+.comment-section-toggle .pricing-toggle {
+  margin: 0;
+}
+
 @media only screen and (max-width: 900px) {
   .comment-section-container {
     padding: 1rem 5rem;
@@ -46,10 +91,43 @@
   .comment-section-container {
     padding: 5rem calc((24 / 16) * 1rem);
   }
+
+  .comment-section-toggle {
+    position: absolute;
+    top: 1.15rem;
+    left: 4.75rem;
+  }
+
+  .comment-section-toggle .pricing-toggle {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .comment-section-container {
     padding: 5rem calc((15 / 16) * 1rem);
+  }
+}
+
+@keyframes commentLogoMotion {
+  19% {
+    transform: rotate(0deg);
+    scale: 0.9;
+  }
+  20% {
+    transform: rotate(-45deg);
+    scale: 0.9;
+  }
+
+  50% {
+    scale: 1.3;
+  }
+
+  65% {
+    scale: 1.1;
+  }
+  100% {
+    transform: rotate(360deg);
+    scale: 1;
   }
 }

@@ -4,6 +4,7 @@ import './Loader.css'
 import AddComment from './components/AddComment/AddComment'
 import Comments from './components/Comments/Comments'
 import axios from 'axios'
+import {users} from './Users'
 
 
 
@@ -12,49 +13,14 @@ import SwitchAccount from './SwitchAccount'
 
 export const CommentsContext = createContext(null);
 
-const users = [
-    
-    {
-    id: 0, 
-    image: { 
-        png: "https://res.cloudinary.com/dg7sswqcr/image/upload/v1679585456/comments-section-fm/image-juliusomo_doq3dh.png",
-        webp: "https://res.cloudinary.com/dg7sswqcr/image/upload/v1679585456/comments-section-fm/image-juliusomo_josf9c.webp"
-      },
-      username: "juliusomo"
-    },
-    {
-    id: 1, 
-    image: { 
-        png: "https://res.cloudinary.com/dg7sswqcr/image/upload/v1679585456/comments-section-fm/image-amyrobson_xkvk0b.png",
-        webp:  "https://res.cloudinary.com/dg7sswqcr/image/upload/v1679585456/comments-section-fm/image-amyrobson_fozexc.webp"
-      },
-      username: "amyrobson"
-    },
-    {
-    id: 2,     
-    image: { 
-        png:"https://res.cloudinary.com/dg7sswqcr/image/upload/v1679585456/comments-section-fm/image-maxblagun_ecp1ug.webp",
-        webp:"https://res.cloudinary.com/dg7sswqcr/image/upload/v1679585456/comments-section-fm/image-maxblagun_ecp1ug.webp"
-      },
-      username: "maxblagun"
-    },
-    {
-    id: 3,     
-    image: { 
-        png:  "https://res.cloudinary.com/dg7sswqcr/image/upload/v1679585456/comments-section-fm/image-ramsesmiron_cfndbf.png",
-        webp: "https://res.cloudinary.com/dg7sswqcr/image/upload/v1679585456/comments-section-fm/image-ramsesmiron_mxxtzx.webp"
-      },
-      username: "ramsesmiron"
-    },
-
-
-]
 
 const CommentSection = () => {
 
     const [currentUser, setCurrentUser] = useState(users[0])
     const [comments, setComments] = useState("")
     const [isLoading, setIsLoading] = useState(false)
+
+    const [darkMode, setDarkMode] = useState(true)
 
 
       useEffect(() => {
@@ -66,13 +32,13 @@ const CommentSection = () => {
                // THIS setTimeout IS ONLY FOR DEMO PURPOSE 
                // - TO MAKE SPINNER APPEAR LONGER ON SCREEN 
                // IN REAL APP, OFC would be no setTimeout 
-            //    setTimeout(()=>{
-            //        setComments(response.data.comments)
-            //        setIsLoading(false)
-            //    },2000)
+               setTimeout(()=>{
+                   setComments(response.data.comments)
+                   setIsLoading(false)
+               },2000)
 
-               setComments(response.data.comments)
-               setIsLoading(false)
+              //  setComments(response.data.comments)
+              //  setIsLoading(false)
               
               } catch (err) {
                   console.log(err);
@@ -80,20 +46,27 @@ const CommentSection = () => {
           }
           getData()
       }, [])
-  
 
-    const emojiStyle = {
-        position: 'absolute',
-        top: '1rem',
-        left: '1rem',
-        textDecoration: 'none',
-        fontSize: '3rem',
-        lineHeight: '.75',
+      const handleClick = () => {
+        setDarkMode(!darkMode)
+        document.querySelector('.pricing-toggle-circle').classList.toggle('pricing-toggle-circle-annual')
+        
+        document.querySelectorAll('.pricing-price')
+        .forEach((price)=>
+        price.classList.toggle('pricing-price-animate'))
     }
-
+  
     return (
-        <div className='comment-section-container df'>
-            <a href="https://frontendmentor-showcase.netlify.app/" target="_blank" style={emojiStyle}>👾</a>
+        <div className={darkMode ? 'comment-section-container df comment-section-dark' : 'comment-section-container df'}>
+            <a className="comment-section-logo" href="https://frontendmentor-showcase.netlify.app/" target="_blank">👾</a>
+
+            {/* // COPIED TOGGLE FROM ANOTHER, OLDER UNCHANGED PROJECT */}
+            <div className="pricing-options comment-section-toggle">
+                        {/* // THIS SHOULD BE NORMALLY A BUTTON  */}
+                        <div className="pricing-toggle" onClick={handleClick}>
+                            <div className="pricing-toggle-circle"></div>
+                        </div>
+            </div>
             {isLoading 
                ? 
               <div className="comment-section-spinner"></div>

@@ -14,8 +14,6 @@ const Pricing = () => {
         document.querySelectorAll('.pricing-price')
         .forEach((price)=>
         price.classList.toggle('pricing-price-animate'))
- 
-        
     }
 
     return (

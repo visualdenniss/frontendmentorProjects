@@ -10,6 +10,8 @@
   align-items: flex-start;
   gap: calc((13 / 16) * 1rem);
   width: 100%;
+
+  animation: fadeINUP 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .comment-section-add-comment-form-reply {
@@ -37,6 +39,11 @@
   /* cursor: pointer; */
   caret-color: var(--comment-section-Moderate-blue);
   /* caret-shape: block; */
+}
+
+.comment-section-dark textarea {
+  background-color: rgb(56, 58, 64);
+  border: 1px solid transparent;
 }
 
 .comment-section-comment-editing-field {
@@ -71,6 +78,10 @@
 .comment-section-editing-btn {
   width: max-content;
   margin-left: auto;
+}
+
+.comment-section-dark .comment-section-add-comment-form button {
+  color: #f3f3f3;
 }
 
 @media only screen and (max-width: 900px) {
