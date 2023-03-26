@@ -1,16 +1,17 @@
+// THIS IS THE FIRST INITIAL BUGFREE WORKING VERSION 
+// KEEPING THIS COPY, IN ORDER TO EXPERIMENT WITH POSSIBLE REFACTORINGS
+
+
 import React from 'react'
 
 const Vote = ({data, currentUser, comments, hasVoted, setHasVoted, setComments, plus, minus }) => {
-
-
-    const checkIsComment = comments.find((comment) => comment.id === data.id);
-  
 
     const handleVote = (direction) => {
 
         if(direction === 'upvote') {
             // We first check if the id belongs to the main comment, if so then simply update it. 
-            if (checkIsComment) {
+            if (comments.find((comment) => comment.id === data.id)) {
+
 
                 const commentToUpdate = comments.find((comment) => comment.id === data.id);
                 const commentIndex = comments.indexOf(commentToUpdate);
@@ -42,7 +43,9 @@ const Vote = ({data, currentUser, comments, hasVoted, setHasVoted, setComments, 
 
                         setHasVoted(updatedVotes)
                     }
+                    
                 }
+
                 // User has not voted yet, and votes up
                  else {
                     // score +1
@@ -55,6 +58,7 @@ const Vote = ({data, currentUser, comments, hasVoted, setHasVoted, setComments, 
                             direction: 'up',
                         }
                     ])
+
                  }
                 setComments(updatedComments)
             }   
@@ -124,7 +128,7 @@ const Vote = ({data, currentUser, comments, hasVoted, setHasVoted, setComments, 
         else {
 
             // We first check if the id belongs to the main comment, if so then simply update it. 
-            if (checkIsComment) {
+            if (comments.find((comment) => comment.id === data.id)) {
                 const commentToUpdate = comments.find((comment) => comment.id === data.id);
                 const commentIndex = comments.indexOf(commentToUpdate);
 

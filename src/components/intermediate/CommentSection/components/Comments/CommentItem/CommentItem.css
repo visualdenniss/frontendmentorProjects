@@ -83,7 +83,8 @@
   gap: calc((15 / 16) * 1rem);
 }
 
-.comment-section-comment-details img {
+.comment-section-comment-details img,
+.comment-section-comment-details picture {
   width: 2rem;
   height: 2rem;
 }
@@ -126,12 +127,13 @@
   border: transparent;
   height: 100%;
   color: var(--comment-section-Moderate-blue);
-  font-weight: 700;
+  font-weight: 500;
   display: flex;
   align-items: center;
   cursor: pointer;
   transition: var(--comment-section-transition);
   font-size: 1rem;
+  font-family: "Rubik", sans-serif;
 }
 
 .comment-section-comment-right-buttons button:hover {
@@ -309,6 +311,7 @@
     width: 100%;
   }
 
+  .comment-section-comment-details picture,
   .comment-section-comment-details img {
     grid-area: 1 / 1 / 4 / 2;
     width: 3rem;

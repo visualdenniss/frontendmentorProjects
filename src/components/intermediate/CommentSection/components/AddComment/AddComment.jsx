@@ -105,7 +105,11 @@ const AddComment = ({isReplying, setIsReplying, comments, setComments, replyingT
 
     return (
         <form className={isReplying ? 'comment-section-add-comment-form-reply comment-section-add-comment-form' : 'comment-section-add-comment-form'}>
-            <img src={currentUser.image.png} alt="" />
+            <picture>
+                    <source srcSet={currentUser.image.png.webp} type="image/webp" />
+                    <source srcSet={currentUser.image.png.png} type="image/png" />
+                    <img src={currentUser.image.png} alt={currentUser.username} />
+            </picture>            
             <textarea placeholder="Add a comment..." value={content} onChange={(e)=> setContent(e.target.value)} resize="false"></textarea>
             <button onClick={handleComment}>{isReplying ? 'reply' : 'send'}</button>
         </form>

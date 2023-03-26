@@ -9,7 +9,7 @@ const SwitchAccount = ({users, currentUser, setCurrentUser}) => {
                 {users.map((user, index)=> (
                 <li key={index + user.username} 
                 className={currentUser.id === user.id ? "comment-section-list-item comment-section-active-user" : "comment-section-list-item"}>
-                    <button onClick={()=>setCurrentUser(users[index])}>
+                    <button tabindex="0" onClick={()=>setCurrentUser(users[index])}>
                         <img src={user.image.png} alt="" />
                     </button>
                 </li>

@@ -79,7 +79,11 @@ const Comment = ({data, type, isReplying, setIsReplying, setReplyingToID}) => {
             <div className="comment-section-comment-right">
                 <div className="comment-section-comment-header">
                     <div className="comment-section-comment-details">
-                        <img src={data?.user.image.png} alt="" />
+                        <picture>
+                            <source srcSet={data?.user.image.webp} type="image/webp" />
+                            <source srcSet={data?.user.image.png} type="image/png" />
+                            <img src={data?.user.image.png} alt={data?.user.username} />
+                        </picture>
                         <a href="">{data?.user.username}</a>
                         {currentUser.username === data?.user.username && <span>you</span>}
                         <p>{data?.createdAt}</p>
@@ -88,11 +92,11 @@ const Comment = ({data, type, isReplying, setIsReplying, setReplyingToID}) => {
 
                         {currentUser.username === data?.user.username ? 
                         <>
-                        <button onClick={handleDelete} style={{color: 'var(--comment-section-Soft-Red)'}}><img src={deleteIcon} alt="" />Delete</button>
-                        <button onClick={handleEdit}><img src={edit} alt="" />Edit</button>
+                        <button onClick={handleDelete} style={{color: 'var(--comment-section-Soft-Red)'}}><img src={deleteIcon} alt="Delete" />Delete</button>
+                        <button onClick={handleEdit}><img src={edit} alt="Edit" />Edit</button>
                         </> 
                         :                        
-                        <button onClick={()=> handleReply()}><img src={reply} alt="" />Reply</button>
+                        <button onClick={()=> handleReply()}><img src={reply} alt="Reply" />Reply</button>
                         }
 
                     </div>

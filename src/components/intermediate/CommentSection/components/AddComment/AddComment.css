@@ -16,7 +16,8 @@
   margin-top: -0.6rem;
 }
 
-.comment-section-add-comment-form > img {
+.comment-section-add-comment-form img,
+.comment-section-add-comment-form picture {
   width: calc((37 / 16) * 1rem);
   height: calc((37 / 16) * 1rem);
 }
@@ -53,12 +54,13 @@
   color: var(--comment-section-White);
   border: none;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.2px;
   padding: 1rem calc((27 / 16) * 1rem);
   border-radius: 0.5rem;
   cursor: pointer;
   transition: var(--comment-section-transition);
+  font-family: "Rubik", sans-serif;
 }
 
 .comment-section-add-comment-form > button:hover,
@@ -87,8 +89,11 @@
     grid-area: reply;
   }
 
-  .comment-section-add-comment-form > img {
+  .comment-section-add-comment-form img,
+  .comment-section-add-comment-form picture {
     grid-area: img;
+    width: calc((47 / 16) * 1rem);
+    height: calc((47 / 16) * 1rem);
   }
   .comment-section-add-comment-form > button {
     grid-area: button;
