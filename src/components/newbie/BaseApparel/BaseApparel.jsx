@@ -80,7 +80,7 @@ const BaseApparel = () => {
                         </p>
                         <div className="base-apparel-body-deco-wrapper">
                             <div className="base-apparel-body-deco-overlay"></div>
-                            <img src={deco} alt="" />
+                            <img src={deco} alt='“CALLA LILY” // 1988 ROBERT MAPPLETHORPE'  />
                         </div>
                         {subscribed ? 
                         <p style={{fontSize:'2rem', color: 'var(--base-apparel-header)'}}>Thank you for subscribing!</p>
@@ -99,7 +99,10 @@ const BaseApparel = () => {
                     </section>
                 </div>
                 <div class="base-apparel-right base-apparel-column">
-                  <div className="base-apparel-bg-2"></div>
+                  <span role="img" aria-label="logan hollowell"></span>
+                  <div className="base-apparel-bg-2">
+                  <span role="img" aria-label="[place alt text here]"></span>
+                  </div>
                 </div>
         </main>
     )
