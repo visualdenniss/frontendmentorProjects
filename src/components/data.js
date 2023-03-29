@@ -215,4 +215,13 @@ export const componentCardData = [
         type: "component", 
         link:"/components/comment-section",
     }, 
+    {
+        id:"25",
+        title: "Base Apparel - Coming Soon",
+        desc: "Base Apparel Coming Soon Landing Page Animated in GSAP", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_700/Challenges/oxwdbpj64r1au0gp1frc.jpg",
+        category:"newbie",
+        type: "component", 
+        link:"/components/base-apparel",
+    }, 
 ]

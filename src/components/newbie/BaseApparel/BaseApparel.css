@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+.base-apparel-container {
+  overflow-x: hidden;
+  /* min-height: 100vh; */
+  width: 100%;
+  min-height: 100vh;
+  /* height: 100vh; */
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "PP Neue Montreal", "Josefin Sans", sans-serif;
+
+  --base-apparel-bg: #242121;
+  --base-apparel-primary1: #a38778;
+  --base-apparel-logo: #e1ddd2;
+  --base-apparel-header: #f2eee2;
+
+  --base-apparel-primary2: hsl(0, 66%, 60%);
+
+  --base-apparel-neutral: #958e8a;
+
+  --base-apparel-linear1: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    to hsl(0, 100%, 98%)
+  );
+  --base-apparel-linear2: linear-gradient(135deg, #a38778, #958e8a);
+
+  background-color: var(--base-apparel-bg);
+  display: flex;
+}
+.base-apparel-column {
+  min-height: 100vh;
+}
+
+.base-apparel-left {
+  /* border: 1px solid red; */
+  width: 57.7%;
+  padding: calc((61 / 16) * 1rem) calc((164 / 16) * 1rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.base-apparel-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: calc((120 / 16) * 1rem);
+  position: relative;
+}
+
+.base-apparel-logo-circle {
+  content: "";
+  border: 4px solid var(--base-apparel-primary1);
+  height: calc((44 / 16) * 1rem);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: calc((15 / 16) * 1rem);
+}
+
+.base-apparel-logo-text {
+  color: var(--base-apparel-logo);
+  font-size: calc((19 / 16) * 1rem);
+  letter-spacing: calc((5.7 / 16) * 1rem);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.base-apparel-body {
+  /* border: 1px solid red; */
+  position: relative;
+}
+
+.base-apparel-body > * {
+  position: relative;
+  z-index: 2;
+}
+
+.base-apparel-body > h2 {
+  color: var(--base-apparel-header);
+  font-size: calc((62 / 16) * 1rem);
+  letter-spacing: calc((19.84 / 16) * 1rem);
+  /* border: 1px solid red; */
+  max-width: 500px;
+  position: relative;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.ml13 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.base-apparel-body .text {
+  margin: 0;
+}
+
+.base-apparel-body .text text {
+  font-size: 62px;
+  fill: transparent;
+  stroke: var(--base-apparel-primary1);
+}
+
+.textto {
+  stroke-width: 1px;
+  stroke-dasharray: 600px;
+  /* stroke-dashoffset: 600px; */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  /* animation: drawStroke 5s cubic-bezier(0.645, 0.045, 0.355, 1) forwards; */
+  animation-delay: 4.2s;
+}
+
+@keyframes drawStroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.base-apparel-body > p {
+  color: var(--base-apparel-neutral);
+  font-size: 1rem;
+  letter-spacing: calc((100 / 1000) * 1rem);
+  line-height: 1.5;
+  margin: calc((37 / 16) * 1rem) 0px;
+  min-width: 500px;
+  overflow: hidden;
+}
+
+.base-apparel-body > p > span {
+  display: inline-block;
+}
+
+.base-apparel-body form {
+  width: 100%;
+  border: 1px solid var(--base-apparel-primary1);
+  display: flex;
+  position: relative;
+  border-radius: calc((30 / 16) * 1rem);
+  /* min-width: 400px; */
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.base-apparel-body form input {
+  width: 100%;
+  border: transparent;
+  font-size: 1rem;
+  padding: calc((19 / 16) * 1rem) calc((30 / 16) * 1rem);
+  background: transparent;
+  border-radius: calc((30 / 16) * 1rem);
+  color: var(--base-apparel-header);
+  font-family: "PP Neue Montreal", "Josefin Sans", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.base-apparel-body form input:focus {
+  outline: 1px solid var(--base-apparel-header);
+}
+
+.base-apparel-body form button {
+  height: 100%;
+  background: var(--base-apparel-bg);
+  width: calc((102 / 16) * 1rem);
+  position: absolute;
+  right: 0;
+  border-radius: calc((30 / 16) * 1rem);
+  border: 1px solid var(--base-apparel-primary1);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.base-apparel-body form button:hover {
+  background-color: var(--base-apparel-primary1);
+}
+
+.base-apparel-body form button:hover svg {
+  color: var(--base-apparel-logo);
+}
+
+.base-apparel-body form button svg {
+  color: var(--base-apparel-primary1);
+}
+
+.base-apparel-body-deco-wrapper {
+  width: 227px;
+  max-height: 231px;
+  position: absolute;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  z-index: 1;
+  top: 110px;
+  left: -167px;
+}
+
+.base-apparel-body-deco-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: relative;
+  opacity: 0.71;
+}
+
+.base-apparel-body-deco-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: var(--base-apparel-bg); */
+}
+
+.base-apparel-right {
+  position: relative;
+  /* left: 50%;
+  right: 20%; */
+  background: url("bg-1.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  width: 100%;
+  /* max-height: 100vh; */
+}
+
+.base-apparel-bg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url("bg-3.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  opacity: 0;
+}
+
+.base-apparel-error {
+  margin-top: -1rem;
+  color: red;
+}
+
+@media only screen and (min-width: 900px) {
+}
+
+@media only screen and (max-width: 700px) {
+  .base-apparel-right {
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  .base-apparel-body-deco-wrapper {
+    display: none;
+  }
+
+  .base-apparel-body > p {
+    min-width: unset;
+  }
+
+  .base-apparel-column {
+    min-height: unset;
+  }
+
+  .base-apparel-left {
+    /* border: 1px solid red; */
+    width: 100%;
+    padding: calc((80 / 16) * 1rem) calc((40 / 16) * 1rem);
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .base-apparel-body > h2 {
+    color: var(--base-apparel-header);
+    font-size: clamp(2.5rem, 2.632vw + 1.974rem, 3.125rem);
+    letter-spacing: calc((19.84 / 16) * 1rem);
+    /* border: 1px solid red; */
+    max-width: 500px;
+  }
+
+  .base-apparel-body form {
+    min-width: unset;
+  }
+
+  .base-apparel-body .text {
+    margin-top: -20px;
+  }
+
+  .base-apparel-body > p > span {
+    display: inline;
+  }
+
+  .base-apparel-body form button {
+    background: transparent;
+    width: calc((90 / 16) * 1rem);
+  }
+
+  .base-apparel-body form input {
+    font-size: 0.8rem;
+  }
+
+  .textto {
+    animation: drawStroke 5s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+    animation-delay: 2.2s;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .base-apparel-body .text text {
+    font-size: 15vw;
+  }
+
+  .base-apparel-body form {
+    min-width: unset;
+    max-width: 100%;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .textto {
+    stroke-dashoffset: unset;
+    animation: none;
+  }
+
+  .base-apparel-body-deco-overlay {
+    display: none;
+  }
+}
