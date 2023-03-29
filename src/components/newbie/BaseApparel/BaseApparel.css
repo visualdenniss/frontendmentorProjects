@@ -2,19 +2,21 @@
 
 @font-face {
   font-family: "PP Neue Montreal";
-  src: url("./assets/fonts/PPNeueMontreal-Medium.otf") format("otf");
+  src: url("./assets/fonts/PPNeueMontreal-Medium.otf") format("opentype");
   font-style: normal;
   font-weight: 500;
 }
+
 @font-face {
   font-family: "PP Neue Montreal";
-  src: url("./assets/fonts/PPNeueMontreal-Bold.otf") format("otf");
+  src: url("./assets/fonts/PPNeueMontreal-Bold.otf") format("opentype");
   font-style: normal;
   font-weight: 700;
 }
+
 @font-face {
   font-family: "PP Neue Montreal";
-  src: url("./assets/fonts/PPNeueMontreal-Book.otf") format("otf");
+  src: url("./assets/fonts/PPNeueMontreal-Book.otf") format("opentype");
   font-style: normal;
   font-weight: 400;
 }
