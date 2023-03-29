@@ -33,15 +33,15 @@ const BaseApparel = () => {
 
   useEffect(()=> {
 
-    // var mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-    // if(window.innerWidth > 900 && !mediaQuery.matches) {
-    //   gsapAnimationDesktop();
-    // }
+    if(window.innerWidth > 900 && !mediaQuery.matches) {
+      gsapAnimationDesktop();
+    }
 
-    // else if(window.innerWidth < 900 && !mediaQuery.matches) {
-    //   gsapAnimationMobile()
-    // }
+    else if(window.innerWidth < 900 && !mediaQuery.matches) {
+      gsapAnimationMobile()
+    }
   },[])
 
     return (
@@ -58,7 +58,7 @@ const BaseApparel = () => {
                     </header>
                     <section class="base-apparel-body">
                         <h2><svg class="text">
-                        <text x="0" y="62px">
+                        <text x="0" y="calc((62/16)*1rem)">
                             <tspan class="textto">W</tspan>
                             <tspan class="textto">E</tspan>
                             <tspan class="textto">'</tspan>

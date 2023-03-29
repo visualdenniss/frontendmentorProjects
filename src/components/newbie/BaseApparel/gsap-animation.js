@@ -258,5 +258,4 @@ export const gsapAnimationMobile = () => {
         delay: 6.2,
       });
     
-
 }

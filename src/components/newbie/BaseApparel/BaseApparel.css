@@ -19,13 +19,6 @@
 
   --base-apparel-neutral: #958e8a;
 
-  --base-apparel-linear1: linear-gradient(
-    135deg,
-    hsl(0, 0%, 100%),
-    to hsl(0, 100%, 98%)
-  );
-  --base-apparel-linear2: linear-gradient(135deg, #a38778, #958e8a);
-
   background-color: var(--base-apparel-bg);
   display: flex;
 }
@@ -51,7 +44,7 @@
 
 .base-apparel-logo-circle {
   content: "";
-  border: 4px solid var(--base-apparel-primary1);
+  border: 0.25rem solid var(--base-apparel-primary1);
   height: calc((44 / 16) * 1rem);
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -81,7 +74,7 @@
   font-size: calc((62 / 16) * 1rem);
   letter-spacing: calc((19.84 / 16) * 1rem);
   /* border: 1px solid red; */
-  max-width: 500px;
+  max-width: calc((500 / 16) * 1rem);
   position: relative;
 }
 
@@ -96,21 +89,23 @@
 
 .base-apparel-body .text {
   margin: 0;
+  min-width: 120%;
 }
 
 .base-apparel-body .text text {
-  font-size: 62px;
+  font-size: calc((62 / 16) * 1rem);
+
   fill: transparent;
   stroke: var(--base-apparel-primary1);
 }
 
 .textto {
   stroke-width: 1px;
-  stroke-dasharray: 600px;
-  /* stroke-dashoffset: 600px; */
+  stroke-dasharray: calc((600 / 16) * 1rem);
+  stroke-dashoffset: calc((600 / 16) * 1rem);
   stroke-linecap: round;
   stroke-linejoin: round;
-  /* animation: drawStroke 5s cubic-bezier(0.645, 0.045, 0.355, 1) forwards; */
+  animation: drawStroke 5s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
   animation-delay: 4.2s;
 }
 
@@ -126,7 +121,7 @@
   letter-spacing: calc((100 / 1000) * 1rem);
   line-height: 1.5;
   margin: calc((37 / 16) * 1rem) 0px;
-  min-width: 500px;
+  min-width: calc((500 / 16) * 1rem);
   overflow: hidden;
 }
 
@@ -140,9 +135,8 @@
   display: flex;
   position: relative;
   border-radius: calc((30 / 16) * 1rem);
-  /* min-width: 400px; */
   overflow: hidden;
-  max-width: 500px;
+  max-width: calc((500 / 16) * 1rem);
 }
 
 .base-apparel-body form input {
@@ -154,7 +148,7 @@
   border-radius: calc((30 / 16) * 1rem);
   color: var(--base-apparel-header);
   font-family: "PP Neue Montreal", "Josefin Sans", sans-serif;
-  letter-spacing: 1.5px;
+  letter-spacing: calc((1.5 / 16) * 1rem);
 }
 
 .base-apparel-body form input:focus {
@@ -188,14 +182,14 @@
 }
 
 .base-apparel-body-deco-wrapper {
-  width: 227px;
-  max-height: 231px;
+  width: calc((227 / 16) * 1rem);
+  max-height: calc((231 / 16) * 1rem);
   position: absolute;
   /* border: 1px solid red; */
   overflow: hidden;
   z-index: 1;
-  top: 110px;
-  left: -167px;
+  top: calc((110 / 16) * 1rem);
+  left: calc((-167 / 16) * 1rem);
 }
 
 .base-apparel-body-deco-wrapper img {
@@ -213,7 +207,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: var(--base-apparel-bg); */
+  background-color: var(--base-apparel-bg);
 }
 
 .base-apparel-right {
@@ -237,14 +231,6 @@
   background: url("bg-3.jpg") no-repeat 50% 50%;
   background-size: cover;
   opacity: 0;
-}
-
-.base-apparel-error {
-  margin-top: -1rem;
-  color: red;
-}
-
-@media only screen and (min-width: 900px) {
 }
 
 @media only screen and (max-width: 700px) {
@@ -284,7 +270,7 @@
     font-size: clamp(2.5rem, 2.632vw + 1.974rem, 3.125rem);
     letter-spacing: calc((19.84 / 16) * 1rem);
     /* border: 1px solid red; */
-    max-width: 500px;
+    max-width: calc((500 / 16) * 1rem);
   }
 
   .base-apparel-body form {
@@ -292,7 +278,7 @@
   }
 
   .base-apparel-body .text {
-    margin-top: -20px;
+    margin-top: calc((-20 / 16) * 1rem);
   }
 
   .base-apparel-body > p > span {
