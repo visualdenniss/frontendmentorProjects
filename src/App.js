@@ -39,6 +39,7 @@ import ProfileCard from './components/newbie/ProfileCard/ProfileCard';
 import StatsPreview from './components/newbie/StatsPreview/StatsPreview';
 import CommentSection from './components/intermediate/CommentSection/CommentSection';
 import BaseApparel from './components/newbie/BaseApparel/BaseApparel';
+import SignUp from './components/newbie/SignUp/SignUp';
 
 
 
@@ -80,6 +81,7 @@ AOS.init({
                 <Route path='/components/stats-preview' element={<StatsPreview></StatsPreview>}/>
                 <Route path='/components/comment-section' element={<CommentSection></CommentSection>}/>
                 <Route path='/components/base-apparel' element={<BaseApparel></BaseApparel>}/>
+                <Route path='/components/sign-up' element={<SignUp></SignUp>}/>
 
                 {/* Pages  */}
                 <Route path='/pages' element={<Pages></Pages>}/>

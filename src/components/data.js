@@ -224,4 +224,13 @@ export const componentCardData = [
         type: "component", 
         link:"/components/base-apparel",
     }, 
+    {
+        id:"26",
+        title: "Intro component with sign-up form",
+        desc: "Form", 
+        img: "https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/ficuxtmo5kmd5bb8lmws.jpg",
+        category:"newbie",
+        type: "component", 
+        link:"/components/sign-up",
+    }, 
 ]

@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;800&display=swap");
+
+.sign-up-page {
+  min-height: 100vh;
+  /* border: 1px solid red; */
+  background: url("./assets/intro-component-with-signup-form-master/images/pramod-tiwari-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 40% 0%;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  padding: 0 calc((40 / 16) * 1rem);
+}
+
+.sign-up-container {
+  /* border: 2px solid blue; */
+  max-width: calc((1100 / 16) * 1rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 100vh;
+  gap: calc((30 / 16) * 1rem);
+  padding: calc((120 / 16) * 1rem) 0;
+}
+
+/* COLUMNS  */
+
+.sign-up-column {
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sign-up-right {
+  align-items: center;
+}
+
+/* LEFT  */
+
+.sign-up-column h1 {
+  align-self: flex-start;
+  font-size: calc((56 / 16) * 1rem);
+  letter-spacing: calc((1.75 / 16) * 1rem);
+  line-height: 1;
+  margin-bottom: calc((25 / 16) * 1rem);
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sign-up-column h1 > span {
+  display: block;
+}
+
+.sign-up-column h1 > span > span {
+  color: #fed287;
+}
+
+.sign-up-column h2 {
+  font-size: calc((18 / 16) * 1rem);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.sign-up-column h2 > span {
+  font-weight: 800;
+}
+
+.sign-up-column p {
+  font-size: calc((18 / 16) * 1rem);
+  line-height: 1.5;
+  max-width: calc((432 / 16) * 1rem);
+}
+
+/* CHANGING WORDS ANIMATION ELEMENTS  */
+
+.sign-up-words-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute; /* makes words stack on top of each other */
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.letter {
+  display: inline-block;
+  transform-origin: 50% 50% calc((25 / 16) * 1rem);
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media only screen and (max-width: 1100px) {
+  .sign-up-page {
+    min-height: 100vh;
+    /* border: 1px solid red; */
+    background: url("./assets/intro-component-with-signup-form-master/images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Mulish", sans-serif;
+    padding: 0 calc((40 / 16) * 1rem);
+  }
+
+  .sign-up-container {
+    /* border: 2px solid blue; */
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: calc((80 / 16) * 1rem);
+  }
+
+  .sign-up-column h1 {
+    align-self: center;
+  }
+
+  .sign-up-column {
+    flex: 1;
+  }
+
+  .sign-up-column p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sign-up-column h1 {
+    font-size: max(24px, 9vw);
+  }
+  .sign-up-column h1 > span {
+    /* border: 1px solid red; */
+    width: 100%;
+    width: 100%;
+  }
+  .sign-up-column p,
+  .sign-up-column h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .sign-up-column p {
+    font-size: min(18px, 5.5vw);
+  }
+}

@@ -1,0 +1,145 @@
+.signup-form {
+  transition: all 0.4s ease;
+}
+
+/* WRAPPER FOR THE WHOLE INPUT FIELD (INPUT + LABEL) */
+
+.signup-field {
+  position: relative;
+  min-height: calc((70 / 16) * 1rem);
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  /* border: 2px solid red; */
+  margin-top: calc((15 / 16) * 1rem);
+}
+
+/* INPUT ITSELF  */
+
+.signup-field input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: white;
+  line-height: calc((62 / 16) * 1rem);
+  outline: 0;
+  font-size: calc((20 / 16) * 1rem);
+  background-color: inherit;
+  padding-top: calc((30 / 16) * 1rem);
+  padding-bottom: calc((15 / 16) * 1rem);
+  border: none;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+.signup-field input::placeholder {
+  opacity: 0;
+}
+
+/* LABEL TEXT  */
+
+.signup-field-label-wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+  /* border: 1px solid yellow; */
+}
+
+.signup-field-label-text {
+  position: absolute;
+  bottom: calc((10 / 16) * 1rem);
+  left: 0px;
+  transition: all 0.6s;
+  transform: translateY(0%);
+  font-size: calc((20 / 16) * 1rem);
+}
+
+/* WHEN INPUT IS CLICKED AND PLACEHOLDER IS SHOWN (USER HAS NOT ENTERED ANY VALUE YET)
+, LABEL TEXT MOVES UP  */
+
+.signup-field
+  input:focus
+  + .signup-field-label-wrapper
+  .signup-field-label-text,
+.signup-field
+  input:not(:placeholder-shown)
+  + .signup-field-label-wrapper
+  .signup-field-label-text {
+  font-size: calc((13 / 16) * 1rem);
+  transform: translateY(-225%);
+}
+
+/* SUBMIT BUTTON  */
+
+.signup-form > input {
+  padding: 1rem;
+  background-color: #00070d;
+  border: none;
+  color: white;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-size: calc((18 / 16) * 1rem);
+  font-family: "Mulish", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: calc((1 / 16) * 1rem);
+  border-radius: calc((10 / 16) * 1rem);
+  margin-top: calc((30 / 16) * 1rem);
+  width: 100%;
+}
+
+.signup-form > input:hover {
+  background-color: #0a1f35;
+}
+
+.signup-form > input:active {
+  transform: scale(0.98);
+}
+.signup-form-terms {
+  font-size: calc((14 / 16) * 1rem) !important;
+  margin-top: calc((15 / 16) * 1rem);
+}
+
+.signup-form a {
+  color: white;
+}
+
+/* ERROR  */
+
+.signup-error-container {
+  /* border: 1px solid red; */
+  overflow: hidden;
+}
+
+.signup-error-message {
+  padding-top: calc((7 / 16) * 1rem);
+  font-size: calc((13 / 16) * 1rem) !important;
+  letter-spacing: calc((0.75 / 16) * 1rem);
+  color: #fe8787;
+  text-align: right;
+}
+
+.signup-error-sign {
+  position: absolute;
+  bottom: calc((10 / 16) * 1rem);
+  right: 0;
+  background-color: #fe8787;
+  border-radius: 50%;
+  padding: calc((3 / 16) * 1rem) calc((11 / 16) * 1rem);
+  aspect-ratio: 1/1;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .signup-form > input {
+    font-size: 1rem;
+    padding: 1rem 1.25rem;
+  }
+}
