@@ -50,13 +50,13 @@ const SignUp = () => {
                 </p>
             </div>
             </main>
-            {isOpen && <Modal isOpen={isOpen} name={name} setIsOpen={setIsOpen}>
+                <Modal isOpen={isOpen} name={name} setIsOpen={setIsOpen}>
                     <h3>
                     Thank you {name}!
                     </h3>
                      <p>Your free trial has been sent to your email. Please check your inbox for instructions on how to get started.</p>
-                 </Modal>}
-            {openToS && <Modal isOpen={openToS} setIsOpen={setOpenToS}>  
+                </Modal>
+                <Modal isOpen={openToS} setIsOpen={setOpenToS}>  
                     <h3>
                     Terms of Services
                     </h3>
@@ -68,7 +68,7 @@ const SignUp = () => {
                      <p>
                      If you have any questions or concerns about these Terms, please contact us at <span style={{textDecoration:'underline'}}>support@mastertodesigncode.com. </span>
                      </p>
-                 </Modal>}
+                </Modal>
         </div>
     )
 }
