@@ -27,7 +27,7 @@ const SignUp = () => {
             <div className="sign-up-left sign-up-column">
                 <h1>
                     <span>Master to&nbsp;
-                        <span className="word">design</span>
+                        <span className="word" style={{color: "#87b3fe"}}>design</span>
                         <span className="word">code</span>
                     </span>
                     <span>In simple steps</span>
