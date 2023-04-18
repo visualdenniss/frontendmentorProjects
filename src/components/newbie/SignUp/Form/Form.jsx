@@ -108,12 +108,7 @@ const Form = ({setIsOpen, setName, setOpenToS}) => {
                 
                 </>
             ))} 
-            
             <input type="submit" value="Claim your free trial" />
-            
-            <p className='signup-form-terms'>By clicking the button you agree our&nbsp; 
-                <a href="#" onClick={()=> setOpenToS(true)}>terms and services</a>
-            </p>
         </form>
     )
 }

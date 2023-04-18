@@ -14,11 +14,11 @@ const SignUp = () => {
     const [name,setName] = useState("")
 
     useEffect(()=> {
-        var mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-        if(!mediaQuery.matches) {
-            gsapLandingAnimation();
-            animateWordChange();
-        }
+        // var mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+        // if(!mediaQuery.matches) {
+        //     gsapLandingAnimation();
+        // }
+        animateWordChange();
     }, [])
 
     return (
@@ -45,7 +45,11 @@ const SignUp = () => {
                      then $20/mo. thereafter
                  </h2>
                 <Form setName={setName} setIsOpen={setIsOpen} setOpenToS={setOpenToS} />
+                <p className='signup-form-terms' id="terms">By clicking the button you agree our&nbsp; 
+                <button aria-labelledby="terms" onClick={()=> setOpenToS(true)}>terms and services</button>
+                </p>
             </div>
+            </main>
             {isOpen && <Modal isOpen={isOpen} name={name} setIsOpen={setIsOpen}>
                     <h3>
                     Thank you {name}!
@@ -65,7 +69,6 @@ const SignUp = () => {
                      If you have any questions or concerns about these Terms, please contact us at <span style={{textDecoration:'underline'}}>support@mastertodesigncode.com. </span>
                      </p>
                  </Modal>}
-            </main>
         </div>
     )
 }

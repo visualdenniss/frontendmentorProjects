@@ -1,5 +1,7 @@
 .signup-form {
   transition: all 0.4s ease;
+  width: 100%;
+  max-width: calc((346 / 16) * 1rem);
 }
 
 /* WRAPPER FOR THE WHOLE INPUT FIELD (INPUT + LABEL) */
@@ -105,8 +107,12 @@
   margin-top: calc((15 / 16) * 1rem);
 }
 
-.signup-form a {
+.signup-form-terms button {
+  background-color: transparent;
   color: white;
+  text-decoration: underline;
+  cursor: pointer;
+  border: transparent;
 }
 
 /* ERROR  */
