@@ -14,10 +14,10 @@ const SignUp = () => {
     const [name,setName] = useState("")
 
     useEffect(()=> {
-        var mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-        if(!mediaQuery.matches) {
-            gsapLandingAnimation();
-        }
+        // var mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+        // if(!mediaQuery.matches) {
+        //     gsapLandingAnimation();
+        // }
         animateWordChange();
     }, [])
 
