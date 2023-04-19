@@ -110,7 +110,7 @@
   .sign-up-page {
     min-height: 100vh;
     /* border: 1px solid red; */
-    background: url("./assets/intro-component-with-signup-form-master/images/bg.png");
+    background: url("./assets/intro-component-with-signup-form-master/images/bg-optimized.png");
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
