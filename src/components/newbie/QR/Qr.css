@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
 .qr {
   min-height: 100vh;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-size: 15px;
   background-color: hsl(212, 45%, 89%);
   padding: 25px;
@@ -10,32 +10,35 @@
 
 .qr-container {
   background-color: hsl(0, 0%, 100%);
-  padding: 15px;
+  padding: 16px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 320px;
   border-radius: 20px;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0476518);
 }
 .qr-img {
-  width: 285px;
+  width: 100%;
   border-radius: 10px;
 }
 .qr-title {
   color: hsl(218, 44%, 22%);
-  font-size: 1.5em;
+  font-size: 22px;
   width: 275px;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 24px;
+  margin-bottom: 16px;
   font-weight: 700;
+  line-height: 27.72px;
 }
 .qr-desc {
-  font-size: 1em;
-  color: hsl(220, 15%, 55%);
-  width: 275px;
+  font-size: 15px;
+  color: #7d889e;
+  letter-spacing: 0.1875px;
+  line-height: 19px;
   text-align: center;
-  padding: 0px 5px;
-  margin-bottom: 30px;
+  padding: 0px 16px;
   font-weight: 400;
 }
