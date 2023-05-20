@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 :root {
   /* primary */
@@ -14,17 +14,19 @@
 
 .nftCardBody {
   font-size: 18px;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   height: 100vh;
   background-color: var(--mainBg);
 }
 
 .nftCard-cardItem {
   background-color: var(--cardBg);
-  width: 300px;
-  padding: 20px;
+  max-width: 350px;
+  padding: 24px;
+  padding-bottom: 32px;
   border-radius: 15px;
   color: var(--Soft-blue);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.0952917);
 }
 
 .nftCard-nft-img {
@@ -62,8 +64,9 @@
 
 .nftCard-title {
   color: var(--White);
-  margin: 15px 0px;
-  font-size: 18px;
+  margin: 20px 0px 16px;
+  font-size: 22px;
+  line-height: 27.72px;
   font-weight: 600;
   transition: all 0.4s ease-in-out;
 }
@@ -71,18 +74,19 @@
   display: flex;
   font-weight: 300;
   justify-content: space-between;
-  margin: 20px 0px;
+  margin: 24px 0px;
   font-size: 16px;
   align-items: center;
+  line-height: 20.16px;
 }
 
 .nftCard-price {
   color: var(--Cyan);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .nftCard-icon {
-  margin-right: 5px;
+  margin-right: 6.48px;
   display: flex;
   align-items: center;
   height: 100%;
@@ -92,16 +96,21 @@
 .nftCard-countdown {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.nftCard-countdown {
+  font-weight: 400;
+}
+
+.nftCard-countdown > .nftCard-icon {
+  margin-right: 7.7px;
 }
 
 .nftCard-p {
   font-weight: 300;
-  font-size: 16px;
-}
-
-.nftCard-p:first-of-type {
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .nftCard-info {
@@ -110,19 +119,25 @@
   font-weight: 300;
 }
 
+.nftCard-info .nftCard-p {
+  line-height: 20.16px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 .nftCard-line {
   width: 100%;
   height: 1px;
   background-color: var(--line);
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .nftCard-avatar {
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  height: 33px;
   border-radius: 50%;
   border: 1px solid var(--White);
-  margin-right: 15px;
+  margin-right: 16px;
 }
 
 .nftCard-span {
