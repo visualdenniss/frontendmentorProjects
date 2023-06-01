@@ -33,10 +33,11 @@
 .profile-card-header {
   background: url("./assets/images/bg-pattern-card.svg");
   background-size: contain;
-  padding: 4.86133333em 1.77777778em 1.28888889em;
+  padding: 87px 1.77777778em 1.28888889em;
   display: grid;
   place-items: center;
   background-repeat: no-repeat;
+  padding-bottom: 28px;
 }
 .profile-card-header-body {
   display: grid;
@@ -45,36 +46,39 @@
   overflow: hidden;
 }
 .profile-card-header-body > img {
-  width: 105px;
-  height: 105px;
+  width: 101px;
+  height: 101px;
   border-radius: 50%;
   border: 5px solid hsl(0deg, 0%, 100%);
 }
 
 .profile-card-bio {
-  margin: 1.11111111em 0.22222222em 0.4em 0px;
+  margin-top: 19px;
+  margin-bottom: 8px;
   overflow: hidden;
 }
 
 .profile-card-name {
   font-size: 1em;
-  letter-spacing: 0.02666667em;
+  letter-spacing: 0;
   font-weight: 700;
-  line-height: 1.5em;
+  line-height: 23px;
 }
 
 .profile-card-age {
   font-size: 1em;
-  margin-left: 0.44444444em;
+  margin-left: 8.5px;
   font-weight: normal;
   color: hsl(227deg, 10%, 46%);
 }
 
 .profile-card-location {
-  font-size: 0.72222222em;
+  font-size: 14px;
   color: hsl(227, 10%, 46%);
   width: 100%;
+  font-weight: 400;
   text-align: center;
+  line-height: 17.36px;
 }
 /* BOTTOM  */
 
@@ -82,8 +86,8 @@
   list-style-type: none;
   display: flex;
   border-top: 0.063rem solid hsl(0deg, 0%, 80%);
-  padding: 1.333em 1.2em;
-  justify-content: space-around;
+  padding: 24px 54px 24px 47px;
+  justify-content: space-between;
 }
 
 .profile-card-stat-item {
@@ -97,11 +101,14 @@
   color: hsl(0deg, 0%, 0%);
   font-size: 1em;
   font-weight: 700;
+  line-height: 22.32px;
 }
 .profile-card-stat-item > p {
-  font-size: 0.644em;
-  letter-spacing: 2.096px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  line-height: 12.4px;
   color: hsl(227deg, 10%, 46%);
+  margin-top: 9px;
 }
 
 @media only screen and (max-width: 22.5em) {
